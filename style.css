@@ -37,3 +37,18 @@ nav a:hover {
 main {
     padding: 20px;
 }
+
+.presentation {
+    display: flex;              /* active Flexbox */
+    align-items: center;        /* aligne verticalement */
+    gap: 20px;                  /* espace entre image et texte */
+}
+
+.presentation img {
+    width: 200px;               /* taille de l'image */
+    height: auto;
+}
+
+.texte {
+    max-width: 500px;
+}
