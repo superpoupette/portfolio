@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+	scroll-snap-type: y mandatory;
 }
 
 header {
@@ -53,6 +54,8 @@ main {
     display: flex;              /* active Flexbox */
     align-items: center;        /* aligne verticalement */
     gap: 20px;                  /* espace entre image et texte */
+	scroll-snap-align : center;
+ height: 100vh;
 }
 
 .paragraphe1 img {
