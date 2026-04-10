@@ -55,7 +55,7 @@ main {
     align-items: center;        /* aligne verticalement */
     gap: 20px;                  /* espace entre image et texte */
 	scroll-snap-align : center;
- height: 100vh;
+ height: calc(100vh - 20px);
 }
 
 .paragraphe1 img {
