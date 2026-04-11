@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-top: 100px;      
+  background: #111;
+  overflow: visible;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    padding: 15px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1{
+    font-size: 25px;            
+    font-family: 'Cinzel Decorative', serif;
+    margin: 0;                  
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #FFC942; 
+}
+
+nav a {
+    font-size: 15px;             
+    font-family: 'Combo', sans-serif;
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+}
+nav a:last-child {
+    margin-right: 0;     
+}
+
+nav a:hover {
+    color: #FFC942; 
+}
+
+.carousel {
+overflow: visible;
+  width: 900px;
+  height: 550px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  width: 160px;
+  height: 240px;
+  flex-shrink: 0;
+  margin: 0 10px;
+  transition: transform 0.4s ease, filter 0.4s ease, opacity 0.4s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* état normal */
+.slide {
+  transform: scale(0.8);
+  filter: brightness(0.4);
+  opacity: 0.5;
+}
+
+/* centre */
+.slide.active {
+  transform: scale(1.15);
+  filter: brightness(1);
+  opacity: 1;
+  z-index: 3;
+}
+
+/* proches */
+.slide.near {
+  transform: scale(0.95);
+  filter: brightness(0.7);
+  opacity: 0.8;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.2);
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: white;
+  user-select: none;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
