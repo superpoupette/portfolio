@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
 	scroll-snap-type: y mandatory;
     background-color: #2E4152;
@@ -24,6 +25,15 @@ header h1{
     margin: 0;                  
 }
 
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #FFC942; 
+}
+
 nav a {
     font-size: 15px;             
     font-family: 'Combo', sans-serif;
@@ -37,14 +47,45 @@ nav a:last-child {
 }
 
 nav a:hover {
-    color: #0B1B24; 
+    color: #FFC942; 
 }
 
 main {
-    padding: 20px;
+    padding: 0px;
 }
 
 
 .texte {
     max-width: 500px;
 }
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-intro {
+    background-image: url("Images/Jeux/background_intro.png");
+}
+
+.section-cluedo {
+    background-image: url("Images/Jeux/background_cluedo.jpg");
+}
+
+.bloc p {
+    max-width: 300px;
+    color: white;
+}
+
+.bloc h2 {
+    font-size: 30px;             
+    font-family: 'Limelight', sans-serif;
+    color: white;
+}
+
