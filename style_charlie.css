@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+/* HEADER FIXE (ton style conservé) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    z-index: 10; /* important pour passer au-dessus du viewer */
+    background: rgba(0, 0, 0, 0.6); /* optionnel mais recommandé */
+}
+
+/* TITRE */
+header h1 {
+    font-size: 25px;
+    font-family: 'Cinzel Decorative', serif;
+    margin: 0;
+}
+
+/* NAV */
+nav a {
+    font-size: 15px;
+    font-family: 'Combo', sans-serif;
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav a:hover {
+    color: #0B1B24;
+}
+
+/* VIEWER OPENSEADRAGON */
+#viewer {
+    width: 100%;
+    height: 100vh;
+
+    background: black;
+
+    /* IMPORTANT : compense le header fixe */
+    padding-top: 80px; /* ajuste selon la hauteur réelle du header */
+    box-sizing: border-box;
+}
