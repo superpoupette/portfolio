@@ -48,12 +48,11 @@ nav a:hover {
 
 /* VIEWER OPENSEADRAGON */
 #viewer {
-    width: 100%;
-    height: 100vh;
+    position: absolute;
+    top: 80px; /* hauteur du header */
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     background: black;
-
-    /* IMPORTANT : compense le header fixe */
-    padding-top: 80px; /* ajuste selon la hauteur réelle du header */
-    box-sizing: border-box;
 }
