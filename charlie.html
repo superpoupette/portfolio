@@ -3,10 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>ouestcharlie</title>
+    <script src="https://openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
+
+    <style>
+    html, body {
+        margin:0;
+        height:100%;
+    }
+
+    #viewer {
+        width:100%;
+        height:100vh;
+        background:black;
+    }
+    </style>
 </head>
 <body>
-    <header>
-   	 <h1>Ou est charlie ?</h1>
-</header>
+
+<div id="viewer"></div>
+
+<script>
+
+var viewer = OpenSeadragon({
+    id: "viewer",
+    prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
+    tileSources: "sortie.dzi",
+    showNavigator: false
+});
+
+let charlieTile = null;
+
+
+// =========================
+// AJOUT DES TUILES
+// =========================
+viewer.addHandler('open', function(){
+
+    // --- Charlie ---
+    viewer.addTiledImage({
+        tileSource: "2022.dzi",
+        x: 0.2891011294986858,
+        y: 0.3041,
+        width: 0.01957575572620729,
+        opacity: 0,
+        preload: true,
+        success: e => charlieTile = e.item
+    });
+});
+
+
+// =========================
+// FADE SELON ZOOM
+// =========================
+viewer.addHandler('animation', function(){
+
+    let zoom = viewer.viewport.getZoom(true);
+
+    // -------- Niveau 1 --------
+    let start1 = 1.5;
+    let end1   = 2.2;
+
+    let opacity1;
+
+    if(zoom <= start1)
+        opacity1 = 0;
+    else if(zoom >= end1)
+        opacity1 = 1;
+    else
+        opacity1 = (zoom - start1) / (end1 - start1);
+
+    if(charlieTile) charlieTile.setOpacity(opacity1);
+    if(croquisTile) croquisTile.setOpacity(opacity1);
+
+
+    // -------- Niveau 2 (plus profond) --------
+    let start2 = 2.1;
+    let end2   = 2.8;
+
+    let opacity2;
+
+    if(zoom <= start2)
+        opacity2 = 0;
+    else if(zoom >= end2)
+        opacity2 = 1;
+    else
+        opacity2 = (zoom - start2) / (end2 - start2);
+
+    if(croquis2Tile) croquis2Tile.setOpacity(opacity2);
+
+});
+
+</script>
 </body>
 </html>

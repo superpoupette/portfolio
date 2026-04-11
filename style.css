@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 	scroll-snap-type: y mandatory;
+    background-color: #2E4152;
 }
 
 header {
@@ -9,8 +10,12 @@ header {
     justify-content: space-between; 
     align-items: center;           
     padding: 15px;
-    background-color: #E6C1C1;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header h1{
