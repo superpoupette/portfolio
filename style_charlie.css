@@ -18,7 +18,6 @@ header {
     box-sizing: border-box;
 
     z-index: 10; /* important pour passer au-dessus du viewer */
-    background: rgba(0, 0, 0, 0.6); /* optionnel mais recommandé */
 }
 
 /* TITRE */
@@ -32,7 +31,7 @@ header h1 {
 nav a {
     font-size: 15px;
     font-family: 'Combo', sans-serif;
-    color: black;
+    color: white;
     margin-right: 50px;
     text-decoration: none;
     transition: all 0.3s ease;
