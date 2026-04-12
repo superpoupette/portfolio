@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    color: white;
+    color: #8BB8E0;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,19 +27,19 @@ header h1 {
 }
 
 header a {
-    color: inherit;
+    color: #13334F;
     text-decoration: none;
 }
 
 header a:hover {
-    color: #FFC942;
+    color: #B00C38;
 }
 
 /* NAV */
 nav a {
     font-size: 15px;
     font-family: 'Combo', sans-serif;
-    color: white;
+    color: #13334F;
     margin-right: 50px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -50,7 +50,7 @@ nav a:last-child {
 }
 
 nav a:hover {
-    color: #87D8FF;
+    color: #B00C38;
 }
 
 /* LAYOUT GLOBAL */
@@ -73,7 +73,7 @@ nav a:hover {
 .sidebar {
     width: 30%;
     background: #111;
-    color: white;
+    color: #8BB8E0;
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
