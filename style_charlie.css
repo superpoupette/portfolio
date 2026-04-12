@@ -64,7 +64,7 @@ nav a:hover {
 
 /* VIEWER */
 #viewer {
-    width: 70%;
+    width: 80%;
     height: calc(100vh - 70px);
     background: black;
     border-right: 2px solid #222;
@@ -72,7 +72,7 @@ nav a:hover {
 
 /* SIDEBAR */
 .sidebar {
-    width: 30%;
+    width: 20%;
     background: #111;
     color: #8BB8E0;
     padding: 20px;
@@ -83,11 +83,11 @@ nav a:hover {
 /* TEXTE */
 .sidebar h2 {
     margin-top: 0;
-    font-family: 'Cinzel Decorative', serif;
+    font-family: 'Combo', sans-serif;
 }
 
 .sidebar p {
-    font-family: 'Combo', sans-serif;
+    font-family: 'Verdana', sans-serif;
 }
 
 /* Checkbox style simple */
