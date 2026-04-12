@@ -9,7 +9,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    color: #8BB8E0;
+    color: #13334F;
+    background-color:#8BB8E0;
     position: fixed;
     top: 0;
     left: 0;
@@ -89,16 +90,14 @@ nav a:hover {
     font-family: 'Combo', sans-serif;
 }
 
-/* BOUTON */
-.sidebar button {
-    margin-top: 20px;
-    background: #FFC942;
-    border: none;
-    padding: 10px 15px;
+/* Checkbox style simple */
+.checklist input[type="checkbox"] {
+    transform: scale(1.2);
     cursor: pointer;
-    font-family: 'Combo', sans-serif;
 }
 
-.sidebar button:hover {
-    background: #e6b800;
+/* Option bonus : barrer quand coché */
+.checklist input[type="checkbox"]:checked + span,
+.checklist input[type="checkbox"]:checked {
+    opacity: 0.6;
 }
