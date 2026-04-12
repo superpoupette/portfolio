@@ -3,7 +3,7 @@ html, body {
     height: 100%;
 }
 
-/* HEADER FIXE (ton style conservé) */
+/* HEADER FIXE */
 header {
     display: flex;
     justify-content: space-between;
@@ -14,9 +14,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 70px;
     box-sizing: border-box;
-
-    z-index: 10; /* important pour passer au-dessus du viewer */
+    z-index: 10;
 }
 
 /* TITRE */
@@ -31,8 +31,8 @@ header a {
     text-decoration: none;
 }
 
-header a:hover{
-    color: #FFC942; 
+header a:hover {
+    color: #FFC942;
 }
 
 /* NAV */
@@ -53,13 +53,52 @@ nav a:hover {
     color: #87D8FF;
 }
 
-/* VIEWER OPENSEADRAGON */
-#viewer {
-    position: absolute;
-    top: 0; /* hauteur du header */
-    left: 0;
-    right: 0;
-    bottom: 0;
+/* LAYOUT GLOBAL */
+.main {
+    display: flex;
+    height: 100vh;
+    padding-top: 70px; /* espace header */
+    box-sizing: border-box;
+}
 
+/* VIEWER */
+#viewer {
+    width: 70%;
+    height: calc(100vh - 70px);
     background: black;
+    border-right: 2px solid #222;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 30%;
+    background: #111;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* TEXTE */
+.sidebar h2 {
+    margin-top: 0;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.sidebar p {
+    font-family: 'Combo', sans-serif;
+}
+
+/* BOUTON */
+.sidebar button {
+    margin-top: 20px;
+    background: #FFC942;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'Combo', sans-serif;
+}
+
+.sidebar button:hover {
+    background: #e6b800;
 }
