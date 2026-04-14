@@ -53,40 +53,54 @@
 </div>
 
 <script>
-
 var viewer = OpenSeadragon({
     id: "viewer",
     prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
-    tileSources: "Images/Charlie/2022/2022.dzi",
-
-    showNavigator: false,
-    showNavigationControl: false,
-    showZoomControl: false,
-    showHomeControl: false,
-    showFullPageControl: false
+    tileSources: "Images/Charlie/2022/2022.dzi"
 });
 
-</script>
+let allItems = {};
 
-<script>
-fetch("charlie.json")
+// Charger le JSON une seule fois
+fetch("items.json")
     .then(response => response.json())
     .then(data => {
-        const checklist = document.querySelector(".checklist");
+        allItems = data;
 
-        data.forEach(item => {
-            const li = document.createElement("li");
-
-            li.innerHTML = `
-                <label>
-                    <input type="checkbox">
-                    <span>${item}</span>
-                </label>
-            `;
-
-            checklist.appendChild(li);
-        });
+        // charger par défaut 2022
+        loadYear("2022");
     });
+
+// fonction pour charger une année
+function loadYear(year) {
+    const checklist = document.querySelector(".checklist");
+    checklist.innerHTML = ""; // reset liste
+
+    // changer image
+    viewer.open(`Images/Charlie/${year}/${year}.dzi`);
+
+    // remplir checklist
+    allItems[year].forEach(item => {
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            <label>
+                <input type="checkbox">
+                <span>${item}</span>
+            </label>
+        `;
+
+        checklist.appendChild(li);
+    });
+}
+
+// gestion boutons
+document.querySelectorAll(".year-buttons button").forEach(button => {
+    button.addEventListener("click", () => {
+        const year = button.dataset.year;
+        loadYear(year);
+    });
+});
 </script>
 
 </body>
