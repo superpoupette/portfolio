@@ -87,6 +87,10 @@ nav a:hover {
     font-size: 17px;
 }
 
+.sidebar p {
+    line-height: 1.2;
+}
+
 /* ===================== */
 /* CHECKLIST */
 /* ===================== */
