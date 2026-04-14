@@ -64,7 +64,7 @@ nav a:hover {
 
 /* VIEWER */
 #viewer {
-    width: 80%;
+    width: 70%;
     height: calc(100vh - 70px);
     background: black;
     border-right: 2px solid #222;
@@ -105,7 +105,7 @@ nav a:hover {
 
 /* ITEM */
 .checklist li {
-    margin-bottom: 20x;
+    margin-bottom: 20px;
 }
 
 /* LABEL */
