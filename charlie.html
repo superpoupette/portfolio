@@ -37,92 +37,7 @@
     <div class="sidebar">
     <h2>Retrouve ces éléments :</h2>
 
-    <ul class="checklist">
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Charlie</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Une chicha</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Un téléphone rose</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Un éventail</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Une boîte de cookies</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Un énorme diamant</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Une peau de banane</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Un arc et son carquois</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Un fusil</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Un paquet de chamallows</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>La maison de bob l'éponge</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Un journal intime</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Une pomme d'amour</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="checkbox">
-                <span>Un caleçon</span>
-            </label>
-        </li>
-    </ul>
+    <ul class="checklist"></ul>
 
     <div class="year-buttons">
     <button>2022</button>
@@ -151,6 +66,27 @@ var viewer = OpenSeadragon({
     showFullPageControl: false
 });
 
+</script>
+
+<script>
+fetch("items.json")
+    .then(response => response.json())
+    .then(data => {
+        const checklist = document.querySelector(".checklist");
+
+        data.forEach(item => {
+            const li = document.createElement("li");
+
+            li.innerHTML = `
+                <label>
+                    <input type="checkbox">
+                    <span>${item}</span>
+                </label>
+            `;
+
+            checklist.appendChild(li);
+        });
+    });
 </script>
 
 </body>
