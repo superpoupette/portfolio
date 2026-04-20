@@ -80,7 +80,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             popupImg.src = img.src;
             popupTitle.textContent = img.dataset.title;
-            popupDate.textContent = img.dataset.date;
+            const dateObj = new Date(img.dataset.date);
+
+            popupDate.textContent = dateObj.toLocaleDateString("fr-FR", {
+                day: "numeric",
+                month: "long",
+                year: "numeric"
+            });
 
             // TAGS AVEC COULEURS PASTEL AUTOMATIQUES
             popupTags.innerHTML = "";

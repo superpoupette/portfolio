@@ -1,23 +1,28 @@
 body {
     margin: 0;
-    padding-top: 70px; /* adapte à la hauteur du header */
-    background-color:#1A2021;
+    padding-top: 70px;
+    background-color: #1A2021;
 }
+
+/* ===== GALERIE ===== */
 
 .galerie {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
-    gap: 10px; /* espace entre les images */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     padding: 20px;
-	margin-left: 100px;
+    margin-left: 100px;
     margin-right: 100px;
 }
 
 .galerie img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* carré parfait */
-    object-fit: cover;   /* remplit sans déformer */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    cursor: pointer;
 }
+
+/* ===== POPUP ===== */
 
 .popup {
     position: fixed;
@@ -26,7 +31,7 @@ body {
     width: 100%;
     height: 100%;
 
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,98 +43,92 @@ body {
 
 .popup-content {
     background: white;
-    padding: 20px;
-    max-width: 90vw;   /* largeur max = 90% de l'écran */
-    max-height: 90vh;  /* hauteur max = 90% de l'écran */
+    padding: 10px; /* réduit pour agrandir l'image */
+    max-width: 92vw;
+    max-height: 92vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+    border-radius: 10px;
 }
 
+/* image plus grande */
 .popup-content img {
     max-width: 100%;
-    max-height: 70vh;  /* limite la hauteur de l’image */
-    width: auto;
-    height: auto;
-    object-fit: contain; /* très important */
+    max-height: 75vh;
+    object-fit: contain;
 }
+
+/* ===== TEXTE POPUP ===== */
 
 .popup-info {
     width: 100%;
-    margin-top: 15px;
-}
-
-/* ligne titre + tags */
-.popup-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 8px;
 }
 
 /* titre */
 #popup-title {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     text-align: left;
 }
 
-/* date */
-#popup-date {
-    margin: 5px 0 0 0;
-    font-size: 14px;
-    color: #555;
-    text-align: left;
+/* ligne date + tags */
+.popup-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 4px;
 }
 
-/* conteneur tags */
+/* date */
+#popup-date {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* tags container */
 #popup-tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* reste sur une ligne */
+    gap: 5px;
     justify-content: flex-end;
+    overflow-x: auto; 
+    max-width: 60%;
+}
+
+/* scrollbar discrète */
+#popup-tags::-webkit-scrollbar {
+    height: 4px;
+}
+
+#popup-tags::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 2px;
 }
 
 /* style des tags */
 #popup-tags span {
-    background-color: #2E4152;
-    color: white;
-    padding: 5px 10px;
-    margin-left: 5px;
-    border-radius: 15px;
-    font-size: 13px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    white-space: nowrap;
+    font-weight: 500;
 }
+
+/* ===== FILTRES ===== */
 
 .filtres {
     padding: 20px 80px 0 80px;
 }
 
-#filtre-annee {
-    background-color: #1A2021;   /* fond sombre */
-    color: white;                /* texte clair */
-    border: 1px solid #444;      /* bord discret */
-    border-radius: 8px;          /* arrondi */
-    padding: 10px 15px;
-    font-size: 16px;
-    font-family: 'Combo', sans-serif;
-
-    outline: none;               /* enlève contour bleu */
-    cursor: pointer;
-
-    transition: all 0.3s ease;
-}
-
-/* effet au survol */
-#filtre-annee:hover {
-    border-color: #FFC942;
-}
-
-/* effet quand actif */
-#filtre-annee:focus {
-    border-color: #FFC942;
-    box-shadow: 0 0 5px rgba(255, 201, 66, 0.5);
-}
-
+#filtre-annee,
 #filtre-tag {
     background-color: #1A2021;
     color: white;
@@ -138,14 +137,21 @@ body {
     padding: 10px 15px;
     font-size: 16px;
     font-family: 'Combo', sans-serif;
-    margin-left: 10px;
 
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease;
 }
 
+#filtre-tag {
+    margin-left: 10px;
+}
+
+/* hover / focus */
+#filtre-annee:hover,
 #filtre-tag:hover,
+#filtre-annee:focus,
 #filtre-tag:focus {
     border-color: #FFC942;
+    box-shadow: 0 0 5px rgba(255, 201, 66, 0.5);
 }
