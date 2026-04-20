@@ -81,17 +81,4 @@ main {
     max-width: 500px;
 }
 
-.galerie {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
-    gap: 10px; /* espace entre les images */
-    padding: 20px;
-	margin-left: 80px;
-    margin-right: 80px;
-}
 
-.galerie img {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* carré parfait */
-    object-fit: cover;   /* remplit sans déformer */
-}
