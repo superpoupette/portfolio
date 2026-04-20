@@ -56,7 +56,48 @@ body {
 }
 
 .popup-info {
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* ligne titre + tags */
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* titre */
+#popup-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+/* date */
+#popup-date {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+/* conteneur tags */
+#popup-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* style des tags */
+#popup-tags span {
+    background-color: #2E4152;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 15px;
+    font-size: 13px;
 }
 
 .filtres {
