@@ -88,3 +88,23 @@ body {
     border-color: #FFC942;
     box-shadow: 0 0 5px rgba(255, 201, 66, 0.5);
 }
+
+#filtre-tag {
+    background-color: #1A2021;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Combo', sans-serif;
+    margin-left: 10px;
+
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#filtre-tag:hover,
+#filtre-tag:focus {
+    border-color: #FFC942;
+}
