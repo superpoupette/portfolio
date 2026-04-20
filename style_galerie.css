@@ -9,8 +9,8 @@ body {
     grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
     gap: 10px; /* espace entre les images */
     padding: 20px;
-	margin-left: 80px;
-    margin-right: 80px;
+	margin-left: 100px;
+    margin-right: 100px;
 }
 
 .galerie img {
