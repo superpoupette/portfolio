@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding-top: 70px; /* adapte à la hauteur du header */
+    background-color:#1A2021;
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 10px; /* espace entre les images */
+    padding: 20px;
+	margin-left: 80px;
+    margin-right: 80px;
+}
+
+.galerie img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* carré parfait */
+    object-fit: cover;   /* remplit sans déformer */
+}
