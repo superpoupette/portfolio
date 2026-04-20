@@ -22,17 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
         selectAnnee.appendChild(option);
     });
 
-    // EXTRAIRE LES TAGS (SAFE)
+    // EXTRAIRE LES TAGS (SAFE + espaces gérés)
     const tags = [...new Set(
         images.flatMap(img => {
             if (!img.dataset.tags) return [];
             return img.dataset.tags.split(",").map(t => t.trim());
         })
-    )];
+    )].filter(t => t !== "");
 
     tags.forEach(tag => {
-        if (tag === "") return;
-
         const option = document.createElement("option");
         option.value = tag;
         option.textContent = tag;
@@ -47,12 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
         images.forEach(img => {
             const annee = new Date(img.dataset.date).getFullYear();
 
-            const tags = img.dataset.tags
+            const imgTags = img.dataset.tags
                 ? img.dataset.tags.split(",").map(t => t.trim())
                 : [];
 
             const matchAnnee = (anneeValue === "all" || annee == anneeValue);
-            const matchTag = (tagValue === "all" || tags.includes(tagValue));
+            const matchTag = (tagValue === "all" || imgTags.includes(tagValue));
 
             img.style.display = (matchAnnee && matchTag) ? "block" : "none";
         });
@@ -67,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const popupTitle = document.getElementById("popup-title");
     const popupDate = document.getElementById("popup-date");
 
-    // ⚠️ IMPORTANT → créer popup-tags s'il n'existe pas
     let popupTags = document.getElementById("popup-tags");
 
     if (!popupTags) {
@@ -76,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".popup-info").appendChild(popupTags);
     }
 
+    // IMAGE CLICK
     images.forEach(img => {
         img.addEventListener("click", () => {
             popup.classList.remove("hidden");
@@ -84,22 +82,55 @@ document.addEventListener("DOMContentLoaded", () => {
             popupTitle.textContent = img.dataset.title;
             popupDate.textContent = img.dataset.date;
 
-            // TAGS
+            // TAGS AVEC COULEURS PASTEL AUTOMATIQUES
             popupTags.innerHTML = "";
 
             if (img.dataset.tags) {
                 img.dataset.tags.split(",").forEach(tag => {
+                    const cleanTag = tag.trim();
+
                     const span = document.createElement("span");
-                    span.textContent = tag.trim();
+                    span.textContent = cleanTag;
+
+                    const color = stringToColor(cleanTag);
+
+                    span.style.backgroundColor = lightenColor(color, 70); // pastel
+                    span.style.color = color; // texte foncé
+
                     popupTags.appendChild(span);
                 });
             }
         });
     });
 
+    // FERMETURE POPUP
     popup.addEventListener("click", (e) => {
         if (e.target === popup) {
             popup.classList.add("hidden");
         }
     });
+
+    // =========================
+    // 🎨 COULEURS AUTOMATIQUES
+    // =========================
+
+    function stringToColor(str) {
+        let hash = 0;
+
+        for (let i = 0; i < str.length; i++) {
+            hash = str.charCodeAt(i) + ((hash << 5) - hash);
+        }
+
+        const h = hash % 360;
+
+        // couleur de base (vive mais contrôlée)
+        return `hsl(${h}, 60%, 45%)`;
+    }
+
+    function lightenColor(hsl, percent) {
+        return hsl.replace(/(\d+)%\)$/, (match, lightness) => {
+            const newLight = Math.min(95, parseInt(lightness) + percent);
+            return `${newLight}%)`;
+        });
+    }
 });
