@@ -58,3 +58,12 @@ body {
 .popup-info {
     margin-top: 10px;
 }
+
+.filtres {
+    padding: 20px 80px 0 80px;
+}
+
+#filtre-annee {
+    padding: 8px;
+    font-size: 16px;
+}
