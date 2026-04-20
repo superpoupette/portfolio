@@ -10,12 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     images.forEach(img => galerie.appendChild(img));
 
-    // EXTRAIRE LES ANNÉES UNIQUES
+    // EXTRAIRE LES ANNÉES
     const annees = [...new Set(
         images.map(img => new Date(img.dataset.date).getFullYear())
     )].sort((a, b) => b - a);
 
-    // REMPLIR LE SELECT ANNÉE
     annees.forEach(annee => {
         const option = document.createElement("option");
         option.value = annee;
@@ -23,36 +22,39 @@ document.addEventListener("DOMContentLoaded", () => {
         selectAnnee.appendChild(option);
     });
 
-    // EXTRAIRE LES TAGS UNIQUES
+    // EXTRAIRE LES TAGS (SAFE)
     const tags = [...new Set(
-        images.flatMap(img => img.dataset.tags.split(","))
-    )].map(tag => tag.trim());
+        images.flatMap(img => {
+            if (!img.dataset.tags) return [];
+            return img.dataset.tags.split(",").map(t => t.trim());
+        })
+    )];
 
-    // REMPLIR LE SELECT TAG
     tags.forEach(tag => {
+        if (tag === "") return;
+
         const option = document.createElement("option");
         option.value = tag;
         option.textContent = tag;
         selectTag.appendChild(option);
     });
 
-    // FONCTION FILTRE COMBINÉ
+    // FILTRE COMBINÉ
     function filtrer() {
         const anneeValue = selectAnnee.value;
         const tagValue = selectTag.value;
 
         images.forEach(img => {
             const annee = new Date(img.dataset.date).getFullYear();
-            const tags = img.dataset.tags.split(",").map(t => t.trim());
+
+            const tags = img.dataset.tags
+                ? img.dataset.tags.split(",").map(t => t.trim())
+                : [];
 
             const matchAnnee = (anneeValue === "all" || annee == anneeValue);
             const matchTag = (tagValue === "all" || tags.includes(tagValue));
 
-            if (matchAnnee && matchTag) {
-                img.style.display = "block";
-            } else {
-                img.style.display = "none";
-            }
+            img.style.display = (matchAnnee && matchTag) ? "block" : "none";
         });
     }
 
@@ -64,7 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const popupImg = document.getElementById("popup-img");
     const popupTitle = document.getElementById("popup-title");
     const popupDate = document.getElementById("popup-date");
-    const popupTags = document.getElementById("popup-tags");
+
+    // ⚠️ IMPORTANT → créer popup-tags s'il n'existe pas
+    let popupTags = document.getElementById("popup-tags");
+
+    if (!popupTags) {
+        popupTags = document.createElement("div");
+        popupTags.id = "popup-tags";
+        document.querySelector(".popup-info").appendChild(popupTags);
+    }
 
     images.forEach(img => {
         img.addEventListener("click", () => {
@@ -74,18 +84,19 @@ document.addEventListener("DOMContentLoaded", () => {
             popupTitle.textContent = img.dataset.title;
             popupDate.textContent = img.dataset.date;
 
-            // AFFICHAGE DES TAGS EN "CHIPS"
+            // TAGS
             popupTags.innerHTML = "";
 
-            img.dataset.tags.split(",").forEach(tag => {
-                const span = document.createElement("span");
-                span.textContent = tag.trim();
-                popupTags.appendChild(span);
-            });
+            if (img.dataset.tags) {
+                img.dataset.tags.split(",").forEach(tag => {
+                    const span = document.createElement("span");
+                    span.textContent = tag.trim();
+                    popupTags.appendChild(span);
+                });
+            }
         });
     });
 
-    // FERMETURE POPUP
     popup.addEventListener("click", (e) => {
         if (e.target === popup) {
             popup.classList.add("hidden");
