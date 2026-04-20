@@ -2,7 +2,7 @@
     margin: 0;
     font-family: Arial, sans-serif;
 	scroll-snap-type: y mandatory;
-    background-color: #2E4152;
+    background-color: #1E2329;
 }
 
 header {
@@ -11,7 +11,6 @@ header {
     align-items: center;           
     padding: 15px;
     color: white;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,7 +29,7 @@ header a {
 }
 
 header a:hover{
-    color: #FFC942; 
+    color: #FFB78A; 
 }
 
 nav a {
@@ -46,7 +45,7 @@ nav a:last-child {
 }
 
 nav a:hover {
-    color: #FFC942; 
+    color: #FFB78A; 
 }
 
 main {
