@@ -64,6 +64,27 @@ body {
 }
 
 #filtre-annee {
-    padding: 8px;
+    background-color: #1A2021;   /* fond sombre */
+    color: white;                /* texte clair */
+    border: 1px solid #444;      /* bord discret */
+    border-radius: 8px;          /* arrondi */
+    padding: 10px 15px;
     font-size: 16px;
+    font-family: 'Combo', sans-serif;
+
+    outline: none;               /* enlève contour bleu */
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* effet au survol */
+#filtre-annee:hover {
+    border-color: #FFC942;
+}
+
+/* effet quand actif */
+#filtre-annee:focus {
+    border-color: #FFC942;
+    box-shadow: 0 0 5px rgba(255, 201, 66, 0.5);
 }
