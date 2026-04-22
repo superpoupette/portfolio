@@ -22,6 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
         selectAnnee.appendChild(option);
     });
 
+    // EXTRAIRE LES PERSOS
+const persos = [...new Set(
+        images.flatMap(img => {
+            if (!img.dataset.perso) return [];
+            return img.dataset.perso.split(",").map(p => p.trim());
+        })
+    )].filter(p => p !== "");
+    
+    persos.forEach(perso => {
+        const option = document.createElement("option");
+        option.value = perso;
+        option.textContent = perso;
+        selectPerso.appendChild(option);
+});
+
     // EXTRAIRE LES TAGS (SAFE + espaces gérés)
     const tags = [...new Set(
         images.flatMap(img => {
@@ -39,25 +54,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // FILTRE COMBINÉ
     function filtrer() {
-        const anneeValue = selectAnnee.value;
-        const tagValue = selectTag.value;
+    const anneeValue = selectAnnee.value;
+    const tagValue = selectTag.value;
+    const persoValue = selectPerso.value;
 
-        images.forEach(img => {
-            const annee = new Date(img.dataset.date).getFullYear();
+    images.forEach(img => {
+        const annee = new Date(img.dataset.date).getFullYear();
 
-            const imgTags = img.dataset.tags
-                ? img.dataset.tags.split(",").map(t => t.trim())
-                : [];
+        const imgTags = img.dataset.tags
+            ? img.dataset.tags.split(",").map(t => t.trim())
+            : [];
 
-            const matchAnnee = (anneeValue === "all" || annee == anneeValue);
-            const matchTag = (tagValue === "all" || imgTags.includes(tagValue));
+        const imgPersos = img.dataset.perso
+            ? img.dataset.perso.split(",").map(p => p.trim())
+            : [];
 
-            img.style.display = (matchAnnee && matchTag) ? "block" : "none";
-        });
-    }
+        const matchAnnee = (anneeValue === "all" || annee == anneeValue);
+        const matchTag = (tagValue === "all" || imgTags.includes(tagValue));
+        const matchPerso = (persoValue === "all" || imgPersos.includes(persoValue));
+
+        img.style.display = (matchAnnee && matchTag && matchPerso)
+            ? "block"
+            : "none";
+    });
+}
 
     selectAnnee.addEventListener("change", filtrer);
+    selectPerso.addEventListener("change", filtrer);
     selectTag.addEventListener("change", filtrer);
+    
 
     // POPUP
     const popup = document.getElementById("popup");
