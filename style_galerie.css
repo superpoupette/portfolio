@@ -14,6 +14,22 @@
     cursor: pointer;
 }
 
+.galerie img[data-pos="top"] {
+    object-position: top;
+}
+
+.galerie img[data-pos="bottom"] {
+    object-position: bottom;
+}
+
+.galerie img[data-pos="left"] {
+    object-position: left;
+}
+
+.galerie img[data-pos="right"] {
+    object-position: right;
+}
+
 /* ===== POPUP ===== */
 
 .popup {
