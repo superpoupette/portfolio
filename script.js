@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const galerie = document.querySelector(".galerie");
     const images = Array.from(galerie.querySelectorAll("img"));
     const selectAnnee = document.getElementById("filtre-annee");
+    const selectPerso = document.getElementById("filtre-perso");
     const selectTag = document.getElementById("filtre-tag");
 
     // TRI PAR DATE
