@@ -115,23 +115,33 @@ const persos = [...new Set(
             });
 
             // TAGS AVEC COULEURS PASTEL AUTOMATIQUES
-            popupTags.innerHTML = "";
+            popupTags.innerHTML = [];
 
-            if (img.dataset.tags) {
-                img.dataset.tags.split(",").forEach(tag => {
-                    const cleanTag = tag.trim();
-
+                // récupérer tags + persos
+                const allTags = [
+                    ...(img.dataset.tags
+                        ? img.dataset.tags.split(",").map(t => t.trim())
+                        : []),
+                
+                    ...(img.dataset.perso
+                        ? img.dataset.perso.split(",").map(p => p.trim())
+                        : [])
+                ];
+                
+                // supprimer doublons éventuels
+                const uniqueTags = [...new Set(allTags)];
+                
+                uniqueTags.forEach(tag => {
                     const span = document.createElement("span");
-                    span.textContent = cleanTag;
-
-                    const color = stringToColor(cleanTag);
-
-                    span.style.backgroundColor = lightenColor(color, 70); // pastel
-                    span.style.color = color; // texte foncé
-
+                    span.textContent = tag;
+                
+                    const color = stringToColor(tag);
+                
+                    span.style.backgroundColor = lightenColor(color, 70);
+                    span.style.color = color;
+                
                     popupTags.appendChild(span);
                 });
-            }
         });
     });
 
