@@ -137,7 +137,8 @@
 }
 
 #filtre-annee,
-#filtre-tag {
+#filtre-tag,
+#filtre-perso {
     background-color: #1E2329;
     color: white;
     border: 1px solid #444;
@@ -151,7 +152,8 @@
     transition: all 0.3s ease;
 }
 
-#filtre-tag {
+#filtre-tag,
+#filtre-perso {
     margin-left: 10px;
 }
 
