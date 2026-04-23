@@ -147,6 +147,21 @@ tabs.forEach(tab => {
   });
 });
 </script>
+  const infoTabs = document.querySelectorAll(".info-tab");
+const infoContents = document.querySelectorAll(".info-content");
+
+infoTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+
+    infoTabs.forEach(t => t.classList.remove("active"));
+    infoContents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+
+    const target = document.getElementById(tab.dataset.info);
+    target.classList.add("active");
+  });
+});
 
 </body>
 </html>
