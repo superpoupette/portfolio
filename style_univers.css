@@ -54,7 +54,7 @@
   color: white;
   padding: 10px;
 
-  height: 260px; /* ✔ hauteur contrôlée */
+  height: 230px; /* ✔ hauteur contrôlée */
   display: flex;
   flex-direction: column;
 }
