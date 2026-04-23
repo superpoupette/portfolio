@@ -54,11 +54,9 @@
   background: #3A3445;
   color: white;
   padding: 10px;
-  flex: 1;
+  height: 260px; /* ✔ stable et contrôlé */
   display: flex;
   flex-direction: column;
-  min-height: 0;   
-  height: 220px;  
 }
 
 /* CONTENU INFOS */
