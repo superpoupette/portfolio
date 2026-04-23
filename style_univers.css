@@ -35,12 +35,11 @@
   padding: 15px;
 }
 
-/* LEFT COLUMN */
+/* LEFT */
 .left {
   width: 30%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .left img {
@@ -49,28 +48,29 @@
   margin-bottom: 10px;
 }
 
-/* INFO WRAPPER (ZONE FLEX PRINCIPALE) */
+/* INFO WRAPPER */
 .info-wrapper {
   background: #3A3445;
   color: white;
   padding: 10px;
-  height: 260px; /* ✔ stable et contrôlé */
+
+  height: 260px; /* ✔ hauteur contrôlée */
   display: flex;
   flex-direction: column;
 }
 
-/* CONTENU INFOS */
+/* INFO CONTENT */
 .info-content {
   display: none;
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .info-content.active {
   display: block;
 }
 
-/* LIGNE LABEL / VALUE */
+/* LIGNES INFOS */
 .info-row {
   display: flex;
   justify-content: space-between;
@@ -96,7 +96,8 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: auto; /* 🔥 colle en bas */
+
+  margin-top: auto; /* ✔ reste en bas */
   padding-top: 10px;
 }
 
@@ -108,6 +109,7 @@
   background: transparent;
   cursor: pointer;
   transition: 0.2s;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,7 +148,7 @@
   margin-top: 0;
 }
 
-/* TABS */
+/* TABS RIGHT */
 .tab-content {
   display: none;
 }
