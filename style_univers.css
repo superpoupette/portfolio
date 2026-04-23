@@ -52,8 +52,8 @@
 .info-wrapper {
   background: #3A3445;
   color: white;
-  padding: 10px;
-  height: 160px;
+  padding: 8px;
+  height: 190px;
   display: flex;
   flex-direction: column;
 }
