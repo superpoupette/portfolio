@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Character Card</title>
+
   <link rel="stylesheet" href="style_univers.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
 <div class="container">
@@ -21,80 +26,76 @@
     <aside class="left">
       <img src="Images/Galerie/STELLA.tn.png" alt="character">
 
-      <div class="info">
-        <p><strong>Birth</strong>22/01/1256</p>
-        <p><strong>Pronouns</strong>she/her</p>
-        <p><strong>Species</strong>human</p>
-        <p><strong>Magic</strong>none</p>
-        <p><strong>Job</strong> illusionist/mercenary</p>
-      </div>
+      <!-- INFO BLOCK DYNAMIQUE -->
       <div class="info-wrapper">
 
-  <div class="info-content active" id="info-general">
-    <p><strong>Birth</strong>22/01/1256</p>
-    <p><strong>Pronouns</strong>she/her</p>
-    <p><strong>Species</strong>human</p>
-    <p><strong>Magic</strong>none</p>
-    <p><strong>Job</strong>illusionist/mercenary</p>
-  </div>
+        <div class="info-content active" id="info-general">
+          <p><strong>Birth</strong>22/01/1256</p>
+          <p><strong>Pronouns</strong>she/her</p>
+          <p><strong>Species</strong>human</p>
+          <p><strong>Magic</strong>none</p>
+          <p><strong>Job</strong>illusionist/mercenary</p>
+        </div>
 
-  <div class="info-content" id="info-physique">
-    <p><strong>Height</strong>1m72</p>
-    <p><strong>Hair</strong>Silver</p>
-    <p><strong>Eyes</strong>Violet</p>
-    <p><strong>Build</strong>Slim</p>
-  </div>
+        <div class="info-content" id="info-physique">
+          <p><strong>Height</strong>1m72</p>
+          <p><strong>Hair</strong>Silver</p>
+          <p><strong>Eyes</strong>Violet</p>
+          <p><strong>Build</strong>Slim</p>
+        </div>
 
-  <div class="info-content" id="info-stats">
-    <p><strong>Strength</strong>★★☆☆☆</p>
-    <p><strong>Agility</strong>★★★★☆</p>
-    <p><strong>Intelligence</strong>★★★★★</p>
-    <p><strong>Luck</strong>★★☆☆☆</p>
-  </div>
+        <div class="info-content" id="info-stats">
+          <p><strong>Strength</strong>★★☆☆☆</p>
+          <p><strong>Agility</strong>★★★★☆</p>
+          <p><strong>Intelligence</strong>★★★★★</p>
+          <p><strong>Luck</strong>★★☆☆☆</p>
+        </div>
 
-</div>
+      </div>
 
-<!-- BUTTONS -->
-<div class="info-tabs">
-  <button class="info-tab active" data-info="info-general">ℹ️</button>
-  <button class="info-tab" data-info="info-physique">👤</button>
-  <button class="info-tab" data-info="info-stats">📊</button>
-</div>
+      <!-- BUTTONS -->
+      <div class="info-tabs">
+        <button class="info-tab active" data-info="info-general">
+          <i class="fa-solid fa-circle-info"></i>
+        </button>
+
+        <button class="info-tab" data-info="info-physique">
+          <i class="fa-solid fa-user"></i>
+        </button>
+
+        <button class="info-tab" data-info="info-stats">
+          <i class="fa-solid fa-chart-simple"></i>
+        </button>
+      </div>
+
     </aside>
 
     <!-- RIGHT -->
     <section class="right">
-      
+
       <!-- ABOUT -->
       <div class="about">
 
         <div class="tab-content active" id="description">
           <h3>Description</h3>
           <p>
-            Stellaria is quite a cold person and not very expressive. She is very lonely.<br>
-            Ever since she was little, she has been very intelligent and precocious. She devoured tons of books from her father's library. She is passionate about everything related to human vision, the eye, light and colors.<br>
-            She is a very unsociable person, she does not necessarily like to talk and likes to spend time alone.<br>
-            She does not possess magic but uses firearms and visual traps, illusions to fight her enemies.
+            Stellaria is quite a cold person and not very expressive...
           </p>
         </div>
 
         <div class="tab-content" id="histoire">
           <h3>Histoire</h3>
-          <p>
-            Son histoire commence dans une bibliothèque oubliée...
-          </p>
+          <p>Son histoire commence dans une bibliothèque oubliée...</p>
         </div>
 
         <div class="tab-content" id="liens">
           <h3>Liens</h3>
-          <p>
-            Relations, connexions, etc...
-          </p>
+          <p>Relations, connexions, etc...</p>
         </div>
 
       </div>
 
-      <!-- TABS -->
+      <!-- TABS RIGHT -->
       <div class="tabs">
         <span class="tab active" data-tab="description">Description</span>
         <span class="tab" data-tab="histoire">Histoire</span>
@@ -113,24 +114,15 @@
 
   </div>
 
-  <!-- FOOTER -->
   <footer class="footer">
     “ Who controls the past controls the future, who controls the present controls the past. ”
   </footer>
 
-  <!-- SPOTIFY -->
-  <iframe style="border-radius:12px"
-    src="https://open.spotify.com/embed/playlist/3Vs82njkbndzICmCnY97p7?theme=0"
-    width="100%" height="152"
-    frameborder="0"
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy">
-  </iframe>
-
 </div>
 
-<!-- SCRIPT TABS -->
+<!-- JS -->
 <script>
+/* RIGHT TABS */
 const tabs = document.querySelectorAll(".tab");
 const contents = document.querySelectorAll(".tab-content");
 
@@ -142,11 +134,11 @@ tabs.forEach(tab => {
 
     tab.classList.add("active");
 
-    const target = document.getElementById(tab.dataset.tab);
-    target.classList.add("active");
+    document.getElementById(tab.dataset.tab).classList.add("active");
   });
 });
 
+/* LEFT INFO TABS (CORRIGÉ ET ISOLÉ) */
 const infoTabs = document.querySelectorAll(".info-tab");
 const infoContents = document.querySelectorAll(".info-content");
 
@@ -158,8 +150,7 @@ infoTabs.forEach(tab => {
 
     tab.classList.add("active");
 
-    const target = document.getElementById(tab.dataset.info);
-    target.classList.add("active");
+    document.getElementById(tab.dataset.info).classList.add("active");
   });
 });
 </script>
