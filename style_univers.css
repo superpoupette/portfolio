@@ -53,7 +53,7 @@
   background: #3A3445;
   color: white;
   padding: 10px;
-  height: 190px; 
+  height: 260px;
   display: flex;
   flex-direction: column;
 }
@@ -61,14 +61,14 @@
 /* INFO CONTENT */
 .info-content {
   display: none;
+  flex-direction: column;
+  justify-content: center;
   flex: 1;
-  overflow-y: auto;
 }
 
 .info-content.active {
-  display: block;
+  display: flex; /* 🔥 important */
 }
-
 /* LIGNES INFOS */
 .info-row {
   display: flex;
@@ -109,8 +109,8 @@
 }
 
 .info-tab {
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 1px solid #a88bc2;
   background: transparent;
@@ -124,7 +124,7 @@
 
 .info-tab i {
   color: white;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .info-tab:hover {
