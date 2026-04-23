@@ -1,0 +1,12 @@
+{
+  "stellaria": {
+    "description": "Stellaria is quite a cold person and not very expressive...",
+    "histoire": "Son histoire commence dans une bibliothèque oubliée...",
+    "liens": "Relations, connexions, etc..."
+  },
+  "autre_perso": {
+    "description": "Un autre personnage...",
+    "histoire": "Une autre histoire...",
+    "liens": "Autres liens..."
+  }
+}

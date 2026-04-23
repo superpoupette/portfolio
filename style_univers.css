@@ -48,13 +48,14 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
-  padding: 5px 0;
+  padding: 10px 0;
   margin: 0; 
 }
 
 .info {
   background: #3A3445;
   margin-top: 10px;
+  color:white;
   padding: 5px 10px; 
   font-size: 14px;
 }
@@ -72,7 +73,7 @@
 .about {
   background: #3A3445;
   padding: 15px;
-  height:290px;
+  height:305px;
   overflow:auto;
   color: white;
 }
@@ -89,23 +90,49 @@
 }
 
 /* TABS */
-.tabs {
-  display: flex;
-  background: #BC9ADB;
-  margin: 15px 0;
+/* cacher les contenus */
+.tab-content {
+  display: none;
 }
 
-.tabs span {
+/* afficher actif */
+.tab-content.active {
+  display: block;
+}
+
+/* style tabs */
+.tabs {
+	margin-top: 10px; 
+  display: flex;
+  background: #a88bc2;
+}
+
+.tab {
   flex: 1;
   text-align: center;
-  padding: 10px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
   color: white;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.tab:hover {
+  opacity: 1;
+}
+
+/* onglet actif */
+.tab.active {
+  background: #8e6fb3;
+  opacity: 1;
 }
 
 /* GALLERY */
 .gallery {
   display: flex;
   gap: 10px;
+  margin-top: 15px;
 }
 
 .gallery img {

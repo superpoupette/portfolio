@@ -11,7 +11,7 @@
 
   <!-- HEADER -->
   <header class="header">
-    <h1>Stellaria</h1>
+    <h1 id="character-name">Stellaria</h1>
     <div class="heart">✹</div>
   </header>
 
@@ -19,41 +19,43 @@
 
     <!-- LEFT -->
     <aside class="left">
-      <img src="Images/Galerie/STELLA.tn.png" alt="character">
+      <img id="character-image" src="Images/Galerie/STELLA.tn.png" alt="character">
 
       <div class="info">
-        <p><strong>NAME</strong> content</p>
-        <p><strong>GENDER</strong> content</p>
-        <p><strong>AGE</strong> content</p>
-        <p><strong>HEIGHT</strong> content</p>
-        <p><strong>RACE</strong> content</p>
-        <p><strong>ROLE</strong> what they do</p>
-        <p><strong>DEMEANOR</strong> content</p>
-        <p><strong>SIGN</strong> zodiac</p>
-        <p><strong>THEME</strong> Song Name 🎵</p>
+        <p><strong>Birth</strong><span id="birth"></span></p>
+        <p><strong>Pronouns</strong><span id="pronouns"></span></p>
+        <p><strong>Species</strong><span id="species"></span></p>
+        <p><strong>Magic</strong><span id="magic"></span></p>
+        <p><strong>Job</strong><span id="job"></span></p>
       </div>
     </aside>
 
     <!-- RIGHT -->
     <section class="right">
       
+      <!-- ABOUT -->
       <div class="about">
-        <h3>Description</h3>
-        <p>
-          Stellaria is quite a cold person and not very expressive. She is very lonely.<br>
-          Ever since she was little, she has been very intelligent and precocious. She devoured tons of books from her father's library. She is passionate about everything related to human vision, the eye, light and colors.<br>
-          She is a very unsociable person, she does not necessarily like to talk and likes to spend time alone.<br>
-          She does not possess magic but uses firearms and visual traps, illusions to fight her enemies.
-        </p>
+        <div class="tab-content active" id="description">
+          <h3>Description</h3>
+          <p id="description-text"></p>
+        </div>
+
+        <div class="tab-content" id="histoire">
+          <h3>Histoire</h3>
+          <p id="histoire-text"></p>
+        </div>
+
+        <div class="tab-content" id="liens">
+          <h3>Liens</h3>
+          <p id="liens-text"></p>
+        </div>
       </div>
 
       <!-- TABS -->
       <div class="tabs">
-        <span>🔖</span>
-        <span>⚙</span>
-        <span>📌</span>
-        <span>📚</span>
-        <span>👥</span>
+        <span class="tab active" data-tab="description">Description</span>
+        <span class="tab" data-tab="histoire">Histoire</span>
+        <span class="tab" data-tab="liens">Liens</span>
       </div>
 
       <!-- GALLERY -->
@@ -70,11 +72,82 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    “ Write a quote or subtitle here... ”
+    “ Who controls the past controls the future, who controls the present controls the past. ”
   </footer>
-  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3Vs82njkbndzICmCnY97p7?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  <!-- SPOTIFY -->
+  <iframe style="border-radius:12px"
+    src="https://open.spotify.com/embed/playlist/3Vs82njkbndzICmCnY97p7?utm_source=generator&theme=0"
+    width="100%" height="152"
+    frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+  </iframe>
 
 </div>
+
+<!-- SCRIPT -->
+<script>
+let data = {};
+let currentCharacter = "stellaria"; 
+
+// Charger JSON
+fetch("univers.json")
+  .then(response => {
+    console.log("response:", response);
+    return response.json();
+  })
+  .then(json => {
+    console.log("json:", json); // 🔥 voir si ça charge
+    data = json;
+    loadCharacter(currentCharacter);
+  })
+  .catch(error => {
+    console.error("Erreur :", error);
+  });
+
+// Injecter données
+function loadCharacter(name) {
+  const char = data[name];
+
+  document.getElementById("character-name").textContent = char.name;
+  document.getElementById("birth").textContent = char.birth;
+  document.getElementById("pronouns").textContent = char.pronouns;
+  document.getElementById("species").textContent = char.species;
+  document.getElementById("magic").textContent = char.magic;
+  document.getElementById("job").textContent = char.job;
+
+  updateContent("description");
+}
+
+// Tabs
+const tabs = document.querySelectorAll(".tab");
+const contents = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+
+    const selected = tab.dataset.tab;
+    document.getElementById(selected).classList.add("active");
+
+    updateContent(selected);
+  });
+});
+
+// Update texte
+function updateContent(tab) {
+  const char = data[currentCharacter];
+
+  document.getElementById("description-text").textContent = char.description;
+  document.getElementById("histoire-text").textContent = char.histoire;
+  document.getElementById("liens-text").textContent = char.liens;
+}
+</script>
 
 </body>
 </html>
