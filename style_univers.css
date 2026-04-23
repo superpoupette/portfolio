@@ -136,7 +136,7 @@
 }
 
 .gallery img {
-  width: 25%;
+  width: calc((100% - 30px) / 4);
   border-radius: 5px;
 }
 
