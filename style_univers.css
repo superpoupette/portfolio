@@ -2,10 +2,11 @@
   background: #eee;
   font-family: Arial, sans-serif;
   background-image: url("Images/Patterns/Pattern_stella2(04.08.21).png");
-  background-repeat: repeat; /* 🔁 motif */
+  background-repeat: repeat;
   background-attachment: fixed;
 }
 
+/* CONTAINER */
 .container {
   width: 1000px;
   margin: auto;
@@ -18,12 +19,12 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 8px 15px; 
+  padding: 8px 15px;
   align-items: center;
 }
 
 .header h1 {
-  font-size: 16px; 
+  font-size: 16px;
   letter-spacing: 1px;
   margin: 0;
 }
@@ -34,145 +35,69 @@
   padding: 15px;
 }
 
-/* LEFT */
+/* LEFT COLUMN */
 .left {
   width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .left img {
   width: 100%;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.info p {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-  margin: 0; 
-}
-
-.info {
-  background: #3A3445;
-  margin-top: 10px;
-  color:white;
-  padding: 5px 10px; 
-  font-size: 14px;
-}
-.info p:last-child {
-  border-bottom: none; 
-}
-
-/* RIGHT */
-.right {
-  width: 70%;
-  padding-left: 15px;
-  position: relative;
-}
-
-.about {
-  background: #3A3445;
-  padding: 15px;
-  height:305px;
-  overflow:auto;
-  color: white;
-}
-
-.about h3 {
-  margin-top: 0; 
-}
-
-.side-character {
-  position: absolute;
-  right: 10px;
-  top: 20px;
-  height: 200px;
-}
-
-/* TABS */
-/* cacher les contenus */
-.tab-content {
-  display: none;
-}
-
-/* afficher actif */
-.tab-content.active {
-  display: block;
-}
-
-/* style tabs */
-.tabs {
-	margin-top: 10px; 
-  display: flex;
-  background: #a88bc2;
-}
-
-.tab {
-  flex: 1;
-  text-align: center;
-  padding: 6px 10px;
-  font-size: 14px;
-  cursor: pointer;
-  color: white;
-  opacity: 0.7;
-  transition: 0.2s;
-}
-
-.tab:hover {
-  opacity: 1;
-}
-
-/* onglet actif */
-.tab.active {
-  background: #8e6fb3;
-  opacity: 1;
-}
-
-/* GALLERY */
-.gallery {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.gallery img {
-  width: calc((100% - 30px) / 4);
-  border-radius: 5px;
-}
-
-/* FOOTER */
-.footer {
-  background: #BC9ADB;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-style: italic;
-}
-
-/* INFO WRAPPER */
+/* INFO WRAPPER (ZONE FLEX PRINCIPALE) */
 .info-wrapper {
   background: #3A3445;
-  margin-top: 10px;
   color: white;
-  padding: 5px 10px;
-  font-size: 14px;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
 }
 
-/* CONTENT */
+/* CONTENU INFOS */
 .info-content {
   display: none;
+  flex: 1;
+  overflow: auto;
 }
 
 .info-content.active {
   display: block;
 }
 
-/* BUTTONS */
+/* LIGNE LABEL / VALUE */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  opacity: 0.9;
+  text-align: right;
+}
+
+/* BOUTONS INFOS */
 .info-tabs {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: auto; /* 🔥 colle en bas */
+  padding-top: 10px;
 }
 
 .info-tab {
@@ -199,4 +124,80 @@
 
 .info-tab.active {
   background: #8e6fb3;
+}
+
+/* RIGHT */
+.right {
+  width: 70%;
+  padding-left: 15px;
+  position: relative;
+}
+
+/* ABOUT */
+.about {
+  background: #3A3445;
+  padding: 15px;
+  height: 305px;
+  overflow: auto;
+  color: white;
+}
+
+.about h3 {
+  margin-top: 0;
+}
+
+/* TABS */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tabs {
+  margin-top: 10px;
+  display: flex;
+  background: #a88bc2;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.tab:hover {
+  opacity: 1;
+}
+
+.tab.active {
+  background: #8e6fb3;
+  opacity: 1;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: calc((100% - 30px) / 4);
+  border-radius: 5px;
+}
+
+/* FOOTER */
+.footer {
+  background: #BC9ADB;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-style: italic;
 }
