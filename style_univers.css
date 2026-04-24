@@ -5,7 +5,12 @@ body {
   background-image: url("Images/Patterns/Pattern_stella2(04.08.21).png");
   background-repeat: repeat;
   background-attachment: fixed;
+  background-size: 100px;
 }
+header {
+  background: #3A3445;
+}
+  
 
 /* CONTAINER */
 .character-card {
