@@ -1,6 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
     const galerie = document.querySelector(".galerie");
-    const images = Array.from(galerie.querySelectorAll("img"));
+    fetch("galeri.json")
+          .then(res => res.json())
+          .then(data => {
+              const galerie = document.querySelector(".galerie");
+              data.forEach(imgData => {
+                  const img = document.createElement("img");
+                  img.src = imgData.src;
+                  img.dataset.date = imgData.date;
+                  img.dataset.title = imgData.title;
+                  img.dataset.perso = imgData.perso || "";
+                  img.dataset.tags = imgData.tags || "";
+                  galerie.appendChild(img);
+              });
+              initGalerie(); // on met le reste de ton code dedans
+          });
     const selectAnnee = document.getElementById("filtre-annee");
     const selectPerso = document.getElementById("filtre-perso");
     const selectTag = document.getElementById("filtre-tag");
