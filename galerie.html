@@ -1,61 +1,77 @@
 ﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<title>Mon site</title>
+    <meta charset="UTF-8">
+    <title>Mon site</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="style_galerie.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_galerie.css">
 </head>
 
-	<div id="popup" class="popup hidden">
-    <div class="popup-content">
-        <img id="popup-img" src="" alt="">
-        <div class="popup-info">
-            <p id="popup-title"></p>
-        <div class="popup-footer">
-            <p id="popup-date"></p>
-        <div id="popup-tags"></div>
-    </div>
-</div>
-    <p id="popup-date"></p>
-</div>
-    </div>
-</div>
 <body>
-    <header>
-   	 <a href="index.html">
-    <h1>SEOLIA</h1>
+
+<header>
+    <a href="index.html">
+        <h1>SEOLIA</h1>
     </a>
 
-   	 <nav>
-       	 <a href="galerie.html">GALERIE</a>
-       	 <a href="jeux.html">JEUX</a>
-         <a href=#>DESSIN INFINI</a>
-         <a href="toutim.html">TOUTIM MAGAZINE</a>
-         <a href="charlie.html">OU EST CHARLIE ?</a>      
-	 </nav>
-	</header>
-	<main>
-		<div class="filtres">
-       	 	<select id="filtre-annee">
-            	<option value="all">All years</option>
-        	</select>
-			<select id="filtre-perso">
-        		<option value="all">All perso</option>
-    		</select>
-			<select id="filtre-tag">
-        		<option value="all">All tags</option>
-    		</select>
-   	 	</div>
-    	<div class="galerie">
-	   	 </div>
-	</main>
-  
-    <footer>
-    </footer>
-	<script src="script.js"></script> 
+    <nav>
+        <a href="galerie.html">GALERIE</a>
+        <a href="jeux.html">JEUX</a>
+        <a href="#">DESSIN INFINI</a>
+        <a href="toutim.html">TOUTIM MAGAZINE</a>
+        <a href="charlie.html">OU EST CHARLIE ?</a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="filtres">
+        <select id="filtre-annee">
+            <option value="all">All years</option>
+        </select>
+
+        <select id="filtre-perso">
+            <option value="all">All perso</option>
+        </select>
+
+        <select id="filtre-tag">
+            <option value="all">All tags</option>
+        </select>
+    </div>
+
+    <div class="galerie">
+
+        <img src="Images/Galerie/charlie.png" data-date="2024-02-17" data-title="Charlie et Vaggie">
+        <img src="Images/Galerie/Armanti(06.03.26).png" data-date="2026-03-06" data-title="Armanti" data-perso="armanti">
+        <img src="Images/Galerie/Fisheye(13.06.25).png" data-date="2025-06-25" data-title="Chilling in the toilet" data-perso="pollux,victoria">
+        <img src="Images/Galerie/2023albumcover.png" data-date="2024-04-01" data-title="Couverture album photo 2023">
+        <img src="Images/Galerie/2023albumcover2.png" data-date="2024-04-01" data-title="Couverture album photo 2023">
+        <img src="Images/Galerie/kastor(20.01.23).png" data-date="2023-01-20" data-title="Kastor" data-tags="kastor" data-pos="top">
+        <img src="Images/Galerie/orman.png" data-date="2020-03-26" data-title="Orman" data-tags="watercolor" data-perso="armanti">
+        <img src="Images/Galerie/MinnieHer(21.01.25).png" data-date="2025-01-21" data-title="HER - Minnie" data-tags="album cover">
+        <img src="Images/Galerie/Marlin(05.05.22).png" data-date="2022-05-05" data-title="Marlène et son vieux clebs">
+        <img src="Images/Galerie/SabrinaEmailCantSend(23.01.25).png" data-date="2025-01-23" data-title="Emails I can't send - Sabrina Carpenter" data-tags="album cover">
+        <img src="Images/Galerie/Albrije(26.03.19).png" data-date="2019-03-26" data-title="Albrije">
+        <img src="Images/Galerie/Crocus(20.03.22).png" data-date="2022-03-20" data-title="Crocus" data-pos="bottom">
+        <img src="Images/Galerie/Jukky(05.07.25).png" data-date="2025-07-05" data-title="Jukky" data-tags="artfight">
+        <img src="Images/Galerie/JuliaStarterPack(13.04.25).png" data-date="2025-04-03" data-title="Julia StarterPack">
+        <img src="Images/Galerie/MagicalStar(29.07.17).jpg" data-date="2017-07-29" data-title="Magical Star" data-tags="watercolor" data-pos="top">
+        <img src="Images/Galerie/Poupée(25.06.17).png" data-date="2017-06-25" data-title="Poupée">
+        <img src="Images/Galerie/SilaStarterPack(13.04.25).png" data-date="2025-04-13" data-title="Sila StarterPack" data-tags="sila">
+        <img src="Images/Galerie/Sorciere(29.07.17).jpg" data-date="2017-07-29" data-title="Sorcière" data-tags="watercolor">
+        <img src="Images/Galerie/Yin&Yang(10.07.17).png" data-date="2017-07-10" data-title="Yin VS Yang">
+        <img src="Images/Galerie/madoka(23.06.17).png" data-date="2017-06-23" data-title="Madoka Magica">
+        <img src="Images/Galerie/resario(15.01.23).png" data-date="2023-01-15" data-title="Signore Resario" data-perso="resario">
+        <img src="Images/Galerie/selfie1(12.01.23).png" data-date="2023-01-12" data-title="Party selfie" data-perso="vera,flodeis">
+    </div>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
