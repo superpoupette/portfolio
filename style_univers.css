@@ -15,7 +15,7 @@ header {
 /* CONTAINER */
 .character-card {
   width: 1000px;
-  margin: auto;
+  margin: 40px auto;
   background: #1E2329;
 }
 
