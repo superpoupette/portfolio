@@ -8,7 +8,7 @@ body {
   background-size: 1000px;
 }
 header {
-  background: ##1F1F1F;
+  background: #1F1F1F;
 }
   
 
@@ -16,7 +16,7 @@ header {
 .character-card {
   width: 1000px;
   margin: 40px auto;
-  background: #1E2329;
+  background: #1F1F1F;
 }
 
 /* HEADER */
@@ -56,7 +56,7 @@ header {
 
 /* INFO WRAPPER */
 .character-card__info-wrapper {
-  background: #1E1E1E;
+  background: #3A3445;
   color: white;
   padding: 8px;
   height: 190px;
