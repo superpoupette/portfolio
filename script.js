@@ -1,102 +1,77 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     const galerie = document.querySelector(".galerie");
-    fetch("galeri.json")
-          .then(res => res.json())
-          .then(data => {
-              const galerie = document.querySelector(".galerie");
-              data.forEach(imgData => {
-                  const img = document.createElement("img");
-                  img.src = imgData.src;
-                  img.dataset.date = imgData.date;
-                  img.dataset.title = imgData.title;
-                  img.dataset.perso = imgData.perso || "";
-                  img.dataset.tags = imgData.tags || "";
-                  galerie.appendChild(img);
-              });
-              initGalerie(); // on met le reste de ton code dedans
-          });
+
     const selectAnnee = document.getElementById("filtre-annee");
     const selectPerso = document.getElementById("filtre-perso");
     const selectTag = document.getElementById("filtre-tag");
 
-    // TRI PAR DATE
-    images.sort((a, b) => {
-        return new Date(b.dataset.date) - new Date(a.dataset.date);
-    });
-    images.forEach(img => galerie.appendChild(img));
+    let images = [];
 
-    // EXTRAIRE LES ANNÉES
-    const annees = [...new Set(
-        images.map(img => new Date(img.dataset.date).getFullYear())
-    )].sort((a, b) => b - a);
+    fetch("galerie.json")
+        .then(res => res.json())
+        .then(data => {
 
-    annees.forEach(annee => {
-        const option = document.createElement("option");
-        option.value = annee;
-        option.textContent = annee;
-        selectAnnee.appendChild(option);
-    });
+            data.forEach(imgData => {
+                const img = document.createElement("img");
 
-    // EXTRAIRE LES PERSOS
-const persos = [...new Set(
-        images.flatMap(img => {
-            if (!img.dataset.perso) return [];
-            return img.dataset.perso.split(",").map(p => p.trim());
-        })
-    )].filter(p => p !== "");
-    
-    persos.forEach(perso => {
-        const option = document.createElement("option");
-        option.value = perso;
-        option.textContent = perso;
-        selectPerso.appendChild(option);
-});
+                img.src = imgData.src;
+                img.dataset.date = imgData.date;
+                img.dataset.title = imgData.title;
+                img.dataset.perso = imgData.perso || "";
+                img.dataset.tags = imgData.tags || "";
+                img.dataset.pos = imgData.pos || "";
 
-    // EXTRAIRE LES TAGS (SAFE + espaces gérés)
-    const tags = [...new Set(
-        images.flatMap(img => {
-            if (!img.dataset.tags) return [];
-            return img.dataset.tags.split(",").map(t => t.trim());
-        })
-    )].filter(t => t !== "");
+                galerie.appendChild(img);
+            });
 
-    tags.forEach(tag => {
-        const option = document.createElement("option");
-        option.value = tag;
-        option.textContent = tag;
-        selectTag.appendChild(option);
-    });
+            images = Array.from(galerie.querySelectorAll("img"));
 
-    // FILTRE COMBINÉ
-    function filtrer() {
-    const anneeValue = selectAnnee.value;
-    const tagValue = selectTag.value;
-    const persoValue = selectPerso.value;
+            initGalerie();
+        });
 
-    images.forEach(img => {
-        const annee = new Date(img.dataset.date).getFullYear();
+    function initGalerie() {
 
-        const imgTags = img.dataset.tags
-            ? img.dataset.tags.split(",").map(t => t.trim())
-            : [];
+        // TRI
+        images.sort((a, b) =>
+            new Date(b.dataset.date) - new Date(a.dataset.date)
+        );
 
-        const imgPersos = img.dataset.perso
-            ? img.dataset.perso.split(",").map(p => p.trim())
-            : [];
+        images.forEach(img => galerie.appendChild(img));
 
-        const matchAnnee = (anneeValue === "all" || annee == anneeValue);
-        const matchTag = (tagValue === "all" || imgTags.includes(tagValue));
-        const matchPerso = (persoValue === "all" || imgPersos.includes(persoValue));
+        // FILTRES
+        function filtrer() {
 
-        img.style.display = (matchAnnee && matchTag && matchPerso)
-            ? "block"
-            : "none";
-    });
-}
+            const anneeValue = selectAnnee.value;
+            const tagValue = selectTag.value;
+            const persoValue = selectPerso.value;
 
-    selectAnnee.addEventListener("change", filtrer);
-    selectPerso.addEventListener("change", filtrer);
-    selectTag.addEventListener("change", filtrer);
+            images.forEach(img => {
+
+                const annee = new Date(img.dataset.date).getFullYear();
+
+                const imgTags = img.dataset.tags
+                    ? img.dataset.tags.split(",").map(t => t.trim())
+                    : [];
+
+                const imgPersos = img.dataset.perso
+                    ? img.dataset.perso.split(",").map(p => p.trim())
+                    : [];
+
+                const matchAnnee = anneeValue === "all" || annee == anneeValue;
+                const matchTag = tagValue === "all" || imgTags.includes(tagValue);
+                const matchPerso = persoValue === "all" || imgPersos.includes(persoValue);
+
+                img.style.display =
+                    (matchAnnee && matchTag && matchPerso)
+                        ? "block"
+                        : "none";
+            });
+        }
+
+        selectAnnee.addEventListener("change", filtrer);
+        selectTag.addEventListener("change", filtrer);
+        selectPerso.addEventListener("change", filtrer);
     
 
     // POPUP
