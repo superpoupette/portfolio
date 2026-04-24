@@ -11,144 +11,138 @@
 </head>
 
 <body>
+
+<!-- HEADER GLOBAL (ton site) -->
 <header>
-   	 <a href="index.html">
+  <a href="index.html">
     <h1>SEOLIA</h1>
-    </a>
+  </a>
 
-   	 <nav>
-         <a href="galerie.html">GALERIE</a>
-       	 <a href="jeux.html">JEUX</a>
-         <a href=#>DESSIN INFINI</a>
-         <a href="toutim.html">TOUTIM MAGAZINE</a>
-         <a href="univers.html">PERSONNAGES</a>
-         <a href="charlie.html">OU EST CHARLIE ?</a>
-         <a href="tests.html">TESTS</a>
-	 </nav>
-	</header>
+  <nav>
+    <a href="galerie.html">GALERIE</a>
+    <a href="jeux.html">JEUX</a>
+    <a href="#">DESSIN INFINI</a>
+    <a href="toutim.html">TOUTIM MAGAZINE</a>
+    <a href="univers.html">PERSONNAGES</a>
+    <a href="charlie.html">OU EST CHARLIE ?</a>
+    <a href="tests.html">TESTS</a>
+  </nav>
+</header>
 
-<div class="container">
+<!-- CHARACTER CARD -->
+<div class="character-card">
 
-  <!-- HEADER -->
+  <!-- HEADER CARD -->
   <header class="character-card__header">
     <h1 class="character-card__title">Stellaria</h1>
     <div class="character-card__icon">✹</div>
   </header>
 
-  <div class="main">
+  <div class="character-card__main">
 
     <!-- LEFT -->
-    <aside class="left">
+    <aside class="character-card__left">
       <img src="Images/Galerie/STELLA.tn.png" alt="character">
 
-      <!-- INFO BLOCK DYNAMIQUE -->
-      <!-- INFO BLOCK DYNAMIQUE -->
-<div class="info-wrapper">
+      <div class="character-card__info-wrapper">
 
-  <!-- GENERAL -->
-  <div class="info-content active" id="info-general">
-
-    <div class="info-row">
-      <span class="label">Birth</span>
-      <span class="value">22/01/1256</span>
-    </div>
-
-    <div class="info-row">
-      <span class="label">Pronouns</span>
-      <span class="value">she/her</span>
-    </div>
-
-    <div class="info-row">
-      <span class="label">Species</span>
-      <span class="value">human</span>
-    </div>
-
-    <div class="info-row">
-      <span class="label">Magic</span>
-      <span class="value">none</span>
-    </div>
-
-    <div class="info-row">
-      <span class="label">Job</span>
-      <span class="value">illusionist / mercenary</span>
-    </div>
-
-  </div>
-
-  <!-- PHYSIQUE -->
-  <div class="info-content" id="info-physique">
-
-    <div class="info-row">
-      <span class="label">Height</span>
-      <span class="value">1m48 (13 yo) 1m63 (adult)
-      </span>
-    </div>
-
-    <div class="info-row">
-      <span class="label">Build</span>
-      <span class="value">thin</span>
-    </div>
-
-    <div class="info-row">
-      <span class="label">Skin</span>
-      <span class="value">#73331c</span>
-    </div>
-
-    <div class="info-row">
-      <span class="label">Eyes</span>
-      <span class="value">black</span>
-    </div>
-
-    <div class="info-row">
-      <span class="label">Hair</span>
-      <span class="value">black</span>
-    </div>
-
-  </div>
-
-  <!-- STATS -->
-  <div class="info-content" id="info-stats">
-      
-          <div class="info-row">
-            <span class="label">Bravery</span>
-            <span class="value">★★★★☆</span>
-          </div>
-      
-          <div class="info-row">
-            <span class="label">Creativity</span>
-            <span class="value">★★☆☆☆</span>
-          </div>
-      
-          <div class="info-row">
-            <span class="label">Social</span>
-            <span class="value">☆☆☆☆☆</span>
-          </div>
-      
-          <div class="info-row">
-            <span class="label">Sensivity</span>
-            <span class="value">★★☆☆☆</span>
+        <!-- GENERAL -->
+        <div class="character-card__info-content active" id="info-general">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Birth</span>
+            <span class="character-card__value">22/01/1256</span>
           </div>
 
-          <div class="info-row">
-            <span class="label">Intellect</span>
-            <span class="value">★★★★★</span>
+          <div class="character-card__info-row">
+            <span class="character-card__label">Pronouns</span>
+            <span class="character-card__value">she/her</span>
           </div>
-      
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Species</span>
+            <span class="character-card__value">human</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Magic</span>
+            <span class="character-card__value">none</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Job</span>
+            <span class="character-card__value">illusionist / mercenary</span>
+          </div>
         </div>
-      
+
+        <!-- PHYSIQUE -->
+        <div class="character-card__info-content" id="info-physique">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Height</span>
+            <span class="character-card__value">1m48 (13 yo) 1m63 (adult)</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Build</span>
+            <span class="character-card__value">thin</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Skin</span>
+            <span class="character-card__value">#73331c</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Eyes</span>
+            <span class="character-card__value">black</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Hair</span>
+            <span class="character-card__value">black</span>
+          </div>
+        </div>
+
+        <!-- STATS -->
+        <div class="character-card__info-content" id="info-stats">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Bravery</span>
+            <span class="character-card__value">★★★★☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Creativity</span>
+            <span class="character-card__value">★★☆☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Social</span>
+            <span class="character-card__value">☆☆☆☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Sensivity</span>
+            <span class="character-card__value">★★☆☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Intellect</span>
+            <span class="character-card__value">★★★★★</span>
+          </div>
+        </div>
+
       </div>
 
       <!-- BUTTONS -->
-      <div class="info-tabs">
-        <button class="info-tab active" data-info="info-general">
+      <div class="character-card__info-tabs">
+        <button class="character-card__info-tab active" data-info="info-general">
           <i class="fa-solid fa-circle-info"></i>
         </button>
 
-        <button class="info-tab" data-info="info-physique">
+        <button class="character-card__info-tab" data-info="info-physique">
           <i class="fa-solid fa-user"></i>
         </button>
 
-        <button class="info-tab" data-info="info-stats">
+        <button class="character-card__info-tab" data-info="info-stats">
           <i class="fa-solid fa-chart-simple"></i>
         </button>
       </div>
@@ -156,39 +150,36 @@
     </aside>
 
     <!-- RIGHT -->
-    <section class="right">
+    <section class="character-card__right">
 
-      <!-- ABOUT -->
-      <div class="about">
+      <div class="character-card__about">
 
-        <div class="tab-content active" id="description">
+        <div class="character-card__tab-content active" id="description">
           <h3>Description</h3>
-          <p>
-            Stellaria is quite a cold person and not very expressive...
-          </p>
+          <p>Stellaria is quite a cold person and not very expressive...</p>
         </div>
 
-        <div class="tab-content" id="histoire">
+        <div class="character-card__tab-content" id="histoire">
           <h3>Histoire</h3>
           <p>Son histoire commence dans une bibliothèque oubliée...</p>
         </div>
 
-        <div class="tab-content" id="liens">
+        <div class="character-card__tab-content" id="liens">
           <h3>Liens</h3>
           <p>Relations, connexions, etc...</p>
         </div>
 
       </div>
 
-      <!-- TABS RIGHT -->
-      <div class="tabs">
-        <span class="tab active" data-tab="description">Description</span>
-        <span class="tab" data-tab="histoire">Histoire</span>
-        <span class="tab" data-tab="liens">Liens</span>
+      <!-- TABS -->
+      <div class="character-card__tabs">
+        <span class="character-card__tab active" data-tab="description">Description</span>
+        <span class="character-card__tab" data-tab="histoire">Histoire</span>
+        <span class="character-card__tab" data-tab="liens">Liens</span>
       </div>
 
       <!-- GALLERY -->
-      <div class="gallery">
+      <div class="character-card__gallery">
         <img src="Images/Moodboards/abb3830173527ed08fdb48ab247fe35a.jpg">
         <img src="Images/Moodboards/ebcf71eafe60eb113bb921b47e42a7ae.jpg">
         <img src="Images/Moodboards/e8fbd6852368bafb92878a142f9f72c2.webp">
@@ -199,7 +190,7 @@
 
   </div>
 
-  <footer class="footer">
+  <footer class="character-card__footer">
     “ Who controls the past controls the future, who controls the present controls the past. ”
   </footer>
 
@@ -207,34 +198,28 @@
 
 <!-- JS -->
 <script>
-/* RIGHT TABS */
-const tabs = document.querySelectorAll(".tab");
-const contents = document.querySelectorAll(".tab-content");
+const tabs = document.querySelectorAll(".character-card__tab");
+const contents = document.querySelectorAll(".character-card__tab-content");
 
 tabs.forEach(tab => {
   tab.addEventListener("click", () => {
-
     tabs.forEach(t => t.classList.remove("active"));
     contents.forEach(c => c.classList.remove("active"));
 
     tab.classList.add("active");
-
     document.getElementById(tab.dataset.tab).classList.add("active");
   });
 });
 
-/* LEFT INFO TABS (CORRIGÉ ET ISOLÉ) */
-const infoTabs = document.querySelectorAll(".info-tab");
-const infoContents = document.querySelectorAll(".info-content");
+const infoTabs = document.querySelectorAll(".character-card__info-tab");
+const infoContents = document.querySelectorAll(".character-card__info-content");
 
 infoTabs.forEach(tab => {
   tab.addEventListener("click", () => {
-
     infoTabs.forEach(t => t.classList.remove("active"));
     infoContents.forEach(c => c.classList.remove("active"));
 
     tab.classList.add("active");
-
     document.getElementById(tab.dataset.info).classList.add("active");
   });
 });
