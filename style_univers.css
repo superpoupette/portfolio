@@ -1,4 +1,5 @@
-﻿body {
+﻿/* BODY (tu peux laisser tel quel si c'est global au site) */
+body {
   background: #eee;
   font-family: Arial, sans-serif;
   background-image: url("Images/Patterns/Pattern_stella2(04.08.21).png");
@@ -7,14 +8,14 @@
 }
 
 /* CONTAINER */
-.container {
+.character-card {
   width: 1000px;
   margin: auto;
   background: #1E2329;
 }
 
 /* HEADER */
-.header {
+.character-card__header {
   background: #BC9ADB;
   color: white;
   display: flex;
@@ -23,33 +24,33 @@
   align-items: center;
 }
 
-.header h1 {
+.character-card__title {
   font-size: 16px;
   letter-spacing: 1px;
   margin: 0;
 }
 
 /* MAIN */
-.main {
+.character-card__main {
   display: flex;
   padding: 15px;
 }
 
 /* LEFT */
-.left {
+.character-card__left {
   width: 30%;
   display: flex;
   flex-direction: column;
 }
 
-.left img {
+.character-card__left img {
   width: 100%;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
 /* INFO WRAPPER */
-.info-wrapper {
+.character-card__info-wrapper {
   background: #3A3445;
   color: white;
   padding: 8px;
@@ -59,56 +60,55 @@
 }
 
 /* INFO CONTENT */
-.info-content {
+.character-card__info-content {
   display: none;
   flex-direction: column;
   justify-content: center;
   flex: 1;
 }
 
-.info-content.active {
-  display: flex; /* 🔥 important */
+.character-card__info-content.active {
+  display: flex;
 }
+
 /* LIGNES INFOS */
-.info-row {
+.character-card__info-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 10px 0; /* 🔥 plus d’air */
-  border-bottom: 1px solid rgba(255,255,255,0.08); /* plus subtil */
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-.info-row:last-child {
+.character-card__info-row:last-child {
   border-bottom: none;
 }
 
 /* texte gauche */
-.label {
-  font-size: 12px;   /* 🔽 plus petit */
+.character-card__label {
+  font-size: 12px;
   letter-spacing: 0.5px;
   opacity: 0.85;
   font-weight: 600;
 }
 
 /* texte droite */
-.value {
-  font-size: 12px;   /* 🔽 plus petit aussi */
+.character-card__value {
+  font-size: 12px;
   opacity: 0.95;
   text-align: right;
 }
 
 /* BOUTONS INFOS */
-.info-tabs {
+.character-card__info-tabs {
   display: flex;
   justify-content: center;
   gap: 10px;
-
-  margin-top: auto; /* ✔ reste en bas */
+  margin-top: auto;
   padding-top: 10px;
 }
 
-.info-tab {
+.character-card__info-tab {
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -116,34 +116,33 @@
   background: transparent;
   cursor: pointer;
   transition: 0.2s;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.info-tab i {
+.character-card__info-tab i {
   color: white;
   font-size: 12px;
 }
 
-.info-tab:hover {
+.character-card__info-tab:hover {
   background: #a88bc2;
 }
 
-.info-tab.active {
+.character-card__info-tab.active {
   background: #8e6fb3;
 }
 
 /* RIGHT */
-.right {
+.character-card__right {
   width: 70%;
   padding-left: 15px;
   position: relative;
 }
 
 /* ABOUT */
-.about {
+.character-card__about {
   background: #3A3445;
   padding: 15px;
   height: 305px;
@@ -151,26 +150,26 @@
   color: white;
 }
 
-.about h3 {
+.character-card__about h3 {
   margin-top: 0;
 }
 
 /* TABS RIGHT */
-.tab-content {
+.character-card__tab-content {
   display: none;
 }
 
-.tab-content.active {
+.character-card__tab-content.active {
   display: block;
 }
 
-.tabs {
+.character-card__tabs {
   margin-top: 10px;
   display: flex;
   background: #a88bc2;
 }
 
-.tab {
+.character-card__tab {
   flex: 1;
   text-align: center;
   padding: 6px 10px;
@@ -181,29 +180,29 @@
   transition: 0.2s;
 }
 
-.tab:hover {
+.character-card__tab:hover {
   opacity: 1;
 }
 
-.tab.active {
+.character-card__tab.active {
   background: #8e6fb3;
   opacity: 1;
 }
 
 /* GALLERY */
-.gallery {
+.character-card__gallery {
   display: flex;
   gap: 10px;
   margin-top: 15px;
 }
 
-.gallery img {
+.character-card__gallery img {
   width: calc((100% - 30px) / 4);
   border-radius: 5px;
 }
 
 /* FOOTER */
-.footer {
+.character-card__footer {
   background: #BC9ADB;
   color: white;
   text-align: center;
