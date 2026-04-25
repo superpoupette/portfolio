@@ -109,13 +109,27 @@
     "date": "2021-03-18",
     "title": "Armanti",
     "tags": [],
-    "perso": ["armanti"],
+    "perso": ["armanti"]
   },
    {
     "src": "../Images/Galerie/Flodeis&Vaar(27.07.21).png",
     "date": "2021-07-27",
     "title": "Lovers",
     "tags": [],
-    "perso": ["flodeis","vaar"],
+    "perso": ["flodeis","vaar"]
+  },
+  {
+    "src": "../Images/Galerie/Flodeis(11.07.21).png",
+    "date": "2021-07-11",
+    "title": "Miss you",
+    "tags": [],
+    "perso": ["flodeis"]
+  },
+  {
+    "src": "../Images/Galerie/Danse.Maeve&Kaoda(02.08.22).png",
+    "date": "2022-08-02",
+    "title": "Danse",
+    "tags": [],
+    "perso": ["maeve","kaoda"]
   }
 ]
