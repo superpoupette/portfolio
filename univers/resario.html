@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="style_personnages.css">
-  <link rel="stylesheet" href="style_armanti.css">
+  <link rel="stylesheet" href="style_kastor.css">
 
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -38,7 +38,7 @@
 
   <!-- HEADER CARD -->
   <header class="character-card__header">
-    <h1 class="character-card__title">Armanti</h1>
+    <h1 class="character-card__title">Signore Resario</h1>
     <div class="character-card__icon">֍</div>
   </header>
 
@@ -54,27 +54,27 @@
         <div class="character-card__info-content active" id="info-general">
           <div class="character-card__info-row">
             <span class="character-card__label">Age</span>
-            <span class="character-card__value">19</span>
+            <span class="character-card__value"> unknow</span>
           </div>
 
           <div class="character-card__info-row">
             <span class="character-card__label">Pronouns</span>
-            <span class="character-card__value">she/her</span>
+            <span class="character-card__value"> he/him</span>
           </div>
 
           <div class="character-card__info-row">
             <span class="character-card__label">Species</span>
-            <span class="character-card__value">orman</span>
+            <span class="character-card__value">dorlis</span>
           </div>
 
           <div class="character-card__info-row">
             <span class="character-card__label">Magic</span>
-            <span class="character-card__value">ground</span>
+            <span class="character-card__value">none</span>
           </div>
 
           <div class="character-card__info-row">
             <span class="character-card__label">Job</span>
-            <span class="character-card__value">priestess</span>
+            <span class="character-card__value">ringmaster</span>
           </div>
         </div>
 
@@ -223,8 +223,6 @@
   <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/65Tz5hnCJlA0DgnmmuMpcJ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
-<div class="character-card__gallery gallery--character"></div>
-
 <!-- JS -->
 <script>
 const tabs = document.querySelectorAll(".character-card__tab");
@@ -252,39 +250,7 @@ infoTabs.forEach(tab => {
     document.getElementById(tab.dataset.info).classList.add("active");
   });
 });
-
-document.addEventListener("DOMContentLoaded", async () => {
-    const container = document.querySelector(".gallery--character");
-
-    if (!container) {
-        console.error("Galerie introuvable !");
-        return;
-    }
-
-    const response = await fetch("../galerie.json");
-    const data = await response.json();
-
-    const personnage = "armanti";
-
-    const images = data.filter(item =>
-        item.perso && item.perso.includes(personnage)
-    );
-
-    images.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-    images.forEach(item => {
-        const img = document.createElement("img");
-
-        img.src = item.src;
-        img.alt = item.title;
-
-        if (item.pos) {
-            img.dataset.pos = item.pos;
-        }
-
-        container.appendChild(img);
-    });
-});
 </script>
+
 </body>
 </html>
