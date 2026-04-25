@@ -223,6 +223,8 @@
   <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/65Tz5hnCJlA0DgnmmuMpcJ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
+<div class="character-card__gallery" id="character-gallery"></div>
+
 <!-- JS -->
 <script>
 const tabs = document.querySelectorAll(".character-card__tab");
@@ -251,6 +253,39 @@ infoTabs.forEach(tab => {
   });
 });
 </script>
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.getElementById("character-gallery");
+
+    const response = await fetch("../galerie.json");
+    const data = await response.json();
+
+    // 👉 nom du personnage (important pour réutiliser le code)
+    const personnage = "armanti";
+
+    // 👉 filtrer les images
+    const images = data.filter(item =>
+        item.perso && item.perso.includes(personnage)
+    );
+
+    // 👉 tri par date (comme ta galerie principale)
+    images.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // 👉 affichage
+    images.forEach(item => {
+        const img = document.createElement("img");
+
+        img.src = item.src;
+        img.alt = item.title;
+
+        // bonus : garder ton système de position
+        if (item.pos) {
+            img.dataset.pos = item.pos;
+        }
+
+        container.appendChild(img);
+    });
+});
 
 </body>
 </html>
