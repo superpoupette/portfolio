@@ -1,38 +1,38 @@
 [
   {
-    "src": "../Images/Galerie/charlie.png",
+    "src": "Images/Galerie/charlie.png",
     "date": "2024-02-17",
     "title": "Charlie et Vaggie",
     "perso": []
   },
   {
-    "src": "../Images/Galerie/Armanti(06.03.26).png",
+    "src": "Images/Galerie/Armanti(06.03.26).png",
     "date": "2026-03-06",
     "title": "Armanti",
     "perso": ["armanti"]
   },
   {
-    "src": "../Images/Galerie/Fisheye(13.06.25).png",
+    "src": "Images/Galerie/Fisheye(13.06.25).png",
     "date": "2025-06-25",
     "title": "Chilling in the toilet",
     "perso": ["pollux", "victoria"]
   },
   {
-    "src": "../Images/Galerie/2023albumcover.png",
+    "src": "Images/Galerie/2023albumcover.png",
     "date": "2024-04-01",
     "title": "Couverture album photo 2023",
     "tags": [],
     "perso": []
   },
   {
-    "src": "../Images/Galerie/2023albumcover2.png",
+    "src": "Images/Galerie/2023albumcover2.png",
     "date": "2024-04-01",
     "title": "Couverture album photo 2023",
     "tags": [],
     "perso": []
   },
   {
-    "src": "../Images/Galerie/kastor(20.01.23).png",
+    "src": "Images/Galerie/kastor(20.01.23).png",
     "date": "2023-01-20",
     "title": "Kastor",
     "tags": ["kastor"],
@@ -40,42 +40,42 @@
     "pos": "top"
   },
   {
-    "src": "../Images/Galerie/orman.png",
+    "src": "Images/Galerie/orman.png",
     "date": "2020-03-26",
     "title": "Orman",
     "tags": ["watercolor"],
     "perso": ["armanti"]
   },
   {
-    "src": "../Images/Galerie/MinnieHer(21.01.25).png",
+    "src": "Images/Galerie/MinnieHer(21.01.25).png",
     "date": "2025-01-21",
     "title": "HER - Minnie",
     "tags": ["album cover"],
     "perso": []
   },
   {
-    "src": "../Images/Galerie/Marlin(05.05.22).png",
+    "src": "Images/Galerie/Marlin(05.05.22).png",
     "date": "2022-05-05",
     "title": "Marlène et son vieux clebs",
     "tags": [],
     "perso": []
   },
   {
-    "src": "../Images/Galerie/SabrinaEmailCantSend(23.01.25).png",
+    "src": "Images/Galerie/SabrinaEmailCantSend(23.01.25).png",
     "date": "2025-01-23",
     "title": "Emails I can't send - Sabrina Carpenter",
     "tags": ["album cover"],
     "perso": []
   },
   {
-    "src": "../Images/Galerie/Albrije(26.03.19).png",
+    "src": "Images/Galerie/Albrije(26.03.19).png",
     "date": "2019-03-26",
     "title": "Albrije",
     "tags": [],
     "perso": []
   },
   {
-    "src": "../Images/Galerie/Crocus(20.03.22).png",
+    "src": "Images/Galerie/Crocus(20.03.22).png",
     "date": "2022-03-20",
     "title": "Crocus",
     "tags": [],
@@ -83,21 +83,21 @@
     "pos": "bottom"
   },
   {
-    "src": "../Images/Galerie/Jukky(05.07.25).png",
+    "src": "Images/Galerie/Jukky(05.07.25).png",
     "date": "2025-07-05",
     "title": "Jukky",
     "tags": ["artfight"],
     "perso": []
   },
   {
-    "src": "../Images/Galerie/JuliaStarterPack(13.04.25).png",
+    "src": "Images/Galerie/JuliaStarterPack(13.04.25).png",
     "date": "2025-04-03",
     "title": "Julia StarterPack",
     "tags": [],
     "perso": []
   },
   {
-    "src": "../Images/Galerie/MagicalStar(29.07.17).jpg",
+    "src": "Images/Galerie/MagicalStar(29.07.17).jpg",
     "date": "2017-07-29",
     "title": "Magical Star",
     "tags": ["watercolor"],
@@ -105,35 +105,35 @@
     "pos": "top"
   },
   {
-    "src": "../Images/Armanti(18.03.21).png",
+    "src": "Images/Armanti(18.03.21).png",
     "date": "2021-03-18",
     "title": "Armanti",
     "tags": [],
     "perso": ["armanti"]
   },
    {
-    "src": "../Images/Galerie/Flodeis&Vaar(27.07.21).png",
+    "src": "Images/Galerie/Flodeis&Vaar(27.07.21).png",
     "date": "2021-07-27",
     "title": "Lovers",
     "tags": [],
     "perso": ["flodeis","vaar"]
   },
   {
-    "src": "../Images/Galerie/Flodeis(11.07.21).png",
+    "src": "Images/Galerie/Flodeis(11.07.21).png",
     "date": "2021-07-11",
     "title": "Miss you",
     "tags": [],
     "perso": ["flodeis"]
   },
   {
-    "src": "../Images/Galerie/Danse.Maeve&Kaoda(02.08.22).png",
+    "src": "Images/Galerie/Danse.Maeve&Kaoda(02.08.22).png",
     "date": "2022-08-02",
     "title": "Danse",
     "tags": [],
     "perso": ["maeve","kaoda"]
   },
   {
-    "src": "../Images/Galerie/Aurore(22.06.22).png",
+    "src": "Images/Galerie/Aurore(22.06.22).png",
     "date": "2022-06-22",
     "title": "Aurore",
     "tags": ["artfight"],
