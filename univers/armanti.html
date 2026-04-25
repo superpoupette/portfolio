@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style_univers.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER GLOBAL (ton site) -->
+<header>
+  <a href="index.html">
+    <h1>SEOLIA</h1>
+  </a>
+
+  <nav>
+    <a href="../galerie.html">GALERIE</a>
+    <a href="../jeux.html">JEUX</a>
+    <a href="#">DESSIN INFINI</a>
+    <a href="../toutim.html">TOUTIM MAGAZINE</a>
+    <a href="../univers.html">PERSONNAGES</a>
+    <a href="../charlie.html">OU EST CHARLIE ?</a>
+    <a href="../tests.html">TESTS</a>
+  </nav>
+</header>
+
+<!-- CHARACTER CARD -->
+<div class="character-card">
+
+  <!-- HEADER CARD -->
+  <header class="character-card__header">
+    <h1 class="character-card__title">Armanti</h1>
+    <div class="character-card__icon">֍</div>
+  </header>
+
+  <div class="character-card__main">
+
+    <!-- LEFT -->
+    <aside class="character-card__left">
+      <img src="../Images/Galerie/Armantiportrait(18.03.21).png" alt="character">
+
+      <div class="character-card__info-wrapper">
+
+        <!-- GENERAL -->
+        <div class="character-card__info-content active" id="info-general">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Age</span>
+            <span class="character-card__value">19</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Pronouns</span>
+            <span class="character-card__value">she/her</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Species</span>
+            <span class="character-card__value">orman</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Magic</span>
+            <span class="character-card__value">ground</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Job</span>
+            <span class="character-card__value">priestess</span>
+          </div>
+        </div>
+
+        <!-- PHYSIQUE -->
+        <div class="character-card__info-content" id="info-physique">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Height</span>
+            <span class="character-card__value">1m87</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Build</span>
+            <span class="character-card__value">thin</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Skin</span>
+            <span class="character-card__value">brown speckled with white</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Eyes</span>
+            <span class="character-card__value">always clothed</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Hair</span>
+            <span class="character-card__value">brown</span>
+          </div>
+        </div>
+
+        <!-- STATS -->
+        <div class="character-card__info-content" id="info-stats">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Benevolence</span>
+            <span class="character-card__value">★★★★★</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Creativity</span>
+            <span class="character-card__value">★★★☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Social</span>
+            <span class="character-card__value">★★☆☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Sensivity</span>
+            <span class="character-card__value">★★★★☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Intellect</span>
+            <span class="character-card__value">★★★☆☆</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="character-card__info-tabs">
+        <button class="character-card__info-tab active" data-info="info-general">
+          <i class="fa-solid fa-circle-info"></i>
+        </button>
+
+        <button class="character-card__info-tab" data-info="info-physique">
+          <i class="fa-solid fa-user"></i>
+        </button>
+
+        <button class="character-card__info-tab" data-info="info-stats">
+          <i class="fa-solid fa-chart-simple"></i>
+        </button>
+      </div>
+
+    </aside>
+
+    <!-- RIGHT -->
+    <section class="character-card__right">
+
+      <div class="character-card__about">
+
+        <div class="character-card__tab-content active" id="description">
+          <p>Armanti is a fairly sensitive person who doesn't show it. She seems very sure of herself and decided at first. She is very determined and stubborn.<br>
+            She is a very religious person, faith has a big place in her life. She also likes to take care of others, and is a very dedicated person.<br>
+            She possesses fairly weak earth-type magic. Barely able to crack the ground, but that allows her to find his way in space. The seed in his scepter serves as an amplifier of power. Thanks to it, she is now able to create earthquakes.<br>
+          </p>
+        </div>
+
+        <div class="character-card__tab-content" id="histoire">
+          <div class="story-section">
+            <h4>Childhood</h4>
+            <p>
+              22 January 1256
+            </p>
+            <p>
+              Stellaria is the daughter of the Emperor of Painari. She grew up in opulence and wealth and never lacked for anything. Her father was very attached to her and spoiled her enormously to make her forgive his absences. She spent her days surrounded by servants and professors.
+            </p>
+            <p>
+              She was a curious child who devoured books and was always thirsty for knowledge. However, she had significant socialization difficulties and did not learn to speak until very late. As soon as she learned to read, she began spending her days in the palace library without ever seeking to go outside into the gardens.
+            </p>
+            <p>
+              Her view of the world was limited to what she could read and what her teachers could teach her.
+            </p>
+          </div>
+
+          <div class="story-section">
+            <h4>Painarian Revolution</h4>
+            <p>
+              Stella only knew the story and life of Painari through the books entrusted to her. Her vision of the country was completely utopian. When she met Ilian, she did not understand the anger that drove him. To her, every citizen of Painari was happy.
+            </p>
+            <p>
+              He showed her his life and that of the lower districts. Although she had little empathy, Stella had a strong sense of equality. For her, a good leader had to treat people well.
+            </p>
+            <p>
+              That day, she decided to confront her father about the misery she had witnessed. Faced with his lack of reaction, she realized that he was aware of these problems and had chosen to ignore them—or even benefit from them.
+            </p>
+            <p>
+              She lost all respect for him and decided to join the revolution. She joined Ilian and Mercure among the revolutionaries and helped develop a plan to overthrow her father's government.
+            </p>
+            <p>
+              Only 13 years old during the revolution, she was nevertheless one of the key figures who helped the people regain power. After faking her death, she had to isolate herself from her hometown and go into exile with Ilian.
+            </p>
+          </div>
+
+          <div class="story-section">
+            <h4>Exile</h4>
+            <p>
+              After leaving Painari, Ilian and Stella wandered for many months before meeting Signore Resario, director of the circus L'Atrio. They joined his troupe under the stage names Strega and Lupo.
+            </p>
+            <p>
+              For two years, they traveled across Sadi Dünya with the circus. Thanks to Ilian's power and Stella's ingenuity, they created a spectacle of light and reflections in which Ilian appeared to duplicate himself and emerge all around the audience.
+            </p>
+            <p>
+              These years allowed Stella to discover the world and its challenges. After some disappointments, she realized two things: to do what you want in this world, you need money—and that you can shape the future by controlling how history is written.
+            </p>
+            <p>
+              They later decided to travel on their own so Ilian could find his father, Mercure. At his funeral, they met Gyulladt, who offered them work as mercenaries. She entrusted them with many missions while keeping a maternal eye on them in Mercure’s memory.
+            </p>
+          </div>
+
+          <div class="story-section">
+            <h4>Ash War</h4>
+            <p>
+              After several years, Gyulladt recognized Ilian's strength and the power of their duo. During the destruction of Vehmas, she tasked them with finding a mage capable of freeing the hero from eternal ice—and killing him if he repeated the mistakes of the past.
+            </p>
+            <p>
+              Stella found Sila, a powerful water mage. Once the hero was freed, the four of them fought on the front lines to prevent monsters from invading the territory.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="character-card__tab-content" id="liens">
+          <p>Relations, connexions, etc...</p>
+        </div>
+
+      </div>
+
+      <!-- TABS -->
+      <div class="character-card__tabs">
+        <span class="character-card__tab active" data-tab="description">About</span>
+        <span class="character-card__tab" data-tab="histoire">Story</span>
+        <span class="character-card__tab" data-tab="liens">Links</span>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="character-card__gallery">
+        <img src="../Images/Moodboards/cd961c82ab3c8240dc97e588bcc54515.jpg">
+        <img src="../Images/Moodboards/4fdda669219e8142f754c5691220b182.jpg">
+        <img src="../Images/Moodboards/ff0cf9c6b772fd57b8e086f942e071b7.jpg">
+        <img src="../Images/Moodboards/3cc6a285fd8cca3f02e1c0e073b30122.jpg">
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer class="character-card__footer">
+    “ Who controls the past controls the future, who controls the present controls the past. ”
+  </footer>
+  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/65Tz5hnCJlA0DgnmmuMpcJ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+<!-- JS -->
+<script>
+const tabs = document.querySelectorAll(".character-card__tab");
+const contents = document.querySelectorAll(".character-card__tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.tab).classList.add("active");
+  });
+});
+
+const infoTabs = document.querySelectorAll(".character-card__info-tab");
+const infoContents = document.querySelectorAll(".character-card__info-content");
+
+infoTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    infoTabs.forEach(t => t.classList.remove("active"));
+    infoContents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.info).classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>
