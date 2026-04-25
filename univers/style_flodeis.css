@@ -40,3 +40,20 @@ body {
 .character-card__footer {
   background: #426F80;
 }
+
+.gallery--character {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1100px;
+    margin: 20px auto 60px auto;
+    padding: 0 20px;
+}
+
+.gallery--character img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
