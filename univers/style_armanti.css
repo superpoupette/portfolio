@@ -1,4 +1,4 @@
-body {
+﻿body {
   background-image: url("../Images/Patterns/Pattern.Armanti(12.06.25).png");
   background-repeat: repeat;
   background-attachment: fixed;
@@ -45,8 +45,9 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    max-width: 1100px;
-    margin-top: 20px;
+    max-width: 900px; 
+    margin: 20px auto 60px auto; 
+    padding: 0 20px;
 }
 
 .character-card__gallery img {
@@ -54,4 +55,5 @@ body {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
+    border-radius: 0;
 }
