@@ -103,12 +103,19 @@
     "tags": ["watercolor"],
     "perso": [],
     "pos": "top"
-  }
+  },
   {
     "src": "../Images/Armanti(18.03.21).png",
     "date": "2021-03-18",
     "title": "Armanti",
     "tags": [],
     "perso": ["armanti"],
+  },
+   {
+    "src": "../Images/Galerie/Flodeis&Vaar(27.07.21).png",
+    "date": "2021-07-27",
+    "title": "Lovers",
+    "tags": [],
+    "perso": ["flodeis","vaar"],
   }
 ]
