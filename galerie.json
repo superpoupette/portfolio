@@ -131,5 +131,12 @@
     "title": "Danse",
     "tags": [],
     "perso": ["maeve","kaoda"]
+  },
+  {
+    "src": "../Images/Galerie/Aurore(22.06.22).png",
+    "date": "2022-06-22",
+    "title": "Aurore",
+    "tags": ["artfight"],
+    "perso": []
   }
 ]
