@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // =========================
     const response = await fetch("../galerie.json");
     const data = await response.json();
+    galerie.innerHTML = "";
 
     // =========================
     // 🖼️ CRÉATION IMAGES

@@ -5,20 +5,18 @@
 
     padding: 20px;
 
-    /* IMPORTANT : évite les décalages visuels sur grand écran */
-    margin: 0 auto;
-    max-width: 1400px;
     width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto; /* CENTRAGE PARFAIT */
 }
 
 .galerie img {
     width: 100%;
     height: 100%;
     aspect-ratio: 1 / 1;
-
     object-fit: cover;
     display: block; /* IMPORTANT : évite les petits décalages inline */
-
     cursor: pointer;
 }
 
