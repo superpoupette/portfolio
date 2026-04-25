@@ -224,7 +224,6 @@
     "title": "Human Vaar",
     "perso": ["vaar"]
   },
-
   {
     "src": "/portfolio/Images/Galerie/IMG_20220215_134923.jpg",
     "title": "Champignons",
@@ -271,5 +270,17 @@
     "title": "Nynna",
     "perso": ["gyulladt"],
     "date": "2021-03-21"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Mermay4(21.05.22).png",
+    "title": "Glow",
+    "tags":["mermay"],
+    "date": "2022-05-21"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/selfie1(12.01.23).png",
+    "title": "Party night",
+    "date": "2023-01-12",
+    "perso": ["vaar","flodeis"]
   }
 ]
