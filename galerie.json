@@ -6,7 +6,7 @@
     "perso": []
   },
   {
-    "src": "Images/Galerie/Armanti(06.03.26).png",
+    "src": "/Images/Galerie/Armanti(06.03.26).png",
     "date": "2026-03-06",
     "title": "Armanti",
     "perso": ["armanti"]
@@ -105,7 +105,7 @@
     "pos": "top"
   },
   {
-    "src": "Images/Armanti(18.03.21).png",
+    "src": "Images/Galerie/Armanti(18.03.21).png",
     "date": "2021-03-18",
     "title": "Armanti",
     "tags": [],
