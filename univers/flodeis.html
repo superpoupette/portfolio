@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style_personnages.css">
+  <link rel="stylesheet" href="style_flodeis.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER GLOBAL (ton site) -->
+<header>
+  <a href="index.html">
+    <h1>SEOLIA</h1>
+  </a>
+
+  <nav>
+    <a href="../galerie.html">GALERIE</a>
+    <a href="../jeux.html">JEUX</a>
+    <a href="../toutim.html">TOUTIM MAGAZINE</a>
+    <a href="univers.html">PERSONNAGES</a>
+    <a href="../charlie.html">OU EST CHARLIE ?</a>
+  </nav>
+</header>
+
+<!-- CHARACTER CARD -->
+<div class="character-card">
+
+  <!-- HEADER CARD -->
+  <header class="character-card__header">
+    <h1 class="character-card__title">Flødeis</h1>
+    <div class="character-card__icon">❄</div>
+  </header>
+
+  <div class="character-card__main">
+
+    <!-- LEFT -->
+    <aside class="character-card__left">
+      <img src="../Images/Galerie/Flodeisportrait(09.07.21).png" alt="character">
+
+      <div class="character-card__info-wrapper">
+
+        <!-- GENERAL -->
+        <div class="character-card__info-content active" id="info-general">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Age</span>
+            <span class="character-card__value">32</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Pronouns</span>
+            <span class="character-card__value">she/her</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Species</span>
+            <span class="character-card__value">human</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Magic</span>
+            <span class="character-card__value">ice</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Job</span>
+            <span class="character-card__value">soldier</span>
+          </div>
+        </div>
+
+        <!-- PHYSIQUE -->
+        <div class="character-card__info-content" id="info-physique">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Height</span>
+            <span class="character-card__value">1m78</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Build</span>
+            <span class="character-card__value">slim</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Skin</span>
+            <span class="character-card__value">pale</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Eyes</span>
+            <span class="character-card__value">white</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Hair</span>
+            <span class="character-card__value">navy blue</span>
+          </div>
+        </div>
+
+        <!-- STATS -->
+        <div class="character-card__info-content" id="info-stats">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Benevolence</span>
+            <span class="character-card__value">★★★★★</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Kindness</span>
+            <span class="character-card__value">★★★★★</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Social</span>
+            <span class="character-card__value">★★★★☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Sensivity</span>
+            <span class="character-card__value">★★★☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Intellect</span>
+            <span class="character-card__value">★★★☆☆</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="character-card__info-tabs">
+        <button class="character-card__info-tab active" data-info="info-general">
+          <i class="fa-solid fa-circle-info"></i>
+        </button>
+
+        <button class="character-card__info-tab" data-info="info-physique">
+          <i class="fa-solid fa-user"></i>
+        </button>
+
+        <button class="character-card__info-tab" data-info="info-stats">
+          <i class="fa-solid fa-chart-simple"></i>
+        </button>
+      </div>
+
+    </aside>
+
+    <!-- RIGHT -->
+    <section class="character-card__right">
+
+      <div class="character-card__about">
+
+        <div class="character-card__tab-content active" id="description">
+          <p>Flødeis is a very introverted and not very talkative young woman. Despite her dry and bewitching appearance, she has very little self-confidence. She opens up to few people and few are those to whom she told about her childhood. She is very jealous and is afraid of abandonment.<br><br>
+             She's an ice magician. Her power was often used in combat to constrain opponents and slow them down in their movements.         </p>
+        </div>
+
+        <div class="character-card__tab-content" id="histoire">
+          <div class="story-section">
+            <h4>Childhood</h4>
+            <p>
+              23/02/0853
+            </p>
+            <p>       
+            Flødeis grew up in the middle of a period of reconquest. His parents were two humans who fought on the frozen fronts of a Sadi Dunya mountain. Legend has it that when he was born his heart was frozen.<br>
+            However, at that time she was only a little child who felt bad about herself. She grew up between two fights and lost her parents very young.<br>
+            Very early on, her power as an ice magician developed and she joined the front when she was 12 years old.
+            </p>
+          </div>
+
+          <div class="story-section">
+            <h4>Reconquest</h4>
+            <p>Flødeis played an important role during the reconquest period. She was a general of an elite combat unit. It was in this team that she led Va'ar the "Lost Hero". She was her superior. They fought together for many years and a romantic relationship developed between them. Their relationship was very toxic and they separated many times to get back together because they were co-dependent. When Va'ar begins to become megalomaniac and want to become ruler of Sadi Dunya, Flødeis uses her powers to try to stop her. Not being powerful enough to kill her, she will use her magic to turn into an eternal ice prison to imprison her.<br><br>
+            The world will never recognize his sacrifice. Years later, the story of the demonic witch who killed our savior is still being told.  </p>
+          </div>
+
+          <div class="story-section">
+            <h4>Ice prison</h4>
+            <p>
+              For 400 years Va'ar remains imprisoned in the prison of ice. During this period Flo has not completely disappeared. Her mind remains trapped in the ice that surrounds the warrior. During these years of confinement, they will both be stuck alone. After many disputes and discussions, their relationship will evolve into a close-knit and close friendship and a form of peace will be between them.</p>
+          </div>
+          <div class="story-section">
+            <h4>Ash War</h4>
+            <p>
+            When Va'ar is freed, the spirit of Flødeis remains present in her as well as in Sila. For the first, she guides her and makes her keep her feet on the ground to prevent the past from happening again. She also stays by Sila's side to amplify her power and be able to contain Va'ar if she loses control again. At the end of the war, the powers of the various fighters of the group will be associated around a fault to be able to send Va'ar and Flødeis back to another world so that they can start another life there.        
+            </div>
+            <div class="story-section">
+            <h4>Earth</h4>
+            <p>
+            The two girls arrive in the 2000s in Italy, on Earth, where they will take on the appearance of two humans and will finally be able to live a peaceful life without war.
+             </div>
+        </div>
+
+        <div class="character-card__tab-content" id="liens">
+          <p>Relations, connexions, etc...</p>
+        </div>
+
+      </div>
+
+      <!-- TABS -->
+      <div class="character-card__tabs">
+        <span class="character-card__tab active" data-tab="description">About</span>
+        <span class="character-card__tab" data-tab="histoire">Story</span>
+        <span class="character-card__tab" data-tab="liens">Links</span>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="character-card__gallery">
+        <img src="../Images/Moodboards/1b3263df4f91344c5970047facfa7fb0.jpg">
+        <img src="../Images/Moodboards/c967380e9918a28d8a2f8ec51e5b7348.jpg">
+        <img src="../Images/Moodboards/c1db0be3ab64181448b147da12f7594c.jpg">
+        <img src="../Images/Moodboards/9914a80a41d826af3c1e06e5c10bd3ab.jpg">
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer class="character-card__footer">
+    “ It is such a mysterious place, the land of tears ”
+  </footer>
+  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7C66cMXBJmtM88yJ7JNVnS?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+<!-- JS -->
+<script>
+const tabs = document.querySelectorAll(".character-card__tab");
+const contents = document.querySelectorAll(".character-card__tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.tab).classList.add("active");
+  });
+});
+
+const infoTabs = document.querySelectorAll(".character-card__info-tab");
+const infoContents = document.querySelectorAll(".character-card__info-content");
+
+infoTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    infoTabs.forEach(t => t.classList.remove("active"));
+    infoContents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.info).classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>
