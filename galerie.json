@@ -233,12 +233,15 @@
   },
   {
     "src": "/portfolio/Images/Galerie/IMG_20220217_122250_785.jpg",
-    "title": "IMG_20220217_122250_785",
+    "title": "Champignons",
+    "date": "2022-02-17",
     "perso": []
   },
   {
     "src": "/portfolio/Images/Galerie/IMG_20220302_112310.jpg",
-    "title": "IMG_20220302_112310",
+    "title": "Autoportrait",
+    "tags": ["watercolor"],
+    "date": "2022-03-02",
     "perso": []
   },
   {
@@ -260,7 +263,7 @@
     "src": "/portfolio/Images/Galerie/IMG20220407162040.jpg",
     "title": "IMG20220407162040",
     "perso": []
-  }
+  },
   {
     "src": "/portfolio/Images/Galerie/Nynna(17.03.21).png",
     "title": "Nynna",
