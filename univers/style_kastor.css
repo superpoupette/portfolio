@@ -1,0 +1,42 @@
+body {
+  background-image: url("../Images/Patterns/Pattern_Kastor2(05.08.21).png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 1000px;
+}
+
+.character-card__header {
+  background: #918247;
+}
+
+.character-card__info-wrapper {
+  background: #363328;
+}
+
+.character-card__info-tab {
+	border: 1px solid #918247;
+}
+
+.character-card__info-tab:hover {
+  background: #918247;
+}
+
+.character-card__info-tab.active {
+  background: #918247;
+}
+
+.character-card__about {
+  background: #363328;
+}
+
+.character-card__tabs {
+	background: #918247;
+}
+
+.character-card__tab.active {
+  background: #736630;
+}
+
+.character-card__footer {
+  background: #918247;
+}
