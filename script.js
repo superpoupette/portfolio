@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // =========================
     // 📦 CHARGEMENT JSON
     // =========================
-    const response = await fetch("../galerie.json");
+    const response = await fetch("galerie.json");
     const data = await response.json();
     galerie.innerHTML = "";
 
