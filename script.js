@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         img.src = item.src;
         img.dataset.date = item.date;
         img.dataset.title = item.title;
+        img.loading = "lazy"; 
         img.dataset.perso = (item.perso || []).join(",");
         img.dataset.tags = (item.tags || []).join(",");
 
