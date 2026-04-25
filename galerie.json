@@ -144,48 +144,54 @@
     "date": "2022-09-18",
     "title": "Le Bateleur",
     "tags": ["tarot"],
-    "perso": []
+    "perso": [],
+        "pos": "bottom"
   },
   {
     "src": "/portfolio/Images/Galerie/2.Papesse.png",
     "title": "La Papesse",
     "date": "2022-10-02",
     "tags": ["tarot"],
-    "perso": []
+    "perso": [],
+        "pos": "bottom"
   },
   {
     "src": "/portfolio/Images/Galerie/5.le pape.png",
     "date": "2022-10-06",
     "title": "Le Pape",
     "tags": ["tarot"],
-    "perso": []
+    "perso": [],
+        "pos": "bottom"
   },
   {
     "src": "/portfolio/Images/Galerie/6.les amoureux.png",
     "date": "2022-10-06",
     "title": "Les Amoureux",
     "tags": ["tarot"],
-    "perso": []
+    "perso": [],
+        "pos": "bottom"
   },
   {
     "src": "/portfolio/Images/Galerie/9.lhermite.png",
     "date": "2022-10-09",
     "title": "L'Hermite",
     "tags": ["tarot"],
-    "perso": []
+    "perso": [],
+        "pos": "bottom"
   },
   {
     "src": "/portfolio/Images/Galerie/10.roue fortune.png",
     "date": "2022-10-11",
     "title": "La Roue de Fortune",
     "tags": ["tarot"],
-    "perso": []
+    "perso": [],
+    "pos": "bottom"
   },
 
   {
     "src": "/portfolio/Images/Galerie/Armanti.png",
     "date": "2019-11-18",
-    "title": "Création d'Armanti'",
+    "title": "Création d'Armanti",
     "perso": ["armanti"]
   },
   {
@@ -204,30 +210,25 @@
     "src": "/portfolio/Images/Galerie/Armanti(19.05.21).png",
     "date": "2021-05-19",
     "title": "Armanti",
-    "perso": []
+    "perso": ["armanti"]
   },
-  {
-    "src": "/portfolio/Images/Galerie/Armanti.png",
-    "title": "Armanti",
-    "perso": []
-  },
-
   {
     "src": "/portfolio/Images/Galerie/Alma&Paga(21.07.22).png",
     "date": "2022-07-21",
     "title": "Alma & Paga",
-    "perso": []
+    "perso": ["paga"]
   },
   {
     "src": "/portfolio/Images/Galerie/HumanVaar(25.07.22).png",
     "date": "2022-07-25",
     "title": "Human Vaar",
-    "perso": []
+    "perso": ["vaar"]
   },
 
   {
     "src": "/portfolio/Images/Galerie/IMG_20220215_134923.jpg",
-    "title": "IMG_20220215_134923",
+    "title": "Champignons",
+    "date": "2022-02-15",
     "perso": []
   },
   {
@@ -259,5 +260,11 @@
     "src": "/portfolio/Images/Galerie/IMG20220407162040.jpg",
     "title": "IMG20220407162040",
     "perso": []
+  }
+  {
+    "src": "/portfolio/Images/Galerie/Nynna(17.03.21).png",
+    "title": "Nynna",
+    "perso": ["gyulladt"],
+    "date": "2021-03-21"
   }
 ]
