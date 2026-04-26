@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\test"
+    "\\test",
+    "\\univers"
   ],
-  "SelectedNode": "\\galerie.json",
+  "SelectedNode": "\\univers\\style_maeve.css",
   "PreviewInSolutionExplorer": false
 }

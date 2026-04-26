@@ -1,0 +1,7 @@
+body {
+    background-color: #F2E7D2;
+    background-image: url("Images/Index/site1.png");
+    background-size: cover;        /* prend toute la largeur */
+    background-position: top center; /* collée en haut */
+    background-repeat: no-repeat;
+}
