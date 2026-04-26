@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
@@ -30,8 +30,9 @@
    <section class="titre">
         <img src="Images/Index/site1.png" alt="Portfolio">
     </section>
-      <section class="galerie" id="galerie">
-      </section>
+    <section class="galerie" id="galerie">
+        <h2 class="galerie-titre">âœ§ Mes derniers dessins âœ§</h2>
+    </section>
     </main>
 
     <footer>
@@ -42,17 +43,17 @@ fetch("galerie.json")
   .then(response => response.json())
   .then(data => {
 
-    // 1. trier par date (du plus récent au plus ancien)
+    // 1. trier par date (du plus rÃ©cent au plus ancien)
     const sorted = data
-      .filter(img => img.date) // sécurité
+      .filter(img => img.date) // sÃ©curitÃ©
       .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    // 2. prendre les 3 plus récents
+    // 2. prendre les 3 plus rÃ©cents
     const latest = sorted.slice(0, 3);
 
     const galerie = document.getElementById("galerie");
 
-    // 3. créer les SVG
+    // 3. crÃ©er les SVG
     latest.forEach((img, index) => {
 
       const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");

@@ -26,7 +26,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
     padding: 50px;
     margin-top: 2px;
+}
+.galerie-titre {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-family: 'Combo', serif;
+    color : #6AADA7;
 }
