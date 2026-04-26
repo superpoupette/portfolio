@@ -1,0 +1,59 @@
+﻿body {
+  background-image: url("../Images/Patterns/Pattern_maeve2(04.08.21).png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 1000px;
+}
+
+.character-card__header {
+  background: #476E3A;
+}
+
+.character-card__info-wrapper {
+  background: #2A3624;
+}
+
+.character-card__info-tab {
+	border: 1px solid #476E3A;
+}
+
+.character-card__info-tab:hover {
+  background: #476E3A;
+}
+
+.character-card__info-tab.active {
+  background: #476E3A;
+}
+
+.character-card__about {
+  background: #2A3624;
+}
+
+.character-card__tabs {
+	background: #476E3A;
+}
+
+.character-card__tab.active {
+  background: #2D4720;
+}
+
+.character-card__footer {
+  background: #476E3A;
+}
+
+.gallery--character {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1100px;
+    margin: 20px auto 60px auto;
+    padding: 0 20px;
+}
+
+.gallery--character img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}

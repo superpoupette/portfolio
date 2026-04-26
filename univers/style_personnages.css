@@ -235,3 +235,86 @@ header {
   padding: 15px;
   font-style: italic;
 }
+
+/* CONTAINER */
+.character-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* CARD */
+.character-link-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 1px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+/* HOVER */
+.character-link-card:hover {
+  transform: translateX(5px);
+}
+
+/* TEXT */
+.character-link-text {
+  flex: 1;
+}
+
+.character-link-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.character-link-text .relation {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.character-link-text p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* IMAGE */
+.character-link-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.character-link-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Cœurs */
+.hearts {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+.character-link-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.character-link-header {
+  display: flex;
+  align-items: center;
+}
+
+.hearts {
+  margin-left: auto; 
+  font-size: 12px;
+  letter-spacing: 2px;
+}
