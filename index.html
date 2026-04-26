@@ -31,7 +31,8 @@
         <img src="Images/Index/site1.png" alt="Portfolio">
     </section>
     <section class="galerie" id="galerie">
-        <h2 class="galerie-titre">✧ Mes derniers dessins ✧</h2>
+        <h2 class="galerie-titre">Mes derniers dessins</h2>
+        <div class="galerie-grid"></div>
     </section>
     </main>
 
@@ -77,7 +78,7 @@ fetch("galerie.json")
         />
       `;
 
-      galerie.appendChild(svg);
+      document.querySelector(".galerie-grid").appendChild(svg);
     });
 
   });
