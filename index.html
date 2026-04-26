@@ -25,11 +25,58 @@
 	 </nav>
 	</header>
 
-    <main>
-	</main>
+   <main>
+      <main>
+      <section class="galerie" id="galerie">
+      </section>
+    </main>
 
     <footer>
-        <p>Seo</p>
     </footer>
+
+    <script>
+fetch("galerie.json")
+  .then(response => response.json())
+  .then(data => {
+
+    // 1. trier par date (du plus récent au plus ancien)
+    const sorted = data
+      .filter(img => img.date) // sécurité
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // 2. prendre les 3 plus récents
+    const latest = sorted.slice(0, 3);
+
+    const galerie = document.getElementById("galerie");
+
+    // 3. créer les SVG
+    latest.forEach((img, index) => {
+
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("width", "300");
+      svg.setAttribute("height", "300");
+      svg.setAttribute("viewBox", "0 0 1000 1000");
+
+      svg.innerHTML = `
+        <defs>
+          <clipPath id="fleurClip-${index}">
+            <path d="M 482 8.487 C 475.675 9.181, 466.686 10.530, 462.024 11.486 C 440.895 15.818, 404.064 35.230, 383.283 52.988 C 364.542 69.001, 342.854 100.584, 338.466 118.250 C 337.614 121.682, 334.758 121.857, 327.102 118.947 C 309.563 112.281, 280.973 107.089, 261.500 107.034 C 233.705 106.955, 204.621 115.077, 185.734 128.191 C ... Z"/>
+          </clipPath>
+        </defs>
+
+        <image 
+          href="${img.src}"
+          width="1000"
+          height="1000"
+          clip-path="url(#fleurClip-${index})"
+          preserveAspectRatio="xMidYMid slice"
+        />
+      `;
+
+      galerie.appendChild(svg);
+    });
+
+  });
+</script>
 </body>
 </html>

@@ -5,3 +5,10 @@ body {
     background-position: top center; /* collée en haut */
     background-repeat: no-repeat;
 }
+.galerie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
