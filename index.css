@@ -37,6 +37,6 @@ header {
 .galerie-grid {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     flex-wrap: nowrap; 
 }
