@@ -24,6 +24,11 @@ header {
 }
 .galerie {
     padding: 50px;
+    display: flex;
+  justify-content: center; /* centre horizontal */
+  align-items: center;     /* centre vertical */
+  height: 100vh;
+  margin: 0;
 }
 
 .galerie-titre {
@@ -42,16 +47,15 @@ header {
 }
 
 .btn {
-      display: flex;
-      justify-content: center;
+
       background-color: #ea8494; /* ta couleur */
       color: white;              /* texte blanc */
       font-family: 'Nunito', sans-serif;
-      padding: 12px 24px;
+      padding: 10px 20px;
       border: none;
       border-radius: 30px;       /* bords arrondis */
       cursor: pointer;
-      font-size: 16px;
+      font-size: 14px;
       display: flex;
       justify-content: center;
     }
