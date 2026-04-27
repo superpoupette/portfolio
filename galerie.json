@@ -35,8 +35,8 @@
     "src": "/portfolio/Images/Galerie/kastor(20.01.23).png",
     "date": "2023-01-20",
     "title": "Kastor",
-    "tags": ["kastor"],
-    "perso": [],
+    "tags": [],
+    "perso": ["kastor"],
     "pos": "top"
   },
   {
@@ -258,11 +258,14 @@
   {
     "src": "/portfolio/Images/Galerie/IMG_20230311_155257.jpg",
     "title": "IMG_20230311_155257",
-    "perso": []
+    "date":"2023-03-11",
+    "perso": [],
+    "tags":["watercolor"]
   },
   {
     "src": "/portfolio/Images/Galerie/IMG20220407162040.jpg",
     "title": "IMG20220407162040",
+    "date":"2022-04-07",
     "perso": []
   },
   {
