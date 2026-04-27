@@ -1,9 +1,19 @@
 header {
-  height:25vh;
-  background: url("Images/Index/site2.png") no-repeat top center / cover;
+  height:11vh;
   color: white;
   position: relative;
 }
+
+body {
+    background: url("Images/Index/site3.png") no-repeat top center / cover;
+    background-size: 100% auto;
+    background-color: #F2E7D2;
+    color:white;
+}
+
+nav a {
+  color: white;
+  }
 /* Conteneur du contenu */
 .header-content {
   display: flex;
@@ -154,7 +164,7 @@ header {
 /* ===== FILTRES ===== */
 
 .filtres {
-    padding: 2px 80px 0 80px;
+    padding: 5px 80px 0 170px;
 }
 
 #filtre-annee,
@@ -163,9 +173,9 @@ header {
     background-color: #F2E7D2;
     color: #c90b5e;
     border: 1px solid #c90b5e;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Combo', sans-serif;
 
     cursor: pointer;
