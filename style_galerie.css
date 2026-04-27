@@ -143,8 +143,8 @@
 #filtre-tag,
 #filtre-perso {
     background-color: #F2E7D2;
-    color: #ea8494;
-    border: 1px solid #444;
+    color: #c90b5e;
+    border: 1px solid #c90b5e;
     border-radius: 8px;
     padding: 10px 15px;
     font-size: 16px;
@@ -165,6 +165,6 @@
 #filtre-tag:hover,
 #filtre-annee:focus,
 #filtre-tag:focus {
-    border-color: #FFB78A;
+    border-color: #c90b5e;
     box-shadow: 0 0 5px rgba(255, 201, 66, 0.5);
 }
