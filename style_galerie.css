@@ -1,3 +1,21 @@
+header {
+  height:25vh;
+  background: url("Images/Index/site2.png") no-repeat top center / cover;
+  color: white;
+  position: relative;
+}
+/* Conteneur du contenu */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
 .galerie {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -136,7 +154,7 @@
 /* ===== FILTRES ===== */
 
 .filtres {
-    padding: 20px 80px 0 80px;
+    padding: 2px 80px 0 80px;
 }
 
 #filtre-annee,
