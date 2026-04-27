@@ -1,51 +1,74 @@
 body {
-    background-color: #F2E7D2;
-    margin: 0;
-    padding: 0;
+  background-color: #F2E7D2;
+  margin: 0;
+  padding: 0;
 }
+
 header {
-    background-color: #ea8494;
+  height:96vh;
+  background: url("Images/Index/site1.png") no-repeat top center / cover;
+  color: white;
+  position: relative;
 }
 
-.titre {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.titre img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    object-position: top center;
-}
-.galerie {
-  padding: 50px;
+/* Conteneur du contenu */
+.header-content {
   display: flex;
-  flex-direction: column;   /* ⬅️ empile en colonne */
-  align-items: center;      /* centre horizontalement */
-  gap: 40px;                /* espace entre les lignes */
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Titre */
+/* NAV */
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTIONS (espacement global propre) */
+section {
+  padding: 60px 20px;
+}
+
+/* GALERIE */
+.galerie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2px;
+  gap: 40px;
+}
+
+/* TITRE */
 .galerie-titre {
   text-align: center;
   font-family: 'Combo', serif;
   color: #6AADA7;
-  font-size: 40px;
+  font-size: 2.5rem; /* plus responsive */
 }
 
-/* Images */
+/* GRID IMAGES */
 .galerie-grid {
   display: flex;
   justify-content: center;
-  gap: 200px;
+  flex-wrap: wrap;      /* important pour responsive */
+  gap: 40px;            /* réduit et flexible */
 }
 
-/* Bouton */
+/* IMAGES */
+.galerie-grid img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* BOUTON */
 .btn {
   background-color: #ea8494;
   color: white;
@@ -55,17 +78,10 @@ header {
   border-radius: 30px;
   cursor: pointer;
   font-size: 14px;
-    text-decoration: none;
-}
-
-.btn,
-.btn:visited,
-.btn:hover,
-.btn:active {
   text-decoration: none;
-  color: white;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background-color:#c90b5e;
+  background-color: #c90b5e;
 }
