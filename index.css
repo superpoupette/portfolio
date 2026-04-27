@@ -55,8 +55,17 @@ header {
   border-radius: 30px;
   cursor: pointer;
   font-size: 14px;
+    text-decoration: none;
+}
+
+.btn,
+.btn:visited,
+.btn:hover,
+.btn:active {
+  text-decoration: none;
+  color: white;
 }
 
 .btn:hover {
-  background-color:#b94a5d;
+  background-color:#c90b5e;
 }
