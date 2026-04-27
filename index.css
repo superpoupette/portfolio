@@ -8,12 +8,11 @@ header {
 }
 
 .titre {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    height: 300px; /* ou 100vh si tu veux plein écran */
     background-image: url("Images/Index/site1.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .titre img {
