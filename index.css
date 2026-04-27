@@ -44,12 +44,14 @@ header {
 .btn {
       background-color: #ea8494; /* ta couleur */
       color: white;              /* texte blanc */
-      font-family: 'Combo', cursive;
+      font-family: 'Nunito', sans-serif;
       padding: 12px 24px;
       border: none;
       border-radius: 12px;       /* bords arrondis */
       cursor: pointer;
       font-size: 16px;
+      display: flex;
+      justify-content: center;
     }
 
     .btn:hover {
