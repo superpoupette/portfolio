@@ -2,7 +2,7 @@
     margin: 0;
     font-family: Arial, sans-serif;
 	scroll-snap-type: y mandatory;
-    background-color: #1E2329;
+    background-color: #F2E7D2;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
     justify-content: space-between; 
     align-items: center;           
     padding: 15px;
-    color: white;
+    color: #c90b5e;
     top: 0;
     left: 0;
     width: 100%;
