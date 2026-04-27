@@ -23,43 +23,40 @@ header {
     object-position: top center;
 }
 .galerie {
-    padding: 50px;
-    display: flex;
-  justify-content: center; /* centre horizontal */
-  align-items: center;     /* centre vertical */
-  height: 100vh;
-  margin: 0;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;   /* ⬅️ empile en colonne */
+  align-items: center;      /* centre horizontalement */
+  gap: 40px;                /* espace entre les lignes */
 }
 
+/* Titre */
 .galerie-titre {
-    text-align: center;
-    margin-bottom: 50px;
-    font-family: 'Combo', serif;
-    color : #6AADA7;
-    font-size: 30px; 
+  text-align: center;
+  font-family: 'Combo', serif;
+  color: #6AADA7;
+  font-size: 30px;
 }
 
+/* Images */
 .galerie-grid {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: nowrap; 
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
+/* Bouton */
 .btn {
+  background-color: #ea8494;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+}
 
-      background-color: #ea8494; /* ta couleur */
-      color: white;              /* texte blanc */
-      font-family: 'Nunito', sans-serif;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 30px;       /* bords arrondis */
-      cursor: pointer;
-      font-size: 14px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .btn:hover {
-      opacity: 0.9; /* petit effet au survol */
-    }
+.btn:hover {
+  opacity: 0.9;
+}
