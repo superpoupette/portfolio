@@ -35,14 +35,14 @@ header {
   text-align: center;
   font-family: 'Combo', serif;
   color: #6AADA7;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 /* Images */
 .galerie-grid {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 200px;
 }
 
 /* Bouton */
