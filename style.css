@@ -35,7 +35,7 @@ header a:hover{
 nav a {
     font-size: 15px;             
     font-family: 'Combo', sans-serif;
-    color: white;
+    color: #F2E7D2;
     margin-right: 50px;
     text-decoration: none;
     transition: all 0.3s ease; 
@@ -45,7 +45,7 @@ nav a:last-child {
 }
 
 nav a:hover {
-    color: #FFB78A; 
+    color: #c90b5e; 
 }
 
 main {
