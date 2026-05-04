@@ -5,10 +5,11 @@ body {
 }
 
 header {
-  height:96vh;
-  background: url("Images/Index/site1.png") no-repeat top center / cover;
-  color: white;
-  position: relative;
+  height: 500px;
+  background-image: url("Images/Index/site1.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 
 /* Conteneur du contenu */
@@ -33,6 +34,15 @@ nav a {
 /* SECTIONS (espacement global propre) */
 section {
   padding: 60px 20px;
+}
+
+/*INTRO*/
+.intro {
+    height: 80vh;
+    background-image: url("Images/Index/site4.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* GALERIE */
