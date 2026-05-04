@@ -38,7 +38,7 @@ section {
 
 /*INTRO*/
 .intro {
-    height: 80vh;
+    height: 500px;
     background-image: url("Images/Index/site4.png");
     background-size: contain;
     background-position: center;
