@@ -10,7 +10,6 @@ body {
   background-size: 1000px;
 }
 header {
-  background: #1F1F1F;
 }
   
 
@@ -18,7 +17,7 @@ header {
 .character-card {
   width: 1000px;
   margin: 40px auto;
-  background: #1F1F1F;
+  background: #FAF8F5;
 }
 
 /* HEADER */
@@ -61,7 +60,7 @@ header {
 /* INFO WRAPPER */
 .character-card__info-wrapper {
   background: #3A3445;
-  color: white;
+  color: #1A171A;
   padding: 8px;
   height: 190px;
   display: flex;
@@ -90,7 +89,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .character-card__info-row:last-child {
@@ -129,7 +128,7 @@ header {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  border: 1px solid #a88bc2;
+  border: 1px solid #39343B;
   background: transparent;
   cursor: pointer;
   transition: 0.2s;
@@ -138,18 +137,6 @@ header {
   justify-content: center;
 }
 
-.character-card__info-tab i {
-  color: white;
-  font-size: 12px;
-}
-
-.character-card__info-tab:hover {
-  background: #a88bc2;
-}
-
-.character-card__info-tab.active {
-  background: #8e6fb3;
-}
 
 /* RIGHT */
 .character-card__right {
@@ -164,7 +151,7 @@ header {
   padding: 15px;
   height: 305px;
   overflow: auto;
-  color: white;
+  color:#1A171A;
 }
 
 .story-section h4 {
@@ -174,8 +161,7 @@ header {
   font-size: 17px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  color: white;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
@@ -251,7 +237,7 @@ header {
   padding: 1px 1px;
   border-radius: 5px;
   text-decoration: none;
-  color: white;
+  color: #1A171A;
   transition: 0.2s;
 }
 

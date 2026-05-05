@@ -281,6 +281,23 @@
     "date": "2022-05-21"
   },
   {
+    "src": "/portfolio/Images/Galerie/julia FOND.png",
+    "title": "Super Julia #Touteam",
+    "date": "2025-09-10"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Gyulladt&Brunelle(19.06.21).png",
+    "title": "Mère & fille",
+    "perso": ["gyulladt","brunelle"],
+    "date": "2021-06-19"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Brunelle(17.06.21).png",
+    "title": "Brunelle",
+    "perso": ["brunelle"],
+    "date": "2021-06-17"
+  },
+  {
     "src": "/portfolio/Images/Galerie/selfie1(12.01.23).png",
     "title": "Party night",
     "date": "2023-01-12",
