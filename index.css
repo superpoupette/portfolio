@@ -47,6 +47,8 @@ section {
 
 /* GALERIE */
 .galerie {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   background-color:#c6d9ca;
   display: flex;
   flex-direction: column;
@@ -54,6 +56,41 @@ section {
   justify-content: flex-start;
   padding-top: 2px;
   gap: 40px;
+
+  position: relative;
+  overflow: hidden;
+
+  /* important pour laisser de la place aux vagues */
+  padding: 100px 20px;
+}
+
+/* SVG */
+.wave-top svg,
+.wave-bottom svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+/* couleur des vagues */
+.wave-top path,
+.wave-bottom path {
+  fill: #F2E7D2; /* couleur de ton fond global */
+}
+
+/* position */
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 /* TITRE */
