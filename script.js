@@ -39,6 +39,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         img.dataset.perso = (item.perso || []).join(",");
         img.dataset.tags = (item.tags || []).join(",");
 
+        // ✅ 👉 CORRECTION ICI (cadrage)
+        if (item.pos) {
+            img.dataset.pos = item.pos;
+        } else {
+            img.dataset.pos = "center"; // fallback propre
+        }
+
         galerie.appendChild(img);
         images.push(img);
     });
