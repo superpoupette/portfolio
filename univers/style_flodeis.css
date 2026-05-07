@@ -14,35 +14,35 @@ body {
 }
 
 .character-card__info-wrapper {
-  background: #96B4B5;
+  background: #7d90a7;
 }
 
 .character-card__info-tab {
-	border: 1px solid #5995AB;
+	border: 1px solid #7d90a7;
 }
 
 .character-card__info-tab:hover {
-  background: #5995AB;
+  background: #7d90a7;
 }
 
 .character-card__info-tab.active {
-  background: #5995AB;
+  background: #7d90a7;
 }
 
 .character-card__about {
-  background: #96B4B5;
+  background: #7d90a7;
 }
 
 .character-card__tabs {
-	background: #5995AB;
+	background: #5f708c;
 }
 
 .character-card__tab.active {
-  background: #426F80;
+  background: #495270;
 }
 
 .character-card__footer {
-  background: #426F80;
+  background: #708193;
 }
 
 .gallery--character {
