@@ -306,8 +306,7 @@ header {
 }
 
 .character-playlist {
-    width: 100%;
-    max-width: 1200px; /* adapte à la largeur de ta fiche */
+    width: 1000px;
     margin: 40px auto;
 }
 
