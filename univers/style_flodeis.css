@@ -5,8 +5,12 @@ body {
   background-size: 1000px;
 }
 
+.character-card {
+  background: #acb6bf;
+}
+
 .character-card__header {
-  background: #5995AB;
+  background: #495167;
 }
 
 .character-card__info-wrapper {
