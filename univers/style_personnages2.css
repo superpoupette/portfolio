@@ -304,3 +304,14 @@ header {
   font-size: 12px;
   letter-spacing: 2px;
 }
+
+.character-playlist {
+    width: 100%;
+    max-width: 1200px; /* adapte à la largeur de ta fiche */
+    margin: 40px auto;
+}
+
+.character-playlist iframe {
+    width: 100%;
+    display: block;
+}
