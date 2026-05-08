@@ -88,12 +88,6 @@
     "perso": ["armanti"]
   },
   {
-    "src": "/portfolio/Images/Galerie/Armanti(19.05.21).png",
-    "date": "2021-05-19",
-    "title": "Armanti",
-    "perso": ["armanti"]
-  },
-  {
     "src": "/portfolio/Images/Galerie/Armanti.png",
     "date": "2019-11-18",
     "title": "Création d'Armanti",
@@ -179,7 +173,7 @@
   },
   {
     "src": "/portfolio/Images/Galerie/IMG20220407162040.jpg",
-    "title": "IMG20220407162040",
+    "title": "Etude de portraits",
     "date":"2022-04-07",
     "perso": []
   },
@@ -393,8 +387,8 @@
 {
   "src": "/portfolio/Images/Galerie/Hero(10.07.21).png",
   "date": "2021-07-10",
-  "title": "Hero",
-  "perso": []
+  "title": "Holding Out for a Hero",
+  "perso": ["vaar"]
 },
 {
   "src": "/portfolio/Images/Galerie/Hyacinthe&Noah(24.07.21).png",
@@ -412,18 +406,13 @@
   "src": "/portfolio/Images/Galerie/Ilian&Stella2(10.07.21).png",
   "date": "2021-07-10",
   "title": "Ilian & Stella",
-  "perso": ["ilian", "stella"]
+  "perso": ["ilian", "stellaria"]
 },
 {
   "src": "/portfolio/Images/Galerie/IMG_20210716_132651_480.jpg",
   "date": "2021-07-16",
-  "title": "IMG_20210716_132651_480",
-  "perso": []
-},
-{
-  "src": "/portfolio/Images/Galerie/kjiem.png",
-  "title": "Kjiem",
-  "perso": []
+  "title": "Lovers",
+  "perso": ["sila","kastor"]
 },
 {
   "src": "/portfolio/Images/Galerie/Lapinmagique(29.07.21).png",
@@ -434,7 +423,7 @@
 {
   "src": "/portfolio/Images/Galerie/Lesbians2(14.10.22).png",
   "date": "2022-10-14",
-  "title": "Lesbians 2",
+  "title": "Lesbians",
   "perso": []
 },
 {
@@ -452,42 +441,42 @@
 {
   "src": "/portfolio/Images/Galerie/Mermay1(03.06.22).png",
   "date": "2022-06-03",
-  "title": "Mermay 1",
+  "title": "Mermay",
   "tags": ["mermay"],
   "perso": []
 },
 {
   "src": "/portfolio/Images/Galerie/Mermay2(21.05.22).png",
   "date": "2022-05-21",
-  "title": "Mermay 2",
+  "title": "Mermay",
   "tags": ["mermay"],
   "perso": []
 },
 {
   "src": "/portfolio/Images/Galerie/Mermay3(21.05.22).png",
   "date": "2022-05-21",
-  "title": "Mermay 3",
+  "title": "Mermay",
   "tags": ["mermay"],
   "perso": []
 },
 {
   "src": "/portfolio/Images/Galerie/Mermay5(01.06.22).png",
   "date": "2022-06-01",
-  "title": "Mermay 5",
+  "title": "Zebrene",
   "tags": ["mermay"],
   "perso": []
 },
 {
   "src": "/portfolio/Images/Galerie/Mermay6(02.06.22).png",
   "date": "2022-06-02",
-  "title": "Mermay 6",
+  "title": "Mermay",
   "tags": ["mermay"],
   "perso": []
 },
 {
   "src": "/portfolio/Images/Galerie/Mermay16(02.06.22).png",
   "date": "2022-06-02",
-  "title": "Mermay 16",
+  "title": "Mermay",
   "tags": ["mermay"],
   "perso": []
 },
@@ -495,23 +484,13 @@
   "src": "/portfolio/Images/Galerie/Nynna&Mercure(02.02.21).png",
   "date": "2021-02-02",
   "title": "Nynna & Mercure",
-  "perso": ["nynna", "mercure"]
-},
-{
-  "src": "/portfolio/Images/Galerie/osa.png",
-  "title": "Osa",
-  "perso": []
+  "perso": ["gyulladt", "mercure"]
 },
 {
   "src": "/portfolio/Images/Galerie/Paga.profil(13.01.23).png",
   "date": "2023-01-13",
   "title": "Profil Paga",
   "perso": ["paga"]
-},
-{
-  "src": "/portfolio/Images/Galerie/Phare.png",
-  "title": "Phare",
-  "perso": []
 },
 {
   "src": "/portfolio/Images/Galerie/PhotoClasse(09.09.22).png",
@@ -535,12 +514,6 @@
   "src": "/portfolio/Images/Galerie/resario(15.01.23).png",
   "date": "2023-01-15",
   "title": "Resario",
-  "perso": ["resario"]
-},
-{
-  "src": "/portfolio/Images/Galerie/resario.profil(15.01.23).png",
-  "date": "2023-01-15",
-  "title": "Profil Resario",
   "perso": ["resario"]
 },
 {
@@ -571,29 +544,18 @@
   "src": "/portfolio/Images/Galerie/Stella.cirque(29.07.22).png",
   "date": "2022-07-29",
   "title": "Stella Cirque",
-  "perso": ["stella"]
-},
-{
-  "src": "/portfolio/Images/Galerie/Stella.profil(31.07.22).png",
-  "date": "2022-07-31",
-  "title": "Profil Stella",
-  "perso": ["stella"]
+  "perso": ["stellaria"]
 },
 {
   "src": "/portfolio/Images/Galerie/STELLA.tn.png",
   "title": "STELLA",
-  "perso": ["stella"]
+  "perso": ["stellaria"]
 },
 {
   "src": "/portfolio/Images/Galerie/Stellaria(25.03.21).png",
   "date": "2021-03-25",
   "title": "Stellaria",
   "perso": ["stellaria"]
-},
-{
-  "src": "/portfolio/Images/Galerie/underwater.jpg",
-  "title": "Underwater",
-  "perso": []
 },
 {
   "src": "/portfolio/Images/Galerie/yako(20.01.23).png",
