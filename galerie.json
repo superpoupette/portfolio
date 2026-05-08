@@ -547,11 +547,6 @@
   "perso": ["stellaria"]
 },
 {
-  "src": "/portfolio/Images/Galerie/STELLA.tn.png",
-  "title": "STELLA",
-  "perso": ["stellaria"]
-},
-{
   "src": "/portfolio/Images/Galerie/Stellaria(25.03.21).png",
   "date": "2021-03-25",
   "title": "Stellaria",
@@ -561,7 +556,6 @@
   "src": "/portfolio/Images/Galerie/yako(20.01.23).png",
   "date": "2023-01-20",
   "title": "Yako",
-  "perso": ["yako"]
 },
 {
   "src": "/portfolio/Images/Galerie/Yin&Yang(10.07.17).png",
