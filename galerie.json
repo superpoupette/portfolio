@@ -301,5 +301,135 @@
     "title": "Party night",
     "date": "2023-01-12",
     "perso": ["vaar","flodeis"]
-  }
+  },
+  {
+  "src": "/portfolio/Images/Galerie/AF_Bibi(02.07.21).png",
+  "date": "2021-07-02",
+  "title": "Bibi",
+  "perso": [],
+  "tags": ["artfight"]
+},
+{
+  "src": "/portfolio/Images/Galerie/AF_Buenia(01.07.21).png",
+  "date": "2021-07-01",
+  "title": "Buenia",
+  "perso": [],
+  "tags": ["artfight"]
+},
+{
+  "src": "/portfolio/Images/Galerie/AF_Camille2(09.07.21).png",
+  "date": "2021-07-09",
+  "title": "Camille",
+  "perso": [],
+  "tags": ["artfight"]
+},
+{
+  "src": "/portfolio/Images/Galerie/AF_Egg4(02.07.21).png",
+  "date": "2021-07-02",
+  "title": "Egg",
+  "perso": [],
+  "tags": ["artfight"]
+},
+{
+  "src": "/portfolio/Images/Galerie/AF_Morrigan(02.07.21).png",
+  "date": "2021-07-02",
+  "title": "Morrigan",
+  "perso": [],
+  "tags": ["artfight"]
+},
+{
+  "src": "/portfolio/Images/Galerie/AF_Nate2(03.07.21).png",
+  "date": "2021-07-03",
+  "title": "Nate",
+  "perso": [],
+  "tags": ["artfight"]
+},
+{
+  "src": "/portfolio/Images/Galerie/AF_Nessedel(09.07.21).png",
+  "date": "2021-07-09",
+  "title": "Nessedel",
+  "perso": [],
+  "tags": ["artfight"]
+},
+{
+  "src": "/portfolio/Images/Galerie/AF_Prim(02.07.21).png",
+  "date": "2021-07-02",
+  "title": "Prim",
+  "perso": [],
+  "tags": ["artfight"]
+},
+{
+  "src": "/portfolio/Images/Galerie/AF_Ule3(13.07.21).png",
+  "date": "2021-07-13",
+  "title": "Ule",
+  "perso": [],
+  "tags": ["artfight"]
+},
+{
+  "src": "/portfolio/Images/Galerie/AF_Zoey(02.07.21).png",
+  "date": "2021-07-02",
+  "title": "Zoey",
+  "perso": [],
+  "tags": ["artfight"]
+},
+{
+  "src": "/portfolio/Images/Galerie/Armantiportrait(18.03.21).png",
+  "date": "2021-03-18",
+  "title": "Portrait Armanti",
+  "perso": ["armanti"]
+},
+{
+  "src": "/portfolio/Images/Galerie/Date_kastor-sila.png",
+  "date": "2021-06-20",
+  "title": "Date Kastor & Sila",
+  "perso": ["kastor", "sila"]
+},
+{
+  "src": "/portfolio/Images/Galerie/Flodeis(09.07.21).png",
+  "date": "2021-07-09",
+  "title": "Flodeis",
+  "perso": ["flodeis"]
+},
+{
+  "src": "/portfolio/Images/Galerie/Flodeis(10.07.21).png",
+  "date": "2021-07-10",
+  "title": "Flodeis",
+  "perso": ["flodeis"]
+},
+{
+  "src": "/portfolio/Images/Galerie/Flodeisportrait(09.07.21).png",
+  "date": "2021-07-09",
+  "title": "Portrait Flodeis",
+  "perso": ["flodeis"]
+},
+{
+  "src": "/portfolio/Images/Galerie/Hero(10.07.21).png",
+  "date": "2021-07-10",
+  "title": "Hero",
+  "perso": []
+},
+{
+  "src": "/portfolio/Images/Galerie/Hyacinthe&Noah(24.07.21).png",
+  "date": "2021-07-24",
+  "title": "Hyacinthe & Noah",
+  "perso": ["hyacinthe", "noah"]
+},
+{
+  "src": "/portfolio/Images/Galerie/Hyacinthe(24.07.21).png",
+  "date": "2021-07-24",
+  "title": "Hyacinthe",
+  "perso": ["hyacinthe"]
+},
+{
+  "src": "/portfolio/Images/Galerie/Ilian&Stella2(10.07.21).png",
+  "date": "2021-07-10",
+  "title": "Ilian & Stella",
+  "perso": ["ilian", "stella"]
+},
+{
+  "src": "/portfolio/Images/Galerie/IMG_20210716_132651_480.jpg",
+  "date": "2021-07-16",
+  "title": "IMG_20210716_132651_480",
+  "perso": []
+}
 ]

@@ -10,7 +10,6 @@ body {
   background-size: 1000px;
 }
 header {
-  background: #1F1F1F;
 }
   
 
@@ -317,4 +316,14 @@ header {
   margin-left: auto; 
   font-size: 12px;
   letter-spacing: 2px;
+}
+
+.character-playlist {
+    width: 1000px;
+    margin: 40px auto;
+}
+
+.character-playlist iframe {
+    width: 100%;
+    display: block;
 }
