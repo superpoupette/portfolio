@@ -100,7 +100,7 @@ fetch("galerie.json")
         </defs>
 
         <image 
-          href="${img.src}"
+          href="${img.thumbnail || img.src}"
           width="1000"
           height="1000"
           clip-path="url(#fleurClip-${index})"

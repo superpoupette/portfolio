@@ -32,10 +32,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     data.forEach(item => {
         const img = document.createElement("img");
 
-        img.src = item.src;
+        img.src = item.thumbnail || item.src;
+        img.dataset.full = item.src;
         img.dataset.date = item.date;
         img.dataset.title = item.title;
         img.loading = "lazy"; 
+        img.decoding = "async";
         img.dataset.perso = (item.perso || []).join(",");
         img.dataset.tags = (item.tags || []).join(",");
 
@@ -112,6 +114,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const tagValue = selectTag.value;
         const persoValue = selectPerso.value;
 
+        popupImg.loading = "eager";
         images.forEach(img => {
             const annee = new Date(img.dataset.date).getFullYear();
 
@@ -144,7 +147,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         img.addEventListener("click", () => {
             popup.classList.remove("hidden");
 
-            popupImg.src = img.src;
+            popupImg.src = img.dataset.full;
             popupTitle.textContent = img.dataset.title;
 
             const dateObj = new Date(img.dataset.date);
