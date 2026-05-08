@@ -143,49 +143,49 @@ document.addEventListener("DOMContentLoaded", async () => {
     // =========================
     // 🖱️ POPUP
     // =========================
-    images.forEach(img => {
-        img.addEventListener("click", () => {
-            popup.classList.remove("hidden");
+    img.addEventListener("click", () => {
+    popup.classList.remove("hidden");
 
-            popupImg.src = img.dataset.full;
-            popupTitle.textContent = img.dataset.title;
+    popupImg.removeAttribute("src");
+    popupImg.src = img.dataset.full || img.src;
 
-            const dateObj = new Date(img.dataset.date);
+    popupTitle.textContent = img.dataset.title;
 
-            popupDate.textContent = dateObj.toLocaleDateString("fr-FR", {
-                day: "numeric",
-                month: "long",
-                year: "numeric"
-            });
+    const dateObj = new Date(img.dataset.date);
 
-            // TAGS
-            popupTags.innerHTML = "";
-
-            const allTags = [
-                ...(img.dataset.tags
-                    ? img.dataset.tags.split(",").map(t => t.trim())
-                    : []),
-
-                ...(img.dataset.perso
-                    ? img.dataset.perso.split(",").map(p => p.trim())
-                    : [])
-            ];
-
-            const uniqueTags = [...new Set(allTags)];
-
-            uniqueTags.forEach(tag => {
-                const span = document.createElement("span");
-                span.textContent = tag;
-
-                const color = stringToColor(tag);
-
-                span.style.backgroundColor = lightenColor(color, 70);
-                span.style.color = color;
-
-                popupTags.appendChild(span);
-            });
-        });
+    popupDate.textContent = dateObj.toLocaleDateString("fr-FR", {
+        day: "numeric",
+        month: "long",
+        year: "numeric"
     });
+
+    // TAGS
+    popupTags.innerHTML = "";
+
+    const allTags = [
+        ...(img.dataset.tags
+            ? img.dataset.tags.split(",").map(t => t.trim())
+            : []),
+
+        ...(img.dataset.perso
+            ? img.dataset.perso.split(",").map(p => p.trim())
+            : [])
+    ];
+
+    const uniqueTags = [...new Set(allTags)];
+
+    uniqueTags.forEach(tag => {
+        const span = document.createElement("span");
+        span.textContent = tag;
+
+        const color = stringToColor(tag);
+
+        span.style.backgroundColor = lightenColor(color, 70);
+        span.style.color = color;
+
+        popupTags.appendChild(span);
+    });
+});
 
     // =========================
     // ❌ FERMETURE POPUP
