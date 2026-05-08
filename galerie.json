@@ -373,12 +373,6 @@
   "tags": ["artfight"]
 },
 {
-  "src": "/portfolio/Images/Galerie/Armantiportrait(18.03.21).png",
-  "date": "2021-03-18",
-  "title": "Portrait Armanti",
-  "perso": ["armanti"]
-},
-{
   "src": "/portfolio/Images/Galerie/Date_kastor-sila.png",
   "date": "2021-06-20",
   "title": "Date Kastor & Sila",
@@ -394,12 +388,6 @@
   "src": "/portfolio/Images/Galerie/Flodeis(10.07.21).png",
   "date": "2021-07-10",
   "title": "Flodeis",
-  "perso": ["flodeis"]
-},
-{
-  "src": "/portfolio/Images/Galerie/Flodeisportrait(09.07.21).png",
-  "date": "2021-07-09",
-  "title": "Portrait Flodeis",
   "perso": ["flodeis"]
 },
 {
