@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
+
     const galerie = document.querySelector(".galerie");
     const selectAnnee = document.getElementById("filtre-annee");
     const selectPerso = document.getElementById("filtre-perso");
@@ -14,7 +15,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!popupTags) {
         popupTags = document.createElement("div");
         popupTags.id = "popup-tags";
-        document.querySelector(".popup-info").appendChild(popupTags);
+
+        const popupInfo = document.querySelector(".popup-info");
+
+        if (popupInfo) {
+            popupInfo.appendChild(popupTags);
+        }
     }
 
     // =========================
@@ -22,6 +28,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // =========================
     const response = await fetch("galerie.json");
     const data = await response.json();
+
     galerie.innerHTML = "";
 
     // =========================
@@ -30,23 +37,26 @@ document.addEventListener("DOMContentLoaded", async () => {
     const images = [];
 
     data.forEach(item => {
+
         const img = document.createElement("img");
 
+        // thumbnail dans la galerie
         img.src = item.thumbnail || item.src;
+
+        // image full pour popup
         img.dataset.full = item.src;
-        img.dataset.date = item.date;
-        img.dataset.title = item.title;
-        img.loading = "lazy"; 
+
+        img.dataset.date = item.date || "";
+        img.dataset.title = item.title || "";
+
+        img.loading = "lazy";
         img.decoding = "async";
+
         img.dataset.perso = (item.perso || []).join(",");
         img.dataset.tags = (item.tags || []).join(",");
 
-        // ✅ 👉 CORRECTION ICI (cadrage)
-        if (item.pos) {
-            img.dataset.pos = item.pos;
-        } else {
-            img.dataset.pos = "center"; // fallback propre
-        }
+        // position crop
+        img.dataset.pos = item.pos || "center";
 
         galerie.appendChild(img);
         images.push(img);
@@ -55,20 +65,30 @@ document.addEventListener("DOMContentLoaded", async () => {
     // =========================
     // 📅 TRI PAR DATE
     // =========================
-    images.sort((a, b) => new Date(b.dataset.date) - new Date(a.dataset.date));
+    images.sort((a, b) => {
+        return new Date(b.dataset.date) - new Date(a.dataset.date);
+    });
+
     images.forEach(img => galerie.appendChild(img));
 
     // =========================
     // 📅 ANNÉES
     // =========================
     const annees = [...new Set(
-        images.map(img => new Date(img.dataset.date).getFullYear())
+        images.map(img => {
+            return new Date(img.dataset.date).getFullYear();
+        })
     )].sort((a, b) => b - a);
 
     annees.forEach(annee => {
+
+        if (!annee || isNaN(annee)) return;
+
         const option = document.createElement("option");
+
         option.value = annee;
         option.textContent = annee;
+
         selectAnnee.appendChild(option);
     });
 
@@ -77,15 +97,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     // =========================
     const persos = [...new Set(
         images.flatMap(img => {
+
             if (!img.dataset.perso) return [];
-            return img.dataset.perso.split(",").map(p => p.trim());
+
+            return img.dataset.perso
+                .split(",")
+                .map(p => p.trim());
+
         })
     )].filter(p => p !== "");
 
     persos.forEach(perso => {
+
         const option = document.createElement("option");
+
         option.value = perso;
         option.textContent = perso;
+
         selectPerso.appendChild(option);
     });
 
@@ -94,15 +122,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     // =========================
     const tags = [...new Set(
         images.flatMap(img => {
+
             if (!img.dataset.tags) return [];
-            return img.dataset.tags.split(",").map(t => t.trim());
+
+            return img.dataset.tags
+                .split(",")
+                .map(t => t.trim());
+
         })
     )].filter(t => t !== "");
 
     tags.forEach(tag => {
+
         const option = document.createElement("option");
+
         option.value = tag;
         option.textContent = tag;
+
         selectTag.appendChild(option);
     });
 
@@ -110,12 +146,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     // 🔎 FILTRES
     // =========================
     function filtrer() {
+
         const anneeValue = selectAnnee.value;
         const tagValue = selectTag.value;
         const persoValue = selectPerso.value;
 
-        popupImg.loading = "eager";
         images.forEach(img => {
+
             const annee = new Date(img.dataset.date).getFullYear();
 
             const imgTags = img.dataset.tags
@@ -126,73 +163,104 @@ document.addEventListener("DOMContentLoaded", async () => {
                 ? img.dataset.perso.split(",").map(p => p.trim())
                 : [];
 
-            const matchAnnee = (anneeValue === "all" || annee == anneeValue);
-            const matchTag = (tagValue === "all" || imgTags.includes(tagValue));
-            const matchPerso = (persoValue === "all" || imgPersos.includes(persoValue));
+            const matchAnnee =
+                (anneeValue === "all" || annee == anneeValue);
 
-            img.style.display = (matchAnnee && matchTag && matchPerso)
-                ? "block"
-                : "none";
+            const matchTag =
+                (tagValue === "all" || imgTags.includes(tagValue));
+
+            const matchPerso =
+                (persoValue === "all" || imgPersos.includes(persoValue));
+
+            img.style.display =
+                (matchAnnee && matchTag && matchPerso)
+                    ? "block"
+                    : "none";
         });
     }
 
-    selectAnnee.addEventListener("change", filtrer);
-    selectPerso.addEventListener("change", filtrer);
-    selectTag.addEventListener("change", filtrer);
+    selectAnnee?.addEventListener("change", filtrer);
+    selectPerso?.addEventListener("change", filtrer);
+    selectTag?.addEventListener("change", filtrer);
 
     // =========================
     // 🖱️ POPUP
     // =========================
-    img.addEventListener("click", () => {
-    popup.classList.remove("hidden");
+    images.forEach(img => {
 
-    popupImg.removeAttribute("src");
-    popupImg.src = img.dataset.full || img.src;
+        img.addEventListener("click", () => {
 
-    popupTitle.textContent = img.dataset.title;
+            popup.classList.remove("hidden");
 
-    const dateObj = new Date(img.dataset.date);
+            // reset
+            popupImg.removeAttribute("src");
 
-    popupDate.textContent = dateObj.toLocaleDateString("fr-FR", {
-        day: "numeric",
-        month: "long",
-        year: "numeric"
+            // full image
+            popupImg.src = img.dataset.full || img.src;
+
+            popupTitle.textContent = img.dataset.title || "";
+
+            const dateObj = new Date(img.dataset.date);
+
+            if (!isNaN(dateObj)) {
+
+                popupDate.textContent = dateObj.toLocaleDateString("fr-FR", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric"
+                });
+
+            } else {
+
+                popupDate.textContent = "";
+            }
+
+            // =========================
+            // 🏷️ TAGS POPUP
+            // =========================
+            popupTags.innerHTML = "";
+
+            const allTags = [
+
+                ...(img.dataset.tags
+                    ? img.dataset.tags.split(",").map(t => t.trim())
+                    : []),
+
+                ...(img.dataset.perso
+                    ? img.dataset.perso.split(",").map(p => p.trim())
+                    : [])
+            ];
+
+            const uniqueTags = [...new Set(allTags)];
+
+            uniqueTags.forEach(tag => {
+
+                if (!tag) return;
+
+                const span = document.createElement("span");
+
+                span.textContent = tag;
+
+                const color = stringToColor(tag);
+
+                span.style.backgroundColor = lightenColor(color, 70);
+                span.style.color = color;
+
+                popupTags.appendChild(span);
+            });
+        });
     });
-
-    // TAGS
-    popupTags.innerHTML = "";
-
-    const allTags = [
-        ...(img.dataset.tags
-            ? img.dataset.tags.split(",").map(t => t.trim())
-            : []),
-
-        ...(img.dataset.perso
-            ? img.dataset.perso.split(",").map(p => p.trim())
-            : [])
-    ];
-
-    const uniqueTags = [...new Set(allTags)];
-
-    uniqueTags.forEach(tag => {
-        const span = document.createElement("span");
-        span.textContent = tag;
-
-        const color = stringToColor(tag);
-
-        span.style.backgroundColor = lightenColor(color, 70);
-        span.style.color = color;
-
-        popupTags.appendChild(span);
-    });
-});
 
     // =========================
     // ❌ FERMETURE POPUP
     // =========================
     popup.addEventListener("click", (e) => {
+
         if (e.target === popup) {
+
             popup.classList.add("hidden");
+
+            popupImg.removeAttribute("src");
         }
     });
 
@@ -200,20 +268,28 @@ document.addEventListener("DOMContentLoaded", async () => {
     // 🎨 COULEURS
     // =========================
     function stringToColor(str) {
+
         let hash = 0;
 
         for (let i = 0; i < str.length; i++) {
+
             hash = str.charCodeAt(i) + ((hash << 5) - hash);
         }
 
         const h = hash % 360;
+
         return `hsl(${h}, 60%, 45%)`;
     }
 
     function lightenColor(hsl, percent) {
+
         return hsl.replace(/(\d+)%\)$/, (match, lightness) => {
-            const newLight = Math.min(95, parseInt(lightness) + percent);
+
+            const newLight =
+                Math.min(95, parseInt(lightness) + percent);
+
             return `${newLight}%)`;
         });
     }
+
 });
