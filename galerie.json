@@ -3,33 +3,24 @@
     "src": "/portfolio/Images/Galerie/Full/1.bateleur.png",
     "date": "2022-09-18",
     "title": "Le Bateleur",
-    "tags": [
-      "tarot"
-    ],
+    "tags": ["tarot"],
     "perso": [],
-    "pos": "bottom",
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/1.bateleur.png"
   },
   {
     "src": "/portfolio/Images/Galerie/Full/10.rouefortune.png",
     "date": "2022-10-11",
     "title": "La Roue de Fortune",
-    "tags": [
-      "tarot"
-    ],
+    "tags": ["tarot"],
     "perso": [],
-    "pos": "bottom",
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/10.rouefortune.png"
   },
   {
     "src": "/portfolio/Images/Galerie/Full/2.Papesse.png",
     "title": "La Papesse",
     "date": "2022-10-02",
-    "tags": [
-      "tarot"
-    ],
+    "tags": ["tarot"],
     "perso": [],
-    "pos": "bottom",
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/2.Papesse.png"
   },
   {
@@ -47,5 +38,599 @@
     "tags": [],
     "perso": [],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/2023albumcover2.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/5.le pape.png",
+    "date": "2022-10-06",
+    "title": "Le Pape",
+    "tags": ["tarot"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/5.le pape.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/6.les amoureux.png",
+    "date": "2022-10-06",
+    "title": "Les Amoureux",
+    "tags": ["tarot"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/6.les amoureux.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/9.lhermite.png",
+    "date": "2022-10-09",
+    "title": "L'Hermite",
+    "tags": ["tarot"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/9.lhermite.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Albrije(26.03.19).png",
+    "date": "2019-03-26",
+    "title": "Albrije",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Albrije(26.03.19).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Alma&Paga(21.07.22).png",
+    "date": "2022-07-21",
+    "title": "Alma & Paga",
+    "perso": ["paga"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Alma&Paga(21.07.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Armanti(06.03.26).png",
+    "date": "2026-03-06",
+    "title": "Armanti",
+    "perso": ["armanti"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Armanti(06.03.26).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Armanti(18.03.21).png",
+    "date": "2021-03-18",
+    "title": "Armanti",
+    "tags": [],
+    "perso": ["armanti"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Armanti(18.03.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Armanti.png",
+    "date": "2019-11-18",
+    "title": "Création d'Armanti",
+    "perso": ["armanti"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Armanti.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/ATC.Armanti(14.11.20).png",
+    "date": "2020-11-14",
+    "title": "ATC Armanti",
+    "perso": ["armanti"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/ATC.Armanti(14.11.20).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/ATC_armantihiver.png",
+    "title": "ATC Armanti hiver",
+    "date": "2020-11-03",
+    "perso": ["armanti"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/ATC_armantihiver.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Aurore(22.06.22).png",
+    "date": "2022-06-22",
+    "title": "Aurore",
+    "tags": ["artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Aurore(22.06.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Brunelle(17.06.21).png",
+    "title": "Brunelle",
+    "perso": ["brunelle"],
+    "date": "2021-06-17",
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Brunelle(17.06.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/charlie.png",
+    "date": "2024-02-17",
+    "title": "Charlie et Vaggie",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/charlie.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Crocus(20.03.22).png",
+    "date": "2022-03-20",
+    "title": "Crocus",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Crocus(20.03.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Danse.Maeve&Kaoda(02.08.22).png",
+    "date": "2022-08-02",
+    "title": "Danse",
+    "tags": [],
+    "perso": ["maeve", "kaoda"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Danse.Maeve&Kaoda(02.08.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Fisheye(13.06.25).png",
+    "date": "2025-06-25",
+    "title": "Chilling in the toilet",
+    "perso": ["pollux", "victoria"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Fisheye(13.06.25).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Flodeis(11.07.21).png",
+    "date": "2021-07-11",
+    "title": "Miss you",
+    "tags": [],
+    "perso": ["flodeis"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Flodeis(11.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Flodeis&Vaar(27.07.21).png",
+    "date": "2021-07-27",
+    "title": "Lovers",
+    "tags": [],
+    "perso": ["flodeis", "vaar"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Flodeis&Vaar(27.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Gyulladt&Brunelle(19.06.21).png",
+    "title": "Mère & fille",
+    "perso": ["gyulladt", "brunelle"],
+    "date": "2021-06-19",
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Gyulladt&Brunelle(19.06.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/HumanVaar(25.07.22).png",
+    "date": "2022-07-25",
+    "title": "Human Vaar",
+    "perso": ["vaar"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/HumanVaar(25.07.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG20220407162040.jpg",
+    "title": "Etude de portraits",
+    "date": "2022-04-07",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG20220407162040.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20220215_134923.jpg",
+    "title": "Champignons",
+    "date": "2022-02-15",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220215_134923.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20220217_122250_785.jpg",
+    "title": "Champignons",
+    "date": "2022-02-17",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220217_122250_785.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20220302_112310.jpg",
+    "title": "Autoportrait",
+    "tags": ["watercolor"],
+    "date": "2022-03-02",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220302_112310.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20220312_165953.jpg",
+    "title": "Lanturn",
+    "date": "2022-03-12",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220312_165953.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20220406_122214.jpg",
+    "title": "Portraits",
+    "date": "2022-04-06",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220406_122214.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20230311_155257.jpg",
+    "title": "IMG_20230311_155257",
+    "date": "2023-03-11",
+    "perso": [],
+    "tags": ["watercolor"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20230311_155257.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/julia FOND.png",
+    "title": "Super Julia #Touteam",
+    "date": "2025-09-10",
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/julia FOND.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Jukky(05.07.25).png",
+    "date": "2025-07-05",
+    "title": "Jukky",
+    "tags": ["artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Jukky(05.07.25).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/JuliaStarterPack(13.04.25).png",
+    "date": "2025-04-03",
+    "title": "Julia StarterPack",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/JuliaStarterPack(13.04.25).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/kastor(20.01.23).png",
+    "date": "2023-01-20",
+    "title": "Kastor",
+    "tags": [],
+    "perso": ["kastor"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/kastor(20.01.23).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/MagicalStar(29.07.17).jpg",
+    "date": "2017-07-29",
+    "title": "Magical Star",
+    "tags": ["watercolor"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/MagicalStar(29.07.17).jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Marlin(05.05.22).png",
+    "date": "2022-05-05",
+    "title": "Marlène et son vieux clebs",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Marlin(05.05.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Mermay4(21.05.22).png",
+    "title": "Glow",
+    "tags": ["mermay"],
+    "date": "2022-05-21",
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Mermay4(21.05.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/MinnieHer(21.01.25).png",
+    "date": "2025-01-21",
+    "title": "HER - Minnie",
+    "tags": ["album cover"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/MinnieHer(21.01.25).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Nynna(17.03.21).png",
+    "title": "Nynna",
+    "perso": ["gyulladt"],
+    "date": "2021-03-21",
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Nynna(17.03.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/orman.png",
+    "date": "2020-03-26",
+    "title": "Orman",
+    "tags": ["watercolor"],
+    "perso": ["armanti"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/orman.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/SabrinaEmailCantSend(23.01.25).png",
+    "date": "2025-01-23",
+    "title": "Emails I can't send - Sabrina Carpenter",
+    "tags": ["album cover"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/SabrinaEmailCantSend(23.01.25).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/selfie1(12.01.23).png",
+    "title": "Party night",
+    "date": "2023-01-12",
+    "perso": ["vaar", "flodeis"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/selfie1(12.01.23).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AF_Bibi(02.07.21).png",
+    "date": "2021-07-02",
+    "title": "Bibi",
+    "perso": [],
+    "tags": ["artfight"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AF_Bibi(02.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AF_Buenia(01.07.21).png",
+    "date": "2021-07-01",
+    "title": "Buenia",
+    "perso": [],
+    "tags": ["artfight"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AF_Buenia(01.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AF_Camille2(09.07.21).png",
+    "date": "2021-07-09",
+    "title": "Camille",
+    "perso": [],
+    "tags": ["artfight"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AF_Camille2(09.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AF_Egg4(02.07.21).png",
+    "date": "2021-07-02",
+    "title": "Egg",
+    "perso": [],
+    "tags": ["artfight"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AF_Egg4(02.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AF_Morrigan(02.07.21).png",
+    "date": "2021-07-02",
+    "title": "Morrigan",
+    "perso": [],
+    "tags": ["artfight"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AF_Morrigan(02.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AF_Nate2(03.07.21).png",
+    "date": "2021-07-03",
+    "title": "Nate",
+    "perso": [],
+    "tags": ["artfight"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AF_Nate2(03.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AF_Nessedel(09.07.21).png",
+    "date": "2021-07-09",
+    "title": "Nessedel",
+    "perso": [],
+    "tags": ["artfight"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AF_Nessedel(09.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AF_Prim(02.07.21).png",
+    "date": "2021-07-02",
+    "title": "Prim",
+    "perso": [],
+    "tags": ["artfight"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AF_Prim(02.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AF_Ule3(13.07.21).png",
+    "date": "2021-07-13",
+    "title": "Ule",
+    "perso": [],
+    "tags": ["artfight"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AF_Ule3(13.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AF_Zoey(02.07.21).png",
+    "date": "2021-07-02",
+    "title": "Zoey",
+    "perso": [],
+    "tags": ["artfight"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AF_Zoey(02.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Date_kastor-sila.png",
+    "date": "2021-06-20",
+    "title": "Date Kastor & Sila",
+    "perso": ["kastor", "sila"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Date_kastor-sila.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Flodeis(09.07.21).png",
+    "date": "2021-07-09",
+    "title": "Flodeis",
+    "perso": ["flodeis"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Flodeis(09.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Flodeis(10.07.21).png",
+    "date": "2021-07-10",
+    "title": "Flodeis",
+    "perso": ["flodeis"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Flodeis(10.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Hero(10.07.21).png",
+    "date": "2021-07-10",
+    "title": "Holding Out for a Hero",
+    "perso": ["vaar"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Hero(10.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Hyacinthe&Noah(24.07.21).png",
+    "date": "2021-07-24",
+    "title": "Hyacinthe & Noah",
+    "perso": ["hyacinthe", "noah"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Hyacinthe&Noah(24.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Hyacinthe(24.07.21).png",
+    "date": "2021-07-24",
+    "title": "Hyacinthe",
+    "perso": ["hyacinthe"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Hyacinthe(24.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Ilian&Stella2(10.07.21).png",
+    "date": "2021-07-10",
+    "title": "Ilian & Stella",
+    "perso": ["ilian", "stellaria"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Ilian&Stella2(10.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20210716_132651_480.jpg",
+    "date": "2021-07-16",
+    "title": "Lovers",
+    "perso": ["sila", "kastor"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20210716_132651_480.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Lapinmagique(29.07.21).png",
+    "date": "2021-07-29",
+    "title": "Lapin magique",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Lapinmagique(29.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Lesbians2(14.10.22).png",
+    "date": "2022-10-14",
+    "title": "Lesbians",
+    "perso": ["va'ar","flodeis"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Lesbians2(14.10.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/madoka(23.06.17).png",
+    "date": "2017-06-23",
+    "title": "Madoka",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/madoka(23.06.17).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Mercure(14.03.21).png",
+    "date": "2021-03-14",
+    "title": "Mercure",
+    "perso": ["mercure"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Mercure(14.03.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Mermay1(03.06.22).png",
+    "date": "2022-06-03",
+    "title": "Mermay",
+    "tags": ["mermay"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Mermay1(03.06.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Mermay2(21.05.22).png",
+    "date": "2022-05-21",
+    "title": "Mermay",
+    "tags": ["mermay"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Mermay2(21.05.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Mermay3(21.05.22).png",
+    "date": "2022-05-21",
+    "title": "Mermay",
+    "tags": ["mermay"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Mermay3(21.05.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Mermay5(01.06.22).png",
+    "date": "2022-06-01",
+    "title": "Zebrene",
+    "tags": ["mermay"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Mermay5(01.06.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Mermay6(02.06.22).png",
+    "date": "2022-06-02",
+    "title": "Mermay",
+    "tags": ["mermay"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Mermay6(02.06.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Mermay16(02.06.22).png",
+    "date": "2022-06-02",
+    "title": "Mermay",
+    "tags": ["mermay"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Mermay16(02.06.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Nynna&Mercure(02.02.21).png",
+    "date": "2021-02-02",
+    "title": "Nynna & Mercure",
+    "perso": ["gyulladt", "mercure"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Nynna&Mercure(02.02.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/PhotoClasse(09.09.22).png",
+    "date": "2022-09-09",
+    "title": "Photo de classe",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/PhotoClasse(09.09.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Pollux(28.03.21).png",
+    "date": "2021-03-28",
+    "title": "Pollux",
+    "perso": ["pollux"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Pollux(28.03.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Poupée(25.06.17).png",
+    "date": "2017-06-25",
+    "title": "Poupée",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Poupée(25.06.17).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/resario(15.01.23).png",
+    "date": "2023-01-15",
+    "title": "Resario",
+    "perso": ["resario"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/resario(15.01.23).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Sila(13.03.21).png",
+    "date": "2021-03-13",
+    "title": "Sila",
+    "perso": ["sila"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Sila(13.03.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/SilaStarterPack(13.04.25).png",
+    "date": "2025-04-13",
+    "title": "Sila Starter Pack",
+    "perso": ["sila"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/SilaStarterPack(13.04.25).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Sorciere(29.07.17).jpg",
+    "date": "2017-07-29",
+    "title": "Sorcière",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Sorciere(29.07.17).jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Stargirl(20.07.21).png",
+    "date": "2021-07-20",
+    "title": "Stargirl",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Stargirl(20.07.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Stella.cirque(29.07.22).png",
+    "date": "2022-07-29",
+    "title": "Stella Cirque",
+    "perso": ["stellaria"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Stella.cirque(29.07.22).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Stellaria(25.03.21).png",
+    "date": "2021-03-25",
+    "title": "Stellaria",
+    "perso": ["stellaria"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Stellaria(25.03.21).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/yako(20.01.23).png",
+    "date": "2023-01-20",
+    "title": "Yako",
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/yako(20.01.23).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Yin&Yang(10.07.17).png",
+    "date": "2017-07-10",
+    "title": "Yin & Yang",
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Yin&Yang(10.07.17).png"
   }
 ]
