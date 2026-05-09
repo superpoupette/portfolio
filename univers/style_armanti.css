@@ -57,3 +57,11 @@
     display: block;
     border-radius: 0;
 }
+
+header {
+    color:#184740;
+}
+
+nav a {
+    color:#184740;
+}

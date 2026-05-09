@@ -136,6 +136,13 @@ header {
   align-items: center;
   justify-content: center;
 }
+.spotify-btn {
+  text-decoration: none;
+}
+.spotify-btn i {
+  color: #39343B;
+  font-size: 14px;
+}
 
 
 /* RIGHT */

@@ -150,6 +150,12 @@
         <button class="character-card__info-tab" data-info="info-stats">
           <i class="fa-solid fa-chart-simple"></i>
         </button>
+        <a class="character-card__info-tab spotify-btn"
+             href="https://open.spotify.com/playlist/65Tz5hnCJlA0DgnmmuMpcJ?si=ef2ff9f55d264d07"
+             target="_blank"
+             rel="noopener noreferrer">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
       </div>
 
     </aside>
@@ -255,20 +261,6 @@
   </footer>
   </div>
 
-          <div class="character-playlist">
-  <iframe
-    data-testid="embed-iframe"
-    style="border-radius:12px"
-    src="https://open.spotify.com/embed/playlist/65Tz5hnCJlA0DgnmmuMpcJ?utm_source=generator&theme=0"
-    width="100%"
-    height="152"
-    frameborder="0"
-    allowfullscreen=""
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy">
-  </iframe>
-</div>
-
 <div class="character-card__gallery gallery--character"></div>
 
 <!-- JS -->
@@ -286,7 +278,7 @@ tabs.forEach(tab => {
   });
 });
 
-const infoTabs = document.querySelectorAll(".character-card__info-tab");
+const infoTabs = document.querySelectorAll(".character-card__info-tab:not(.spotify-btn)");
 const infoContents = document.querySelectorAll(".character-card__info-content");
 
 infoTabs.forEach(tab => {

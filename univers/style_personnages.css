@@ -150,6 +150,14 @@ header {
   background: #8e6fb3;
 }
 
+.spotify-btn {
+  text-decoration: none;
+}
+.spotify-btn i {
+  color: #white;
+  font-size: 14px;
+}
+
 /* RIGHT */
 .character-card__right {
   width: 70%;
