@@ -30,6 +30,10 @@ main {
     background-image: url("Images/Jeux/background_cluedo.jpg");
 }
 
+.section-cards {
+    background-image: url("Images/Jeux/background_cartes.png");
+}
+
 .bloc h2 {
     font-size: 30px;
     font-family: 'Limelight', sans-serif;
@@ -46,7 +50,7 @@ main {
 ========================= */
 
 .texte {
-    max-width: 500px;
+    max-width: 400px;
     color: white;
 }
 
@@ -55,13 +59,37 @@ main {
 ========================= */
 
 .section-cards {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     padding: 0 80px;
     box-sizing: border-box;
+    position: relative;
+}
+.content-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    transform: translateX(150px); 
+}
+
+.deco-image {
+    position: absolute;
+    bottom: 0; 
+    left: 10px;    
+    width: 450px;  
+    height: auto;
+    z-index: 0;   
+    pointer-events: none; 
+}
+
+.section-cards h2
+{
+    color: #D62068;
+}
+.section-cards p {
+    color: #781E41;
 }
 
 /* =========================
