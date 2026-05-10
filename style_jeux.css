@@ -7,7 +7,7 @@ main {
 }
 
 /* =========================
-   GLOBAL
+   STRUCTURE GLOBALE
 ========================= */
 
 .bloc {
@@ -59,56 +59,35 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
     padding: 0 80px;
     box-sizing: border-box;
 }
 
 /* =========================
-   DECK
-========================= */
-
-.deck-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-#deck {
-    width: 180px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-#deck:hover {
-    transform: scale(1.05);
-}
-
-.deck-bg {
-    position: absolute;
-    top: 400px;
-}
-
-/* =========================
-   MAIN DE CARTES (FIX IMPORTANT)
+   MAIN DE CARTES
 ========================= */
 
 .cartes {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 140px;
 }
 
-/* wrapper carte */
+/* cartes */
 .card {
     width: 170px;
     height: 260px;
     position: relative;
+
+    margin-left: -30px;
 }
 
-/* image */
+.card:first-child {
+    margin-left: 0;
+}
+
 .card img {
     width: 100%;
     height: 100%;
@@ -117,17 +96,37 @@ main {
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* overlap */
-.card {
-    margin-left: -30px;
+.cartes-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
 }
 
-.card:first-child {
-    margin-left: 0;
+/* zone cartes */
+.cartes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deck-crop {
+    width: 180px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+    margin-top: 50px; /* rapproche du paquet */
+}
+
+/* image du dos */
+.deck-back {
+    width: 180px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* =========================
-   MAIN DE JOUEUR (IMPORTANT FIX)
+   EFFET MAIN DE JOUEUR
 ========================= */
 
 .card:nth-child(1) {
@@ -136,29 +135,10 @@ main {
 
 .card:nth-child(2) {
     transform: rotate(0deg) translateY(-15px);
-    z-index: 3;
+    z-index: 2;
 }
 
 .card:nth-child(3) {
     transform: rotate(18deg) translateY(8px);
-}
-
-
-/* =========================
-   ANIMATION DEAL
-========================= */
-
-.card img.deal {
-    animation: deal 0.4s ease;
-}
-
-@keyframes deal {
-    from {
-        transform: translateY(-40px) scale(0.8);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-    }
+    z-index: 3;
 }

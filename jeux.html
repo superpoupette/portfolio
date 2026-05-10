@@ -46,15 +46,21 @@
         <p>Lorem ipsum dolor sit amet...</p>
     </div>
 
-    <div class="deck-container">
-        <img id="deck" src="Images/Jeux/Cartes/verso.png" alt="paquet de cartes">
+    <div class="cartes-wrapper">
 
-        <div class="cartes">
-            <div class="card"><img class="carte"></div>
-            <div class="card"><img class="carte"></div>
-            <div class="card"><img class="carte"></div>
-        </div>
+    <div class="cartes">
+        <div class="card"><img class="carte"></div>
+        <div class="card"><img class="carte"></div>
+        <div class="card"><img class="carte"></div>
     </div>
+
+    <!-- Dos du paquet sous les cartes -->
+    <div class="deck-crop">
+        <img class="deck-back" src="Images/Jeux/Cartes/verso.png" alt="dos du paquet">
+    </div>
+
+
+</div>
 
 </section>
 
@@ -63,42 +69,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const images = [];
 
-    for (let i = 1; i <= 21; i++) images.push(`Images/Jeux/Cartes/A${i}.png`);
-    for (let i = 1; i <= 8; i++) images.push(`Images/Jeux/Cartes/c${i}.png`);
-    for (let i = 9; i <= 16; i++) images.push(`Images/Jeux/Cartes/C${i}.png`);
-    for (let i = 1; i <= 4; i++) images.push(`Images/Jeux/Cartes/E${i}.png`);
+    // A1 → A21
+    for (let i = 1; i <= 21; i++) {
+        images.push(`Images/Jeux/Cartes/A${i}.png`);
+    }
 
+    // c1 → c8
+    for (let i = 1; i <= 8; i++) {
+        images.push(`Images/Jeux/Cartes/c${i}.png`);
+    }
+
+    // C9 → C16
+    for (let i = 9; i <= 16; i++) {
+        images.push(`Images/Jeux/Cartes/C${i}.png`);
+    }
+
+    // E1 → E4
+    for (let i = 1; i <= 4; i++) {
+        images.push(`Images/Jeux/Cartes/E${i}.png`);
+    }
+
+    // K / P / t
     for (let i = 1; i <= 16; i++) {
         images.push(`Images/Jeux/Cartes/K${i}.png`);
         images.push(`Images/Jeux/Cartes/P${i}.png`);
         images.push(`Images/Jeux/Cartes/t${i}.png`);
     }
 
+    // bonus
     images.push(`Images/Jeux/Cartes/Bonus.png`);
 
-    const cards = document.querySelectorAll(".carte");
-    const deck = document.getElementById("deck");
+    const cartes = document.querySelectorAll(".carte");
 
-    function tirerMain() {
-
-        cards.forEach((img, index) => {
-
-            // reset animation propre
-            img.classList.remove("deal");
-            void img.offsetWidth;
-
-            const randomIndex = Math.floor(Math.random() * images.length);
-            img.src = images[randomIndex];
-
-            setTimeout(() => {
-                img.classList.add("deal");
-            }, index * 150);
-
-        });
-    }
-
-    tirerMain();
-    deck.addEventListener("click", tirerMain);
+    cartes.forEach(img => {
+        const randomIndex = Math.floor(Math.random() * images.length);
+        img.src = images[randomIndex];
+    });
 
 });
 </script>
