@@ -43,7 +43,9 @@
 
     <div class="texte">
         <h2>Jeu de carte/tarot</h2>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <p>Ce jeu est constitué des 52 cartes classiques divisées en 4 couleurs.<br>
+        Mais il contient également les 21 cartes de tarot, 2 jokers par couleurs et 4 jokers neutres, permettant de reproduire de nombreux jeux.<br><br>
+        Wizard : utiliser les 52 cartes ainsi que les 4 jokers sorciers (symbolisés par un Z) et les 4 jokers bouffons (symbolisés par un N)</p>
     </div>
 
     <div class="cartes-wrapper">
@@ -52,11 +54,12 @@
         <div class="card"><img class="carte"></div>
         <div class="card"><img class="carte"></div>
         <div class="card"><img class="carte"></div>
+        <div class="card"><img class="carte"></div>
     </div>
 
     <!-- Dos du paquet sous les cartes -->
     <div class="deck-crop">
-        <img class="deck-back" src="Images/Jeux/Cartes/verso.png" alt="dos du paquet">
+        <img class="deck-back" id="deck" src="Images/Jeux/Cartes/verso.png" alt="dos du paquet">
     </div>
 
 
@@ -64,46 +67,56 @@
 
 </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+<script>document.addEventListener("DOMContentLoaded", () => {
 
     const images = [];
 
-    // A1 → A21
     for (let i = 1; i <= 21; i++) {
         images.push(`Images/Jeux/Cartes/A${i}.png`);
     }
 
-    // c1 → c8
     for (let i = 1; i <= 8; i++) {
         images.push(`Images/Jeux/Cartes/c${i}.png`);
     }
 
-    // C9 → C16
     for (let i = 9; i <= 16; i++) {
         images.push(`Images/Jeux/Cartes/C${i}.png`);
     }
 
-    // E1 → E4
     for (let i = 1; i <= 4; i++) {
         images.push(`Images/Jeux/Cartes/E${i}.png`);
     }
 
-    // K / P / t
     for (let i = 1; i <= 16; i++) {
         images.push(`Images/Jeux/Cartes/K${i}.png`);
         images.push(`Images/Jeux/Cartes/P${i}.png`);
         images.push(`Images/Jeux/Cartes/t${i}.png`);
     }
 
-    // bonus
     images.push(`Images/Jeux/Cartes/Bonus.png`);
 
     const cartes = document.querySelectorAll(".carte");
+    const deck = document.getElementById("deck");
 
-    cartes.forEach(img => {
-        const randomIndex = Math.floor(Math.random() * images.length);
-        img.src = images[randomIndex];
+    function tirerCartes() {
+
+    const cartesArray = Array.from(cartes);
+
+    cartesArray.forEach((img, index) => {
+        setTimeout(() => {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            img.src = images[randomIndex];
+        }, index * 150); // 👉 décalage progressif
+    });
+
+}
+
+    // tirage initial
+    tirerCartes();
+
+    // clic sur le verso → nouveau tirage
+    deck.addEventListener("click", () => {
+        tirerCartes();
     });
 
 });
