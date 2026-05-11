@@ -79,14 +79,64 @@ main {
     justify-content: center;
 }
 
-.loup-image {
+.carte-container {
+    position: relative;
     width: 400px;
     height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loup-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin: 25px 0;
+
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    margin-bottom: 40px;
+}
+
+.symbole {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 24px;
+}
+
+/* haut */
+.top {
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* droite */
+.right {
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* bas */
+.bottom {
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* gauche */
+.left {
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* =========================
