@@ -54,6 +54,15 @@ main {
     color: white;
 }
 
+
+.section-loup h2
+{
+    color: #D62068;
+}
+.section-loup p {
+    color: #781E41;
+}
+
 /* =========================
    SECTION CARTES
 ========================= */
