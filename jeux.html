@@ -79,7 +79,12 @@
 
 </section>
 
-<script>document.addEventListener("DOMContentLoaded", () => {
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       CARTES TAROT
+    ========================= */
 
     const images = [];
 
@@ -92,7 +97,7 @@
     }
 
     for (let i = 1; i <= 16; i++) {
-		images.push(`Images/Jeux/Cartes/c${i}.png`);
+        images.push(`Images/Jeux/Cartes/c${i}.png`);
         images.push(`Images/Jeux/Cartes/K${i}.png`);
         images.push(`Images/Jeux/Cartes/P${i}.png`);
         images.push(`Images/Jeux/Cartes/t${i}.png`);
@@ -105,45 +110,57 @@
 
     function tirerCartes() {
 
-    const cartesArray = Array.from(cartes);
+        const cartesArray = Array.from(cartes);
 
-    cartesArray.forEach((img, index) => {
-        setTimeout(() => {
-            const randomIndex = Math.floor(Math.random() * images.length);
-            img.src = images[randomIndex];
-        }, index * 150); // 👉 décalage progressif
-    });
+        cartesArray.forEach((img, index) => {
 
-}
+            setTimeout(() => {
 
-    // tirage initial
+                const randomIndex = Math.floor(Math.random() * images.length);
+
+                img.src = images[randomIndex];
+
+            }, index * 150);
+
+        });
+
+    }
+
     tirerCartes();
 
-    // clic sur le verso → nouveau tirage
     deck.addEventListener("click", () => {
         tirerCartes();
     });
 
+    /* =========================
+       LOUPS-GAROUS
+    ========================= */
+
+    const image = document.getElementById("loupImage");
+
+    // image aléatoire au chargement
+    const randomLoup = Math.floor(Math.random() * 4) + 1;
+
+    image.src = `Images/Jeux/Loup/L${randomLoup}.png`;
+
+    document.querySelector(".top").addEventListener("click", () => {
+        image.src = "Images/Jeux/Loup/L1.png";
+    });
+
+    document.querySelector(".right").addEventListener("click", () => {
+        image.src = "Images/Jeux/Loup/L2.png";
+    });
+
+    document.querySelector(".bottom").addEventListener("click", () => {
+        image.src = "Images/Jeux/Loup/L3.png";
+    });
+
+    document.querySelector(".left").addEventListener("click", () => {
+        image.src = "Images/Jeux/Loup/L4.png";
+    });
+
 });
-	const image = document.getElementById("loupImage");
-
-		document.querySelector(".top").addEventListener("click", () => {
-		    image.src = "Images/Jeux/Loup/L1.png";
-		});
-		
-		document.querySelector(".right").addEventListener("click", () => {
-		    image.src = "Images/Jeux/Loup/L2.png";
-		});
-		
-		document.querySelector(".bottom").addEventListener("click", () => {
-		    image.src = "Images/Jeux/Loup/L3.png";
-		});
-		
-		document.querySelector(".left").addEventListener("click", () => {
-		    image.src = "Images/Jeux/Loup/L4.png";
-		});
 </script>
-
 </main>
 
 <footer></footer>
