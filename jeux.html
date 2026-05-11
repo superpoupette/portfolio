@@ -40,7 +40,13 @@
 </section>
 
 <section class="bloc section-loup">
-    <img class="loup-image" id="loupImage" alt="Illustration loup-garou">
+    <div class="carte-container">
+	    <button class="symbole top">☀</button>
+	    <button class="symbole right">☾</button>
+	    <button class="symbole bottom">✦</button>
+	    <button class="symbole left">✧</button>
+	    <img class="loup-image" id="loupImage">
+	</div>
 	<h2>Les Loups-garous de Thiercelieux - 2022</h2>
     <p>Redesign du jeu des Loups-garous de Thiercelieux avec les personnages de plusieurs extensions.</p>
 
@@ -119,11 +125,23 @@
     });
 
 });
-	const loupImage = document.getElementById("loupImage");
+	const image = document.getElementById("loupImage");
 
-const randomLoup = Math.floor(Math.random() * 4) + 1;
-
-loupImage.src = `Images/Jeux/Loup/L${randomLoup}.png`;
+		document.querySelector(".top").addEventListener("click", () => {
+		    image.src = "Images/Jeux/Loup/L1.png";
+		});
+		
+		document.querySelector(".right").addEventListener("click", () => {
+		    image.src = "Images/Jeux/Loup/L2.png";
+		});
+		
+		document.querySelector(".bottom").addEventListener("click", () => {
+		    image.src = "Images/Jeux/Loup/L3.png";
+		});
+		
+		document.querySelector(".left").addEventListener("click", () => {
+		    image.src = "Images/Jeux/Loup/L4.png";
+		});
 </script>
 
 </main>
