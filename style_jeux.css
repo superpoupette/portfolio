@@ -153,6 +153,16 @@ main {
     transform: translateY(-50%) scale(1.2);
 }
 
+.lunes-deco {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: auto;
+    pointer-events: none;
+    z-index: 2;
+}
 /* =========================
    SECTION CARTES
 ========================= */
