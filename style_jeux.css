@@ -69,17 +69,26 @@ main {
 
 .section-loup {
     background-color: #b1d7e8;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+
+    /* gros arrondi du haut */
+    border-top-left-radius: 50% 140px;
+    border-top-right-radius: 50% 140px;
+
+    overflow: hidden;
 }
 
 .carte-container {
     position: relative;
     width: 400px;
     height: 400px;
-
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,13 +164,18 @@ main {
 
 .lunes-deco {
     position: absolute;
-    top: -120px;
+
+    top: 20px;
     left: 50%;
+
     transform: translateX(-50%);
-    width: 220px;
+
+    width: 520px;
     height: auto;
-    pointer-events: none;
+
     z-index: 2;
+
+    pointer-events: none;
 }
 /* =========================
    SECTION CARTES
