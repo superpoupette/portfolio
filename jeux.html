@@ -40,8 +40,10 @@
 </section>
 
 <section class="bloc section-loup">
-    <h2>Les Loups-garous de Thiercelieux - 2022</h2></h2>
+    <img class="loup-image" id="loupImage" alt="Illustration loup-garou">
+	<h2>Les Loups-garous de Thiercelieux - 2022</h2>
     <p>Redesign du jeu des Loups-garous de Thiercelieux avec les personnages de plusieurs extensions.</p>
+
 </section>
 
 <section class="bloc section-cards">
@@ -117,6 +119,11 @@
     });
 
 });
+	const loupImage = document.getElementById("loupImage");
+
+const randomLoup = Math.floor(Math.random() * 4) + 1;
+
+loupImage.src = `Images/Jeux/Loup/L${randomLoup}.png`;
 </script>
 
 </main>
