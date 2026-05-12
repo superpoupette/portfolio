@@ -54,7 +54,7 @@
         <img class="similo-card side" id="similo5">
 
     </div>
-
+	<button id="nextSimilo" class="similo-button">➜</button>
     <p>Une sélection de cartes du jeu Similo.</p>
 
 </section>
@@ -154,9 +154,12 @@ document.addEventListener("DOMContentLoaded", () => {
     deck.addEventListener("click", () => {
         tirerCartes();
     });
-	    /* =========================
+	/* =========================
        SIMILO
     ========================= */
+
+    const totalSimilo = 9;
+
     const similoCards = [
         document.getElementById("similo1"),
         document.getElementById("similo2"),
@@ -165,15 +168,37 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("similo5")
     ];
 
+    const nextButton = document.getElementById("nextSimilo");
+
+    let currentStart = 1;
+
     function afficherSimilo() {
 
         similoCards.forEach((card, index) => {
 
-            // index + 1 => S1, S2, S3...
-            card.src = `Images/Jeux/Similo/S${index + 1}.png`;
+            let imageNumber = currentStart + index;
+
+            // boucle infinie
+            if (imageNumber > totalSimilo) {
+                imageNumber -= totalSimilo;
+            }
+
+            card.src = `Images/Jeux/Similo/S${imageNumber}.png`;
 
         });
     }
+
+    nextButton.addEventListener("click", () => {
+
+        currentStart++;
+
+        if (currentStart > totalSimilo) {
+            currentStart = 1;
+        }
+
+        afficherSimilo();
+
+    });
 
     afficherSimilo();
     /* =========================
