@@ -38,16 +38,26 @@
     <h2>CLUEDO - 2026</h2>
     <p>Lorem ipsum dolor sit amet...</p>
 </section>
-
+	
 <section class="bloc section-similo">
 
     <h2>SIMILO - 2023</h2>
 
-    <div class="similo-card-container">
-        <img id="similoImage" class="similo-card" alt="Carte Similo">
+    <div class="similo-gallery">
+
+        <img class="similo-card side" id="similo1">
+        <img class="similo-card side" id="similo2">
+
+        <img class="similo-card center" id="similoCenter">
+
+        <img class="similo-card side" id="similo4">
+        <img class="similo-card side" id="similo5">
+
     </div>
 
-    <p>Une carte aléatoire du jeu Similo.</p>
+    <p>Une sélection de cartes du jeu Similo.</p>
+
+</section>
 
 </section>
 
@@ -144,20 +154,40 @@ document.addEventListener("DOMContentLoaded", () => {
     deck.addEventListener("click", () => {
         tirerCartes();
     });
-	/* =========================
+	    /* =========================
        SIMILO
     ========================= */
 
-    const similoImage = document.getElementById("similoImage");
-
-    // nombre d'images dans le dossier
     const totalSimilo = 5;
 
-    // image aléatoire
-    const randomSimilo = Math.floor(Math.random() * totalSimilo) + 1;
+    const similoCards = [
+        document.getElementById("similo1"),
+        document.getElementById("similo2"),
+        document.getElementById("similoCenter"),
+        document.getElementById("similo4"),
+        document.getElementById("similo5")
+    ];
 
-    similoImage.src = `Images/Jeux/Similo/S${randomSimilo}.png`;
+    function melanger(array) {
+        return array.sort(() => Math.random() - 0.5);
+    }
 
+    function afficherSimilo() {
+
+        const images = [];
+
+        for (let i = 1; i <= totalSimilo; i++) {
+            images.push(`Images/Jeux/Similo/S${i}.png`);
+        }
+
+        const imagesMelangees = melanger(images);
+
+        similoCards.forEach((card, index) => {
+            card.src = imagesMelangees[index];
+        });
+    }
+
+    afficherSimilo();
     /* =========================
        LOUPS-GAROUS
     ========================= */
