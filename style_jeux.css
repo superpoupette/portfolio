@@ -299,35 +299,41 @@ main {
 }
 
 /* =========================
-   SECTION SIMILO
+   SIMILO GALERIE
 ========================= */
 
-.section-similo {
-    background-image: url("Images/Jeux/background_similo.png");
-    background-size: cover;
-    background-position: center;
+.similo-gallery {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 25px;
-}
-
-
-.similo-card-container {
-    display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
 }
 
 .similo-card {
-    width: 260px;
-    height: auto;
     border-radius: 18px;
+
     box-shadow:
         0 10px 25px rgba(0,0,0,0.35),
         0 0 25px rgba(255,255,255,0.15);
-    transition: transform 0.25s ease;
+
+    transition: all 0.3s ease;
+
+    object-fit: cover;
+}
+
+/* cartes côtés */
+.similo-card.side {
+    width: 170px;
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
+/* carte centrale */
+.similo-card.center {
+    width: 280px;
+    z-index: 2;
+    transform: scale(1.08);
 }
 
 
