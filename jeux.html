@@ -163,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tirerCartes();
     });
 	
+    
     /* =========================
        SIMILO
     ========================= */
@@ -181,47 +182,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevButton = document.getElementById("prevSimilo");
 
     let currentStart = 1;
-    let isAnimating = false;
 
-    function afficherSimilo(direction = "next") {
+    function afficherSimilo() {
 
-        if (isAnimating) return;
-        isAnimating = true;
+        similoCards.forEach((card, index) => {
 
-        // animation sortie
-        similoCards.forEach(card => {
-            card.classList.add("sliding");
+            let imageNumber = currentStart + index;
+
+            while (imageNumber > totalSimilo) {
+                imageNumber -= totalSimilo;
+            }
+
+            while (imageNumber < 1) {
+                imageNumber += totalSimilo;
+            }
+
+            card.src = `Images/Jeux/Similo/S${imageNumber}.png`;
+
         });
-
-        setTimeout(() => {
-
-            similoCards.forEach((card, index) => {
-
-                let imageNumber = currentStart + index;
-
-                while (imageNumber > totalSimilo) {
-                    imageNumber -= totalSimilo;
-                }
-
-                while (imageNumber < 1) {
-                    imageNumber += totalSimilo;
-                }
-
-                card.src = `Images/Jeux/Similo/S${imageNumber}.png`;
-
-            });
-
-            // retour animation
-            setTimeout(() => {
-                similoCards.forEach(card => {
-                    card.classList.remove("sliding");
-                });
-
-                isAnimating = false;
-
-            }, 80);
-
-        }, 200);
     }
 
     nextButton.addEventListener("click", () => {
@@ -232,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentStart = 1;
         }
 
-        afficherSimilo("next");
+        afficherSimilo();
 
     });
 
@@ -244,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentStart = totalSimilo;
         }
 
-        afficherSimilo("prev");
+        afficherSimilo();
 
     });
 
