@@ -409,6 +409,24 @@ main {
     opacity: 0;
 }
 
+.similo-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    transition: transform 0.45s ease;
+}
+
+/* animation */
+.similo-gallery.slide-next {
+    transform: translateX(-120px);
+}
+
+.similo-gallery.slide-prev {
+    transform: translateX(120px);
+}
+
 
 
 
