@@ -157,9 +157,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	    /* =========================
        SIMILO
     ========================= */
-
-    const totalSimilo = 9;
-
     const similoCards = [
         document.getElementById("similo1"),
         document.getElementById("similo2"),
@@ -168,22 +165,13 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("similo5")
     ];
 
-    function melanger(array) {
-        return array.sort(() => Math.random() - 0.5);
-    }
-
     function afficherSimilo() {
 
-        const images = [];
-
-        for (let i = 1; i <= totalSimilo; i++) {
-            images.push(`Images/Jeux/Similo/S${i}.png`);
-        }
-
-        const imagesMelangees = melanger(images);
-
         similoCards.forEach((card, index) => {
-            card.src = imagesMelangees[index];
+
+            // index + 1 => S1, S2, S3...
+            card.src = `Images/Jeux/Similo/S${index + 1}.png`;
+
         });
     }
 
