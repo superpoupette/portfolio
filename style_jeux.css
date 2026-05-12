@@ -345,13 +345,17 @@ main {
     transform: scale(1.08);
 }
 
+.section-similo p {
+    margin-top: 30px;
+}
+
 /* =========================
    BOUTONS
 ========================= */
 
 .similo-button {
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
 
     border-radius: 50%;
 
