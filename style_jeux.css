@@ -333,4 +333,22 @@ main {
     transform: scale(1.08);
 }
 
+.similo-button {
+    margin-top: 25px;
+
+    background: none;
+    border: none;
+
+    font-size: 50px;
+    color: white;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.similo-button:hover {
+    transform: scale(1.15);
+}
+
 
