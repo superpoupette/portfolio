@@ -39,6 +39,18 @@
     <p>Lorem ipsum dolor sit amet...</p>
 </section>
 
+<section class="bloc section-similo">
+
+    <h2>SIMILO - 2023</h2>
+
+    <div class="similo-card-container">
+        <img id="similoImage" class="similo-card" alt="Carte Similo">
+    </div>
+
+    <p>Une carte aléatoire du jeu Similo.</p>
+
+</section>
+
 <section class="bloc section-loup">
     <div class="carte-container">
 	    <img src="Images/Jeux/lunes.png" class="lunes-deco" alt="lunes">	
@@ -132,6 +144,19 @@ document.addEventListener("DOMContentLoaded", () => {
     deck.addEventListener("click", () => {
         tirerCartes();
     });
+	/* =========================
+       SIMILO
+    ========================= */
+
+    const similoImage = document.getElementById("similoImage");
+
+    // nombre d'images dans le dossier
+    const totalSimilo = 5;
+
+    // image aléatoire
+    const randomSimilo = Math.floor(Math.random() * totalSimilo) + 1;
+
+    similoImage.src = `Images/Jeux/Similo/S${randomSimilo}.png`;
 
     /* =========================
        LOUPS-GAROUS
