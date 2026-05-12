@@ -183,23 +183,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentStart = 1;
 
-    function afficherSimilo() {
+    function afficherSimilo(direction = "left") {
 
-        similoCards.forEach((card, index) => {
+        // animation sortie
+        similoCards.forEach((card) => {
 
-            let imageNumber = currentStart + index;
+            card.classList.remove("slide-left", "slide-right");
 
-            while (imageNumber > totalSimilo) {
-                imageNumber -= totalSimilo;
-            }
+            void card.offsetWidth;
 
-            while (imageNumber < 1) {
-                imageNumber += totalSimilo;
-            }
-
-            card.src = `Images/Jeux/Similo/S${imageNumber}.png`;
+            card.classList.add(
+                direction === "left"
+                    ? "slide-left"
+                    : "slide-right"
+            );
 
         });
+
+        // changer images pendant l'animation
+        setTimeout(() => {
+
+            similoCards.forEach((card, index) => {
+
+                let imageNumber = currentStart + index;
+
+                while (imageNumber > totalSimilo) {
+                    imageNumber -= totalSimilo;
+                }
+
+                while (imageNumber < 1) {
+                    imageNumber += totalSimilo;
+                }
+
+                card.src = `Images/Jeux/Similo/S${imageNumber}.png`;
+
+            });
+
+            // remettre les cartes à leur position normale
+            similoCards.forEach((card) => {
+
+                card.classList.remove("slide-left", "slide-right");
+
+            });
+
+        }, 200);
     }
 
     nextButton.addEventListener("click", () => {
@@ -210,23 +237,9 @@ document.addEventListener("DOMContentLoaded", () => {
             currentStart = 1;
         }
 
-        afficherSimilo();
+        afficherSimilo("left");
 
     });
-
-    prevButton.addEventListener("click", () => {
-
-        currentStart--;
-
-        if (currentStart < 1) {
-            currentStart = totalSimilo;
-        }
-
-        afficherSimilo();
-
-    });
-
-    afficherSimilo();
     /* =========================
        LOUPS-GAROUS
     ========================= */
