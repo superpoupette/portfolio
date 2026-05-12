@@ -302,10 +302,6 @@ main {
    SIMILO GALERIE
 ========================= */
 
-.section-similo {
-    background: linear-gradient(to bottom, #40204f, #24112e);
-}
-
 /* wrapper global */
 .similo-wrapper {
     display: flex;
@@ -391,6 +387,16 @@ main {
 
     box-shadow:
         0 0 20px rgba(255,255,255,0.25);
+}
+
+.similo-card {
+    transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease;
+}
+
+/* état "en transition" */
+.similo-card.sliding {
+    opacity: 0.2;
+    transform: scale(0.85) translateY(10px);
 }
 
 
