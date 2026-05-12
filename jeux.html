@@ -43,18 +43,26 @@
 
     <h2>SIMILO - 2023</h2>
 
-    <div class="similo-gallery">
+    <div class="similo-wrapper">
 
-        <img class="similo-card side" id="similo1">
-        <img class="similo-card side" id="similo2">
+        <button id="prevSimilo" class="similo-button left-button">❮</button>
 
-        <img class="similo-card center" id="similoCenter">
+        <div class="similo-gallery">
 
-        <img class="similo-card side" id="similo4">
-        <img class="similo-card side" id="similo5">
+            <img class="similo-card side" id="similo1">
+            <img class="similo-card side" id="similo2">
+
+            <img class="similo-card center" id="similoCenter">
+
+            <img class="similo-card side" id="similo4">
+            <img class="similo-card side" id="similo5">
+
+        </div>
+
+        <button id="nextSimilo" class="similo-button right-button">❯</button>
 
     </div>
-	<button id="nextSimilo" class="similo-button">➜</button>
+
     <p>Une sélection de cartes du jeu Similo.</p>
 
 </section>
@@ -154,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
     deck.addEventListener("click", () => {
         tirerCartes();
     });
-	/* =========================
+	    /* =========================
        SIMILO
     ========================= */
 
@@ -169,6 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     const nextButton = document.getElementById("nextSimilo");
+    const prevButton = document.getElementById("prevSimilo");
 
     let currentStart = 1;
 
@@ -178,9 +187,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let imageNumber = currentStart + index;
 
-            // boucle infinie
-            if (imageNumber > totalSimilo) {
+            while (imageNumber > totalSimilo) {
                 imageNumber -= totalSimilo;
+            }
+
+            while (imageNumber < 1) {
+                imageNumber += totalSimilo;
             }
 
             card.src = `Images/Jeux/Similo/S${imageNumber}.png`;
@@ -194,6 +206,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (currentStart > totalSimilo) {
             currentStart = 1;
+        }
+
+        afficherSimilo();
+
+    });
+
+    prevButton.addEventListener("click", () => {
+
+        currentStart--;
+
+        if (currentStart < 1) {
+            currentStart = totalSimilo;
         }
 
         afficherSimilo();
