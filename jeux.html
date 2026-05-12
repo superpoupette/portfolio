@@ -162,7 +162,8 @@ document.addEventListener("DOMContentLoaded", () => {
     deck.addEventListener("click", () => {
         tirerCartes();
     });
-	    /* =========================
+	
+    /* =========================
        SIMILO
     ========================= */
 
@@ -180,24 +181,47 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevButton = document.getElementById("prevSimilo");
 
     let currentStart = 1;
+    let isAnimating = false;
 
-    function afficherSimilo() {
+    function afficherSimilo(direction = "next") {
 
-        similoCards.forEach((card, index) => {
+        if (isAnimating) return;
+        isAnimating = true;
 
-            let imageNumber = currentStart + index;
-
-            while (imageNumber > totalSimilo) {
-                imageNumber -= totalSimilo;
-            }
-
-            while (imageNumber < 1) {
-                imageNumber += totalSimilo;
-            }
-
-            card.src = `Images/Jeux/Similo/S${imageNumber}.png`;
-
+        // animation sortie
+        similoCards.forEach(card => {
+            card.classList.add("sliding");
         });
+
+        setTimeout(() => {
+
+            similoCards.forEach((card, index) => {
+
+                let imageNumber = currentStart + index;
+
+                while (imageNumber > totalSimilo) {
+                    imageNumber -= totalSimilo;
+                }
+
+                while (imageNumber < 1) {
+                    imageNumber += totalSimilo;
+                }
+
+                card.src = `Images/Jeux/Similo/S${imageNumber}.png`;
+
+            });
+
+            // retour animation
+            setTimeout(() => {
+                similoCards.forEach(card => {
+                    card.classList.remove("sliding");
+                });
+
+                isAnimating = false;
+
+            }, 80);
+
+        }, 200);
     }
 
     nextButton.addEventListener("click", () => {
@@ -208,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentStart = 1;
         }
 
-        afficherSimilo();
+        afficherSimilo("next");
 
     });
 
@@ -220,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentStart = totalSimilo;
         }
 
-        afficherSimilo();
+        afficherSimilo("prev");
 
     });
 
