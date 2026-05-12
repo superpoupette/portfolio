@@ -165,81 +165,107 @@ document.addEventListener("DOMContentLoaded", () => {
 	
     
     /* =========================
-       SIMILO
-    ========================= */
-
-    const totalSimilo = 9;
-
-    const similoCards = [
-        document.getElementById("similo1"),
-        document.getElementById("similo2"),
-        document.getElementById("similoCenter"),
-        document.getElementById("similo4"),
-        document.getElementById("similo5")
-    ];
-
-    const nextButton = document.getElementById("nextSimilo");
-    const prevButton = document.getElementById("prevSimilo");
-
-    let currentStart = 1;
-
-    function afficherSimilo(direction = "left") {
-
-        // animation sortie
-        similoCards.forEach((card) => {
-
-            card.classList.remove("slide-left", "slide-right");
-
-            void card.offsetWidth;
-
-            card.classList.add(
-                direction === "left"
-                    ? "slide-left"
-                    : "slide-right"
-            );
-
-        });
-
-        // changer images pendant l'animation
-        setTimeout(() => {
-
-            similoCards.forEach((card, index) => {
-
-                let imageNumber = currentStart + index;
-
-                while (imageNumber > totalSimilo) {
-                    imageNumber -= totalSimilo;
-                }
-
-                while (imageNumber < 1) {
-                    imageNumber += totalSimilo;
-                }
-
-                card.src = `Images/Jeux/Similo/S${imageNumber}.png`;
-
-            });
-
-            // remettre les cartes à leur position normale
-            similoCards.forEach((card) => {
-
-                card.classList.remove("slide-left", "slide-right");
-
-            });
-
-        }, 200);
-    }
-
-    nextButton.addEventListener("click", () => {
-
-        currentStart++;
-
-        if (currentStart > totalSimilo) {
-            currentStart = 1;
-        }
-
-        afficherSimilo("left");
-
-    });
+	   SIMILO
+	========================= */
+	
+	const totalSimilo = 9;
+	
+	const similoCards = [
+	    document.getElementById("similo1"),
+	    document.getElementById("similo2"),
+	    document.getElementById("similoCenter"),
+	    document.getElementById("similo4"),
+	    document.getElementById("similo5")
+	];
+	
+	const gallery = document.querySelector(".similo-gallery");
+	
+	const nextButton = document.getElementById("nextSimilo");
+	const prevButton = document.getElementById("prevSimilo");
+	
+	let currentStart = 1;
+	let isAnimating = false;
+	
+	function updateSimiloImages() {
+	
+	    similoCards.forEach((card, index) => {
+	
+	        let imageNumber = currentStart + index;
+	
+	        while (imageNumber > totalSimilo) {
+	            imageNumber -= totalSimilo;
+	        }
+	
+	        while (imageNumber < 1) {
+	            imageNumber += totalSimilo;
+	        }
+	
+	        card.src = `Images/Jeux/Similo/S${imageNumber}.png`;
+	
+	    });
+	
+	}
+	
+	function slideSimilo(direction) {
+	
+	    if (isAnimating) return;
+	
+	    isAnimating = true;
+	
+	    gallery.classList.remove("slide-next", "slide-prev");
+	
+	    void gallery.offsetWidth;
+	
+	    gallery.classList.add(
+	        direction === "next"
+	            ? "slide-next"
+	            : "slide-prev"
+	    );
+	
+	    setTimeout(() => {
+	
+	        if (direction === "next") {
+	
+	            currentStart++;
+	
+	            if (currentStart > totalSimilo) {
+	                currentStart = 1;
+	            }
+	
+	        } else {
+	
+	            currentStart--;
+	
+	            if (currentStart < 1) {
+	                currentStart = totalSimilo;
+	            }
+	
+	        }
+	
+	        gallery.style.transition = "none";
+	        gallery.classList.remove("slide-next", "slide-prev");
+	
+	        updateSimiloImages();
+	
+	        void gallery.offsetWidth;
+	
+	        gallery.style.transition = "transform 0.45s ease";
+	
+	        isAnimating = false;
+	
+	    }, 450);
+	
+	}
+	
+	nextButton.addEventListener("click", () => {
+	    slideSimilo("next");
+	});
+	
+	prevButton.addEventListener("click", () => {
+	    slideSimilo("prev");
+	});
+	
+	updateSimiloImages();
     /* =========================
        LOUPS-GAROUS
     ========================= */
