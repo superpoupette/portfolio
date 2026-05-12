@@ -391,6 +391,23 @@ main {
         0 0 20px rgba(255,255,255,0.25);
 }
 
+.similo-card {
+    transition:
+        transform 0.45s ease,
+        opacity 0.45s ease;
+}
+
+/* quand on avance */
+.similo-card.slide-left {
+    transform: translateX(-120px);
+    opacity: 0;
+}
+
+/* quand on recule */
+.similo-card.slide-right {
+    transform: translateX(120px);
+    opacity: 0;
+}
 
 
 
