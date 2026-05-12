@@ -312,13 +312,10 @@ main {
 
 .similo-card {
     border-radius: 18px;
-
     box-shadow:
         0 10px 25px rgba(0,0,0,0.35),
         0 0 25px rgba(255,255,255,0.15);
-
     transition: all 0.3s ease;
-
     object-fit: cover;
 }
 
@@ -331,7 +328,7 @@ main {
 
 /* carte centrale */
 .similo-card.center {
-    width: 280px;
+    width: 210px;
     z-index: 2;
     transform: scale(1.08);
 }
