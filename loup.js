@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Loup2",
 	        fichier: "Loup2.jpg",
-	        symbole: "🐺"
+	        icone: "icone_loup.png"
 	    },
 	
 	    {
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Petite fille",
 	        fichier: "Petite fille.jpg",
-	        symbole: "🧒"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
@@ -173,7 +173,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         bouton.className = "symbole";
 
-        bouton.innerHTML = perso.symbole;
+        const icone = document.createElement("img");
+
+		icone.src = `Images/Jeux/icones/${perso.icone}`;
+		icone.alt = perso.nom;
+		icone.className = "icone-loup";
+		
+		bouton.appendChild(icone);
 
         bouton.title = perso.nom;
 
