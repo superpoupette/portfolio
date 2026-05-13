@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const icone = document.createElement("img");
 
-		icone.src = `Images/Jeux/icones/${perso.icone}`;
+		icone.src = `Images/Jeux/Loup/icones/${perso.icone}`;
 		icone.alt = perso.nom;
 		icone.className = "icone-loup";
 		
