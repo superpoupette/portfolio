@@ -58,14 +58,6 @@ main {
 /* =========================
    SECTION LOUP
 ========================= */
-.section-loup h2
-{
-    color: #D62068;
-}
-.section-loup p {
-    color: #781E41;
-    text-align: center;
-}
 
 .section-loup {
     background-color: #b1d7e8;
@@ -77,100 +69,116 @@ main {
 
     position: relative;
 
-    /* gros arrondi du haut */
     border-top-left-radius: 50% 450px;
     border-top-right-radius: 50% 450px;
 
     overflow: hidden;
 }
 
+.section-loup h2 {
+    color: #D62068;
+}
+
+.section-loup p {
+    color: #781E41;
+    text-align: center;
+}
+
 .carte-container {
     position: relative;
-    width: 400px;
-    height: 400px;
-    margin-top: 120px;
+
+    width: 420px;
+    height: 420px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-top: 120px;
 }
 
+/* image centrale */
 .loup-image {
+    width: 280px;
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    position: relative;
+    z-index: 2;
+
+    box-shadow:
+        0 0 25px rgba(214,32,104,0.3),
+        0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* lunes décor */
+.lunes-deco {
+    position: absolute;
+
+    width: 520px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+/* container des symboles */
+#symbolesContainer {
+    position: absolute;
+
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    0 0 25px rgba(214,32,104,0.3),
-    0 10px 25px rgba(0,0,0,0.4);
+
+    top: 0;
+    left: 0;
+
+    z-index: 3;
 }
 
+/* boutons symboles */
 .symbole {
     position: absolute;
-    background: none;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
     border: none;
+
+    background:
+        rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(5px);
+
+    color: white;
+
+    font-size: 20px;
+
     cursor: pointer;
-    font-size: 40px;
-    color: #D62068;
-    padding: 0;
-    transition: transform 0.2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
 }
 
 .symbole:hover {
     transform: scale(1.2);
-}
 
-/* haut */
-.top {
-    top: -35px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* droite */
-.right {
-    right: -35px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/* bas */
-.bottom {
-    bottom: -35px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* gauche */
-.left {
-    left: -35px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.top:hover {
-    transform: translateX(-50%) scale(1.2);
-}
-
-.right:hover {
-    transform: translateY(-50%) scale(1.2);
-}
-
-.bottom:hover {
-    transform: translateX(-50%) scale(1.2);
-}
-
-.left:hover {
-    transform: translateY(-50%) scale(1.2);
-}
-
-.lunes-deco {
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 520px;
-    height: auto;
-    z-index: 2;
-    pointer-events: none;
+    background:
+        rgba(255,255,255,0.35);
 }
 /* =========================
    SECTION CARTES
