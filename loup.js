@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Cupidon",
 	        fichier: "Cupidon.jpg",
-	        symbole: "💘"
+	        symbole: "❤"
 	    },
 	
 	    {
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Loup1",
 	        fichier: "Loup1.jpg",
-	        symbole: "🐺"
+	        symbole: "⏾"
 	    },
 	
 	    {
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Sorciere",
 	        fichier: "Sorciere.jpg",
-	        symbole: "🧪"
+	        symbole: "☀︎"
 	    },
 	
 	    {
@@ -160,8 +160,8 @@ document.addEventListener("DOMContentLoaded", () => {
         `Images/Jeux/Loup/${personnages[randomIndex].fichier}`;
 
     /* création des symboles */
-    const largeur = 420;
-    const hauteur = 420;
+    const largeur = 450;
+    const hauteur = 450;
 
     const perimetre =
         2 * (largeur + hauteur);
@@ -219,10 +219,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         bouton.style.left =
-            `calc(50% - ${largeur/2}px + ${x}px - 12px)`;
+            `calc(50% - ${largeur/2}px + ${x}px - 18px)`;
 
         bouton.style.top =
-            `calc(50% - ${hauteur/2}px + ${y}px - 12px)`;
+            `calc(50% - ${hauteur/2}px + ${y}px - 18px)`;
 
         bouton.addEventListener("click", () => {
 
