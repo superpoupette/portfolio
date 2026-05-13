@@ -160,8 +160,8 @@ document.addEventListener("DOMContentLoaded", () => {
         `Images/Jeux/Loup/${personnages[randomIndex].fichier}`;
 
     /* création des symboles */
-    const largeur = 360;
-    const hauteur = 440;
+    const largeur = 420;
+    const hauteur = 420;
 
     const perimetre =
         2 * (largeur + hauteur);
