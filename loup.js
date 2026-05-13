@@ -1,13 +1,11 @@
-/* =========================
-       LOUPS-GAROUS
-    ========================= */
+document.addEventListener("DOMContentLoaded", () => {
 
+    const image = document.getElementById("loupImage");
 
-const image = document.getElementById("loupImage");
-const symbolesContainer =
-    document.getElementById("symbolesContainer");
+    const symbolesContainer =
+        document.getElementById("symbolesContainer");
 
-const personnages = [
+    const personnages = [
 
 	    {
 	        nom: "Chaperon",
@@ -120,13 +118,13 @@ const personnages = [
 	    {
 	        nom: "Soeur1",
 	        fichier: "Soeur1.png",
-	        symbole: "✝"
+	        symbole: "✿"
 	    },
 	
 	    {
 	        nom: "Soeur2",
 	        fichier: "Soeur2.png",
-	        symbole: "☩"
+	        symbole: "❀"
 	    },
 	
 	    {
@@ -155,88 +153,86 @@ const personnages = [
 	];
 	
 	/* image aléatoire */
-	const randomIndex =
-	    Math.floor(Math.random() * personnages.length);
-	
-	image.src =
-	    `Images/Jeux/Loup/${personnages[randomIndex].fichier}`;
-	
-	/* création des symboles */
-	const largeur = 360;
-const hauteur = 440;
+    const randomIndex =
+        Math.floor(Math.random() * personnages.length);
 
-const perimetre =
-    2 * (largeur + hauteur);
+    image.src =
+        `Images/Jeux/Loup/${personnages[randomIndex].fichier}`;
 
-personnages.forEach((perso, index) => {
+    /* création des symboles */
+    const largeur = 360;
+    const hauteur = 440;
 
-    const bouton =
-        document.createElement("button");
+    const perimetre =
+        2 * (largeur + hauteur);
 
-    bouton.className = "symbole";
+    personnages.forEach((perso, index) => {
 
-    bouton.innerHTML = perso.symbole;
+        const bouton =
+            document.createElement("button");
 
-    bouton.title = perso.nom;
+        bouton.className = "symbole";
 
-    const position =
-        (index / personnages.length)
-        * perimetre;
+        bouton.innerHTML = perso.symbole;
 
-    let x = 0;
-    let y = 0;
+        bouton.title = perso.nom;
 
-    /* HAUT */
-    if (position < largeur) {
+        const position =
+            (index / personnages.length)
+            * perimetre;
 
-        x = position;
-        y = 0;
+        let x = 0;
+        let y = 0;
 
-    }
+        if (position < largeur) {
 
-    /* DROITE */
-    else if (position < largeur + hauteur) {
+            x = position;
+            y = 0;
 
-        x = largeur;
-        y = position - largeur;
+        }
 
-    }
+        else if (position < largeur + hauteur) {
 
-    /* BAS */
-    else if (position < largeur * 2 + hauteur) {
+            x = largeur;
+            y = position - largeur;
 
-        x =
-            largeur -
-            (position - largeur - hauteur);
+        }
 
-        y = hauteur;
+        else if (position < largeur * 2 + hauteur) {
 
-    }
+            x =
+                largeur -
+                (position - largeur - hauteur);
 
-    /* GAUCHE */
-    else {
+            y = hauteur;
 
-        x = 0;
+        }
 
-        y =
-            hauteur -
-            (position - largeur * 2 - hauteur);
+        else {
 
-    }
+            x = 0;
 
-    bouton.style.left =
-        `calc(50% - ${largeur/2}px + ${x}px - 12px)`;
+            y =
+                hauteur -
+                (position - largeur * 2 - hauteur);
 
-    bouton.style.top =
-        `calc(50% - ${hauteur/2}px + ${y}px - 12px)`;
+        }
 
-    bouton.addEventListener("click", () => {
+        bouton.style.left =
+            `calc(50% - ${largeur/2}px + ${x}px - 12px)`;
 
-        image.src =
-            `Images/Jeux/Loup/${perso.fichier}`;
+        bouton.style.top =
+            `calc(50% - ${hauteur/2}px + ${y}px - 12px)`;
+
+        bouton.addEventListener("click", () => {
+
+            image.src =
+                `Images/Jeux/Loup/${perso.fichier}`;
+
+        });
+
+        symbolesContainer.appendChild(bouton);
 
     });
-
-    symbolesContainer.appendChild(bouton);
 
 });
