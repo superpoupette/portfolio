@@ -99,15 +99,15 @@ main {
 
 /* image centrale */
 .loup-image {
-    width: 280px;
-    height: 400px;
+    width: 320px;
+    height: auto;
 
-    object-fit: cover;
-
-    border-radius: 22px;
+    object-fit: contain;
 
     position: relative;
     z-index: 2;
+
+    border-radius: 20px;
 
     box-shadow:
         0 0 25px rgba(214,32,104,0.3),
@@ -146,39 +146,21 @@ main {
 /* boutons symboles */
 .symbole {
     position: absolute;
-
-    width: 42px;
-    height: 42px;
-
-    border-radius: 50%;
-
     border: none;
-
-    background:
-        rgba(255,255,255,0.15);
-
-    backdrop-filter: blur(5px);
-
+    background: none;
     color: white;
-
-    font-size: 20px;
-
+    font-size: 24px;
     cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     transition:
-        transform 0.25s ease,
-        background 0.25s ease;
+        transform 0.2s ease,
+        color 0.2s ease;
+    z-index: 5;
 }
 
 .symbole:hover {
-    transform: scale(1.2);
+    transform: scale(1.25);
 
-    background:
-        rgba(255,255,255,0.35);
+    color: #ffe082;
 }
 /* =========================
    SECTION CARTES
