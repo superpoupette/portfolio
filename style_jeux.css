@@ -86,7 +86,6 @@ main {
 
 .carte-container {
     position: relative;
-
     width: 420px;
     height: 420px;
 
@@ -99,8 +98,6 @@ main {
 
 /* image centrale */
 .loup-image {
-    width: 280px;
-    height: 400px;
     height: auto;
 
     object-fit: contain;
