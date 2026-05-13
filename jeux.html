@@ -271,9 +271,6 @@ document.addEventListener("DOMContentLoaded", () => {
        LOUPS-GAROUS
     ========================= */
 
-    /* =========================
-   LOUPS-GAROUS
-========================= */
 
 const image = document.getElementById("loupImage");
 const symbolesContainer =
@@ -434,44 +431,84 @@ const personnages = [
 	    `Images/Jeux/Loup/${personnages[randomIndex].fichier}`;
 	
 	/* création des symboles */
-	const rayon = 185;
-	
-	personnages.forEach((perso, index) => {
-	
-	    const bouton =
-	        document.createElement("button");
-	
-	    bouton.className = "symbole";
-	
-	    bouton.innerHTML = perso.symbole;
-	
-	    const angle =
-	        (index / personnages.length)
-	        * (Math.PI * 2)
-	        - Math.PI / 2;
-	
-	    const x =
-	        Math.cos(angle) * rayon;
-	
-	    const y =
-	        Math.sin(angle) * rayon;
-	
-	    bouton.style.left =
-	        `calc(50% + ${x}px - 21px)`;
-	
-	    bouton.style.top =
-	        `calc(50% + ${y}px - 21px)`;
-	
-	    bouton.addEventListener("click", () => {
-	
-	        image.src =
-	            `Images/Jeux/Loup/${perso.fichier}`;
-	
-	    });
-	
-	    symbolesContainer.appendChild(bouton);
-	
-	});
+	const largeur = 360;
+const hauteur = 440;
+
+const perimetre =
+    2 * (largeur + hauteur);
+
+personnages.forEach((perso, index) => {
+
+    const bouton =
+        document.createElement("button");
+
+    bouton.className = "symbole";
+
+    bouton.innerHTML = perso.symbole;
+
+    bouton.title = perso.nom;
+
+    const position =
+        (index / personnages.length)
+        * perimetre;
+
+    let x = 0;
+    let y = 0;
+
+    /* HAUT */
+    if (position < largeur) {
+
+        x = position;
+        y = 0;
+
+    }
+
+    /* DROITE */
+    else if (position < largeur + hauteur) {
+
+        x = largeur;
+        y = position - largeur;
+
+    }
+
+    /* BAS */
+    else if (position < largeur * 2 + hauteur) {
+
+        x =
+            largeur -
+            (position - largeur - hauteur);
+
+        y = hauteur;
+
+    }
+
+    /* GAUCHE */
+    else {
+
+        x = 0;
+
+        y =
+            hauteur -
+            (position - largeur * 2 - hauteur);
+
+    }
+
+    bouton.style.left =
+        `calc(50% - ${largeur/2}px + ${x}px - 12px)`;
+
+    bouton.style.top =
+        `calc(50% - ${hauteur/2}px + ${y}px - 12px)`;
+
+    bouton.addEventListener("click", () => {
+
+        image.src =
+            `Images/Jeux/Loup/${perso.fichier}`;
+
+    });
+
+    symbolesContainer.appendChild(bouton);
+
+});
 
 });
 </script>
