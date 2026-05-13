@@ -10,61 +10,61 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Chaperon",
 	        fichier: "Chaperon.png",
-	        symbole: "🌹"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Chasseur",
 	        fichier: "Chasseur.jpg",
-	        symbole: "🏹"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Corbeau",
 	        fichier: "Corbeau.jpg",
-	        symbole: "🐦"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Cupidon",
 	        fichier: "Cupidon.jpg",
-	        symbole: "❤"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Dictateur",
 	        fichier: "Dictateur.png",
-	        symbole: "👑"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Enfant loup",
 	        fichier: "Enfant loup.jpg",
-	        symbole: "🐺"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Garde",
 	        fichier: "Garde.png",
-	        symbole: "🛡"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Loup blanc",
 	        fichier: "Loup blanc.png",
-	        symbole: "🌕"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Loup noir",
 	        fichier: "Loup noir.png",
-	        symbole: "🌑"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Loup1",
 	        fichier: "Loup1.jpg",
-	        symbole: "⏾"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
@@ -76,25 +76,25 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Loup3",
 	        fichier: "Loup3.jpg",
-	        symbole: "🐺"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Loup4",
 	        fichier: "Loup4.jpg",
-	        symbole: "🐺"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Maire",
 	        fichier: "Maire.png",
-	        symbole: "🎖"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Ours",
 	        fichier: "Ours.png",
-	        symbole: "🐻"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
@@ -106,49 +106,49 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Pyro",
 	        fichier: "Pyro.png",
-	        symbole: "🔥"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Servante",
 	        fichier: "Servante.png",
-	        symbole: "🕯"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Soeur1",
 	        fichier: "Soeur1.png",
-	        symbole: "✿"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Soeur2",
 	        fichier: "Soeur2.png",
-	        symbole: "❀"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Sorciere",
 	        fichier: "Sorciere.jpg",
-	        symbole: "☀︎"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Villageois",
 	        fichier: "Villageois.jpg",
-	        symbole: "🏠"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Villageois2",
 	        fichier: "Villageois2.png",
-	        symbole: "🏡"
+	        icone : "icone_fille.png"
 	    },
 	
 	    {
 	        nom: "Voyante",
 	        fichier: "Voyante.jpg",
-	        symbole: "🔮"
+	        icone : "icone_fille.png"
 	    }
 	];
 	
