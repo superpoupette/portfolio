@@ -99,7 +99,8 @@ main {
 
 /* image centrale */
 .loup-image {
-    width: 320px;
+    width: 280px;
+    height: 400px;
     height: auto;
 
     object-fit: contain;
