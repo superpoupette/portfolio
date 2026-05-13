@@ -70,17 +70,18 @@
 </section>
 
 <section class="bloc section-loup">
-    <div class="carte-container">
-	    <img src="Images/Jeux/lunes.png" class="lunes-deco" alt="lunes">	
-	    <button class="symbole top">☀</button>
-	    <button class="symbole right">☾</button>
-	    <button class="symbole bottom">✦</button>
-	    <button class="symbole left">✧</button>	
-	    <img class="loup-image" id="loupImage">
-	</div>
-	<h2>Les Loups-garous de Thiercelieux - 2022</h2>
-    <p>Redesign du jeu des Loups-garous de Thiercelieux avec les personnages de plusieurs extensions.</p>
-
+	    <div class="carte-container">
+	        <img src="Images/Jeux/lunes.png"
+	             class="lunes-deco"
+	             alt="lunes">
+	        <div id="symbolesContainer"></div>
+	        <img class="loup-image" id="loupImage">
+	    </div>
+	    <h2>Les Loups-garous de Thiercelieux - 2022</h2>
+	    <p>
+	        Redesign du jeu des Loups-garous de Thiercelieux
+	        avec les personnages de plusieurs extensions.
+	    </p>
 </section>
 
 <section class="bloc section-cards">
@@ -270,28 +271,207 @@ document.addEventListener("DOMContentLoaded", () => {
        LOUPS-GAROUS
     ========================= */
 
-    const image = document.getElementById("loupImage");
+    /* =========================
+   LOUPS-GAROUS
+========================= */
 
-    // image aléatoire au chargement
-    const randomLoup = Math.floor(Math.random() * 4) + 1;
+const image = document.getElementById("loupImage");
+const symbolesContainer =
+    document.getElementById("symbolesContainer");
 
-    image.src = `Images/Jeux/Loup/L${randomLoup}.png`;
+const personnages = [
 
-    document.querySelector(".top").addEventListener("click", () => {
-        image.src = "Images/Jeux/Loup/Chaperon.png";
-    });
-
-    document.querySelector(".right").addEventListener("click", () => {
-        image.src = "Images/Jeux/Loup/Garde.png";
-    });
-
-    document.querySelector(".bottom").addEventListener("click", () => {
-        image.src = "Images/Jeux/Loup/Loup blanc.png";
-    });
-
-    document.querySelector(".left").addEventListener("click", () => {
-        image.src = "Images/Jeux/Loup/Ours.png";
-    });
+	    {
+	        nom: "Chaperon",
+	        fichier: "Chaperon.png",
+	        symbole: "🌹"
+	    },
+	
+	    {
+	        nom: "Chasseur",
+	        fichier: "Chasseur.jpg",
+	        symbole: "🏹"
+	    },
+	
+	    {
+	        nom: "Corbeau",
+	        fichier: "Corbeau.jpg",
+	        symbole: "🐦"
+	    },
+	
+	    {
+	        nom: "Cupidon",
+	        fichier: "Cupidon.jpg",
+	        symbole: "💘"
+	    },
+	
+	    {
+	        nom: "Dictateur",
+	        fichier: "Dictateur.png",
+	        symbole: "👑"
+	    },
+	
+	    {
+	        nom: "Enfant loup",
+	        fichier: "Enfant loup.jpg",
+	        symbole: "🐺"
+	    },
+	
+	    {
+	        nom: "Garde",
+	        fichier: "Garde.png",
+	        symbole: "🛡"
+	    },
+	
+	    {
+	        nom: "Loup blanc",
+	        fichier: "Loup blanc.png",
+	        symbole: "🌕"
+	    },
+	
+	    {
+	        nom: "Loup noir",
+	        fichier: "Loup noir.png",
+	        symbole: "🌑"
+	    },
+	
+	    {
+	        nom: "Loup1",
+	        fichier: "Loup1.jpg",
+	        symbole: "🐺"
+	    },
+	
+	    {
+	        nom: "Loup2",
+	        fichier: "Loup2.jpg",
+	        symbole: "🐺"
+	    },
+	
+	    {
+	        nom: "Loup3",
+	        fichier: "Loup3.jpg",
+	        symbole: "🐺"
+	    },
+	
+	    {
+	        nom: "Loup4",
+	        fichier: "Loup4.jpg",
+	        symbole: "🐺"
+	    },
+	
+	    {
+	        nom: "Maire",
+	        fichier: "Maire.png",
+	        symbole: "🎖"
+	    },
+	
+	    {
+	        nom: "Ours",
+	        fichier: "Ours.png",
+	        symbole: "🐻"
+	    },
+	
+	    {
+	        nom: "Petite fille",
+	        fichier: "Petite fille.jpg",
+	        symbole: "🧒"
+	    },
+	
+	    {
+	        nom: "Pyro",
+	        fichier: "Pyro.png",
+	        symbole: "🔥"
+	    },
+	
+	    {
+	        nom: "Servante",
+	        fichier: "Servante.png",
+	        symbole: "🕯"
+	    },
+	
+	    {
+	        nom: "Soeur1",
+	        fichier: "Soeur1.png",
+	        symbole: "✝"
+	    },
+	
+	    {
+	        nom: "Soeur2",
+	        fichier: "Soeur2.png",
+	        symbole: "☩"
+	    },
+	
+	    {
+	        nom: "Sorciere",
+	        fichier: "Sorciere.jpg",
+	        symbole: "🧪"
+	    },
+	
+	    {
+	        nom: "Villageois",
+	        fichier: "Villageois.jpg",
+	        symbole: "🏠"
+	    },
+	
+	    {
+	        nom: "Villageois2",
+	        fichier: "Villageois2.png",
+	        symbole: "🏡"
+	    },
+	
+	    {
+	        nom: "Voyante",
+	        fichier: "Voyante.jpg",
+	        symbole: "🔮"
+	    }
+	];
+	
+	/* image aléatoire */
+	const randomIndex =
+	    Math.floor(Math.random() * personnages.length);
+	
+	image.src =
+	    `Images/Jeux/Loup/${personnages[randomIndex].fichier}`;
+	
+	/* création des symboles */
+	const rayon = 185;
+	
+	personnages.forEach((perso, index) => {
+	
+	    const bouton =
+	        document.createElement("button");
+	
+	    bouton.className = "symbole";
+	
+	    bouton.innerHTML = perso.symbole;
+	
+	    const angle =
+	        (index / personnages.length)
+	        * (Math.PI * 2)
+	        - Math.PI / 2;
+	
+	    const x =
+	        Math.cos(angle) * rayon;
+	
+	    const y =
+	        Math.sin(angle) * rayon;
+	
+	    bouton.style.left =
+	        `calc(50% + ${x}px - 21px)`;
+	
+	    bouton.style.top =
+	        `calc(50% + ${y}px - 21px)`;
+	
+	    bouton.addEventListener("click", () => {
+	
+	        image.src =
+	            `Images/Jeux/Loup/${perso.fichier}`;
+	
+	    });
+	
+	    symbolesContainer.appendChild(bouton);
+	
+	});
 
 });
 </script>
