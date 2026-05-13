@@ -418,21 +418,15 @@ main {
 
 .symbole {
     position: absolute;
-
-    width: 42px;
-    height: 42px;
-
+    width: 35px;
+    height: 35px;
     border: none;
     background: none;
-
     cursor: pointer;
-
     transition:
         transform 0.2s ease,
         filter 0.2s ease;
-
     z-index: 5;
-
     padding: 0;
 }
 
@@ -440,9 +434,7 @@ main {
 .icone-loup {
     width: 100%;
     height: 100%;
-
     object-fit: contain;
-
     pointer-events: none;
 }
 
