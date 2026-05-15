@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Chasseur",
 	        fichier: "Chasseur.jpg",
-	        icone : "icone_fille.png"
+	        icone : "icone_chasseur.png"
 	    },
 	
 	    {
@@ -52,19 +52,19 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Loup blanc",
 	        fichier: "Loup blanc.png",
-	        icone : "icone_fille.png"
+	        icone : "icone_loupblanc.png"
 	    },
 	
 	    {
 	        nom: "Loup noir",
 	        fichier: "Loup noir.png",
-	        icone : "icone_fille.png"
+	        icone : "icone_loupnoir.png"
 	    },
 	
 	    {
 	        nom: "Loup1",
 	        fichier: "Loup1.jpg",
-	        icone : "icone_fille.png"
+	        icone : "icone_loup.png"
 	    },
 	
 	    {
@@ -76,13 +76,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Loup3",
 	        fichier: "Loup3.jpg",
-	        icone : "icone_fille.png"
+	        icone : "icone_loup.png"
 	    },
 	
 	    {
 	        nom: "Loup4",
 	        fichier: "Loup4.jpg",
-	        icone : "icone_fille.png"
+	        icone : "icone_loup.png"
 	    },
 	
 	    {
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Pyro",
 	        fichier: "Pyro.png",
-	        icone : "icone_fille.png"
+	        icone : "icone_pyro.png"
 	    },
 	
 	    {
