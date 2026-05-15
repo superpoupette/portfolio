@@ -60,12 +60,10 @@ main {
 
 .section-loup {
     background-image: url("Images/Jeux/background_loup.png");
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-
     position: relative;
     overflow: hidden;
 }
@@ -73,7 +71,6 @@ main {
 /* titre */
 .section-loup h2 {
     color: #D62068;
-
     margin-top: 70px;
 }
 
@@ -81,30 +78,26 @@ main {
 .section-loup p {
     color: #781E41;
     text-align: center;
-
     margin-top: 30px;
 }
 
 /* bloc principal */
 .carte-container {
     position: relative;
-
     width: 500px;
     height: 500px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-top: 220px;
     margin-bottom: 90px;
 }
 
 /* image centrale */
 .loup-image {
+    margin-top: 100px;
     width: 400px;
     height: 400px;
-
     object-fit: contain;
 
     position: relative;
