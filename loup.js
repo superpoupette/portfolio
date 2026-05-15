@@ -235,10 +235,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         bouton.addEventListener("click", () => {
 
-            image.src =
-                `Images/Jeux/Loup/${perso.fichier}`;
-
-        });
+		    image.src =
+		        `Images/Jeux/Loup/${perso.fichier}`;
+		
+		    nomPersonnage.textContent =
+		        perso.nom;
+		
+		});
 
         symbolesContainer.appendChild(bouton);
 
