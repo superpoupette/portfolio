@@ -121,6 +121,7 @@ main {
     letter-spacing: 1px;
     text-shadow:
         0 2px 8px rgba(255,255,255,0.5);
+    font-family: 'Marcellus', serif;
 }
 
 /* container des symboles */
