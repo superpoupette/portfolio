@@ -89,13 +89,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 220px;
+    margin-top: 300px;
     margin-bottom: 90px;
 }
 
 /* image centrale */
 .loup-image {
-    margin-top: 100px;
     width: 400px;
     height: 400px;
     object-fit: contain;
@@ -114,7 +113,7 @@ main {
 .nom-personnage {
     position: absolute;
 
-    bottom: 40px;
+    bottom: 80px;
     left: 50%;
 
     transform: translateX(-50%);
@@ -124,7 +123,7 @@ main {
     color: black;
 
     font-family: 'Limelight', sans-serif;
-    font-size: 28px;
+    font-size: 15px;
     letter-spacing: 1px;
 
     text-shadow:
