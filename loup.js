@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	{
 	        nom: "Cupidon",
 	        fichier: "Cupidon.jpg",
-	        icone : "icone_chaperon.png"
+	        icone : "icone_loup.png"
 	    },
 	    {
 	        nom: "Corbeau",
