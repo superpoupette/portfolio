@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const personnages = [
 
 	    {
-	        nom: "Chaperon",
+	        nom: "Le chaperon",
 	        fichier: "Chaperon.png",
 	        icone : "icone_chaperon.png"
 	    },
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    },
 	
 	    {
-	        nom: "Chasseur",
+	        nom: "Le chasseur",
 	        fichier: "Chasseur.jpg",
 	        icone : "icone_chasseur.png"
 	    },
