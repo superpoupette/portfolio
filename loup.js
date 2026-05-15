@@ -35,11 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
 	        fichier: "Cupidon.jpg",
 	        icone : "icone_fille.png"
 	    },
+		{
+	        nom: "Loup1",
+	        fichier: "Loup1.jpg",
+	        icone : "icone_loup.png"
+	    },
 	
 	    {
 	        nom: "Dictateur",
 	        fichier: "Dictateur.png",
-	        icone : "icone_fille.png"
+	        icone : "icone_dictateur.png"
 	    },
 	
 	    {
@@ -58,33 +63,19 @@ document.addEventListener("DOMContentLoaded", () => {
 	        nom: "Loup blanc",
 	        fichier: "Loup blanc.png",
 	        icone : "icone_loupblanc.png"
-	    },
-	
-	    {
-	        nom: "Loup noir",
-	        fichier: "Loup noir.png",
-	        icone : "icone_loupnoir.png"
-	    },
-	
-	    {
-	        nom: "Loup1",
-	        fichier: "Loup1.jpg",
-	        icone : "icone_loup.png"
-	    },
-	
+	    },  
+	    	
 	
 	    {
 	        nom: "Loup3",
 	        fichier: "Loup3.jpg",
 	        icone : "icone_loup.png"
-	    },
-	
-	    
+	    },	    
 	
 	    {
 	        nom: "Maire",
 	        fichier: "Maire.png",
-	        icone : "icone_fille.png"
+	        icone : "icone_maire.png"
 	    },
 	
 	    {
@@ -110,6 +101,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	        fichier: "Servante.png",
 	        icone : "icone_fille.png"
 	    },
+		 {
+	        nom: "Loup noir",
+	        fichier: "Loup noir.png",
+	        icone : "icone_loupnoir.png"
+	    },
 	
 	    {
 	        nom: "Soeur1",
@@ -126,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Sorciere",
 	        fichier: "Sorciere.jpg",
-	        icone : "icone_fille.png"
+	        icone : "icone_sorciere.png"
 	    },
 	
 	    {
