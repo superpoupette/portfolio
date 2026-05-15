@@ -25,18 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
 	        fichier: "Chasseur.jpg",
 	        icone : "icone_chasseur.png"
 	    },
-	
+	{
+	        nom: "Cupidon",
+	        fichier: "Cupidon.jpg",
+	        icone : "icone_chaperon.png"
+	    },
 	    {
 	        nom: "Corbeau",
 	        fichier: "Corbeau.jpg",
 	        icone : "icone_corbeau.png"
 	    },
 	
-	    {
-	        nom: "Cupidon",
-	        fichier: "Cupidon.jpg",
-	        icone : "icone_chaperon.png"
-	    },
+	    
 		{
 	        nom: "Loup1",
 	        fichier: "Loup1.jpg",
