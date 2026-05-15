@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const symbolesContainer =
         document.getElementById("symbolesContainer");
+	const nomPersonnage =
+    document.getElementById("nomPersonnage");
 
     const personnages = [
 
@@ -155,7 +157,10 @@ document.addEventListener("DOMContentLoaded", () => {
         Math.floor(Math.random() * personnages.length);
 
     image.src =
-        `Images/Jeux/Loup/${personnages[randomIndex].fichier}`;
+    `Images/Jeux/Loup/${personnages[randomIndex].fichier}`;
+
+	nomPersonnage.textContent =
+    personnages[randomIndex].nom;
 
     /* création des symboles */
     const largeur = 450;
