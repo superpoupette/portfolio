@@ -71,7 +71,7 @@ main {
 /* titre */
 .section-loup h2 {
     color: #D62068;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 /* texte */
@@ -112,20 +112,13 @@ main {
 /* nom personnage */
 .nom-personnage {
     position: absolute;
-
     bottom: 80px;
     left: 50%;
-
     transform: translateX(-50%);
-
     z-index: 10;
-
     color: black;
-
-    font-family: 'Limelight', sans-serif;
-    font-size: 15px;
+    font-size: 30px;
     letter-spacing: 1px;
-
     text-shadow:
         0 2px 8px rgba(255,255,255,0.5);
 }
