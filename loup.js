@@ -10,7 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Chaperon",
 	        fichier: "Chaperon.png",
-	        icone : "icone_fille.png"
+	        icone : "icone_chaperon.png"
+	    },
+		{
+	        nom: "Loup2",
+	        fichier: "Loup2.jpg",
+	        icone: "icone_loup.png"
 	    },
 	
 	    {
@@ -22,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    {
 	        nom: "Corbeau",
 	        fichier: "Corbeau.jpg",
-	        icone : "icone_fille.png"
+	        icone : "icone_corbeau.png"
 	    },
 	
 	    {
@@ -67,11 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	        icone : "icone_loup.png"
 	    },
 	
-	    {
-	        nom: "Loup2",
-	        fichier: "Loup2.jpg",
-	        icone: "icone_loup.png"
-	    },
 	
 	    {
 	        nom: "Loup3",
@@ -79,11 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	        icone : "icone_loup.png"
 	    },
 	
-	    {
-	        nom: "Loup4",
-	        fichier: "Loup4.jpg",
-	        icone : "icone_loup.png"
-	    },
+	    
 	
 	    {
 	        nom: "Maire",
@@ -138,17 +134,23 @@ document.addEventListener("DOMContentLoaded", () => {
 	        fichier: "Villageois.jpg",
 	        icone : "icone_fille.png"
 	    },
+		{
+	        nom: "Loup4",
+	        fichier: "Loup4.jpg",
+	        icone : "icone_loup.png"
+	    },
 	
 	    {
 	        nom: "Villageois2",
 	        fichier: "Villageois2.png",
 	        icone : "icone_fille.png"
 	    },
+		
 	
 	    {
 	        nom: "Voyante",
 	        fichier: "Voyante.jpg",
-	        icone : "icone_fille.png"
+	        icone : "icone_voyante.png"
 	    }
 	];
 	
