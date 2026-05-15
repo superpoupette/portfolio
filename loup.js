@@ -10,18 +10,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const personnages = [
 
 	    {
-	        nom: "Le chaperon",
+	        nom: "Chaperon",
 	        fichier: "Chaperon.png",
 	        icone : "icone_chaperon.png"
 	    },
 		{
-	        nom: "Loup2",
+	        nom: "Loup",
 	        fichier: "Loup2.jpg",
 	        icone: "icone_loup.png"
 	    },
 	
 	    {
-	        nom: "Le chasseur",
+	        nom: "Chasseur",
 	        fichier: "Chasseur.jpg",
 	        icone : "icone_chasseur.png"
 	    },
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	
 	    
 		{
-	        nom: "Loup1",
+	        nom: "Loup",
 	        fichier: "Loup1.jpg",
 	        icone : "icone_loup.png"
 	    },
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    	
 	
 	    {
-	        nom: "Loup3",
+	        nom: "Loup",
 	        fichier: "Loup3.jpg",
 	        icone : "icone_loup.png"
 	    },	    
@@ -91,9 +91,15 @@ document.addEventListener("DOMContentLoaded", () => {
 	        fichier: "Petite fille.jpg",
 	        icone : "icone_fille.png"
 	    },
+
+		{
+	        nom: "Simple villageois",
+	        fichier: "Villageois.jpg",
+	        icone : "icone_fille.png"
+	    },
 	
 	    {
-	        nom: "Pyro",
+	        nom: "Pyromancien",
 	        fichier: "Pyro.png",
 	        icone : "icone_pyro.png"
 	    },
@@ -110,13 +116,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	    },
 	
 	    {
-	        nom: "Soeur1",
+	        nom: "Soeur",
 	        fichier: "Soeur1.png",
 	        icone : "icone_fille.png"
 	    },
 	
 	    {
-	        nom: "Soeur2",
+	        nom: "Soeur",
 	        fichier: "Soeur2.png",
 	        icone : "icone_fille.png"
 	    },
@@ -127,19 +133,15 @@ document.addEventListener("DOMContentLoaded", () => {
 	        icone : "icone_sorciere.png"
 	    },
 	
-	    {
-	        nom: "Villageois",
-	        fichier: "Villageois.jpg",
-	        icone : "icone_fille.png"
-	    },
+	    
 		{
-	        nom: "Loup4",
+	        nom: "Loup",
 	        fichier: "Loup4.jpg",
 	        icone : "icone_loup.png"
 	    },
 	
 	    {
-	        nom: "Villageois2",
+	        nom: "Simple villageois",
 	        fichier: "Villageois2.png",
 	        icone : "icone_fille.png"
 	    },
