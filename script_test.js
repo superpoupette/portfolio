@@ -1,64 +1,76 @@
 const track = document.querySelector(".track");
 const slides = Array.from(document.querySelectorAll(".slide"));
 
-let index = 0;
+let index = 2; 
+// on dÃ©marre sur la 3e carte
+
 const len = slides.length;
 
-/**
- * Permet une boucle infinie propre
- */
+/* boucle infinie */
 function mod(i) {
-  return (i + len) % len;
+    return (i + len) % len;
 }
 
-/**
- * Met à jour l'affichage du carousel
- */
+/* update carousel */
 function update() {
 
-  slides.forEach(s => s.classList.remove("active", "near"));
+    slides.forEach(slide => {
+        slide.classList.remove("active", "near");
+    });
 
-  const prev2 = slides[mod(index - 2)];
-  const prev1 = slides[mod(index - 1)];
-  const current = slides[mod(index)];
-  const next1 = slides[mod(index + 1)];
-  const next2 = slides[mod(index + 2)];
+    const current = slides[mod(index)];
 
-  current.classList.add("active");
-  prev1.classList.add("near");
-  next1.classList.add("near");
-  prev2.classList.add("near");
-  next2.classList.add("near");
+    const prev1 = slides[mod(index - 1)];
+    const prev2 = slides[mod(index - 2)];
 
-  const slideWidth = slides[0].offsetWidth + 20;
-  const containerWidth = 900;
+    const next1 = slides[mod(index + 1)];
+    const next2 = slides[mod(index + 2)];
 
-  const centerOffset = (containerWidth / 2) - (slideWidth / 2);
-  const offset = index * slideWidth;
+    current.classList.add("active");
 
-  track.style.transform = `translateX(${centerOffset - offset}px)`;
+    prev1.classList.add("near");
+    prev2.classList.add("near");
+
+    next1.classList.add("near");
+    next2.classList.add("near");
+
+    /* dimensions */
+    const slideWidth = 180;
+    // 160px + 20px de marges
+
+    const containerWidth = 900;
+
+    /* centre exact */
+    const offset =
+        index * slideWidth;
+
+    const center =
+        (containerWidth / 2) -
+        (slideWidth / 2);
+
+    track.style.transform =
+        `translateX(${center - offset}px)`;
 }
 
-/**
- * Navigation
- */
+/* navigation */
 function next() {
-  index = mod(index + 1);
-  update();
+    index = mod(index + 1);
+    update();
 }
 
 function prev() {
-  index = mod(index - 1);
-  update();
+    index = mod(index - 1);
+    update();
 }
 
-/**
- * Events
- */
-document.querySelector(".next").addEventListener("click", next);
-document.querySelector(".prev").addEventListener("click", prev);
+/* boutons */
+document
+    .querySelector(".next")
+    .addEventListener("click", next);
 
-/**
- * init
- */
+document
+    .querySelector(".prev")
+    .addEventListener("click", prev);
+
+/* init */
 window.addEventListener("load", update);
