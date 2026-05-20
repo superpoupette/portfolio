@@ -1,7 +1,7 @@
 const track = document.querySelector(".track");
 const slides = Array.from(document.querySelectorAll(".slide"));
 
-let index = 2; 
+let index = 0; 
 // on démarre sur la 3e carte
 
 const len = slides.length;
@@ -34,22 +34,18 @@ function update() {
     next1.classList.add("near");
     next2.classList.add("near");
 
-    /* dimensions */
-    const slideWidth = 180;
-    // 160px + 20px de marges
-
+    const slideWidth = 200;
+    /* 160px + 20px gauche + 20px droite */
+    
     const containerWidth = 900;
-
-    /* centre exact */
-    const offset =
-        index * slideWidth;
-
-    const center =
-        (containerWidth / 2) -
-        (slideWidth / 2);
-
+    
+    const translateX =
+        (containerWidth / 2)
+        - (slideWidth / 2)
+        - (index * slideWidth);
+    
     track.style.transform =
-        `translateX(${center - offset}px)`;
+        `translateX(${translateX}px)`;
 }
 
 /* navigation */
