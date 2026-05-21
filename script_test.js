@@ -1,7 +1,7 @@
 const track = document.querySelector(".track");
 const slides = Array.from(document.querySelectorAll(".slide"));
 
-let index = 0; 
+let index = 2; 
 // on démarre sur la 3e carte
 
 const len = slides.length;
