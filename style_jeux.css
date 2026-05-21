@@ -299,10 +299,6 @@ main {
 
     overflow-x: hidden;
     overflow-y: visible;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* track */
@@ -331,7 +327,6 @@ main {
         filter 0.4s ease,
         opacity 0.4s ease;
 
-    /* état normal */
     transform: scale(0.8);
 
     filter: brightness(0.4);
@@ -435,15 +430,12 @@ main {
 
 /* positions */
 .carousel .prev {
-
     left: 15px;
 }
 
 .carousel .next {
-
     right: 15px;
 }
-
 /* =========================
    SIMILO GALERIE
 ========================= */
