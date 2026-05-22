@@ -150,6 +150,12 @@
         <button class="character-card__info-tab" data-info="info-stats">
           <i class="fa-solid fa-chart-simple"></i>
         </button>
+        <a class="character-card__info-tab spotify-btn"
+             href="https://open.spotify.com/playlist/1sUAxzL0cYmneE6RYPtoLV?si=-8zHt5K7R-u2OmLzY6k8LA"
+             target="_blank"
+             rel="noopener noreferrer">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
       </div>
 
     </aside>
@@ -189,7 +195,7 @@
         <a href="evy.html" class="character-link-card">
           <div class="character-link-text">
             <div class="character-link-header">
-              <h3>Gyulladt</h3>
+              <h3>Evy</h3>
               <div class="hearts">❤︎❤︎❤︎❤︎</div>
             </div>
             <span class="relation">[ besties/childhood friend/roomates ]</span>
@@ -260,7 +266,7 @@
   </div>
 
   <footer class="character-card__footer">
-    “ A day without laughter is a day wasted. ”
+    “ Hey Nana, if you and I were lovers, would we have been able to fill the emptiness by holding each other? ”
   </footer>
   </div>
 
@@ -305,7 +311,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch("../galerie.json");
     const data = await response.json();
 
-    const personnage = "brunelle";
+    const personnage = "victoria";
 
     const images = data.filter(item =>
         item.perso && item.perso.includes(personnage)
