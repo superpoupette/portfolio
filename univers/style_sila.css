@@ -6,11 +6,11 @@ body {
 }
 
 .character-card__header {
-  background: #C44350;
+  background: #DB6375;
 }
 
 .character-card__info-wrapper {
-  background: #E0D0CE;
+  background: #F7D5DB;
 }
 
 .character-card__info-tab {
@@ -26,7 +26,7 @@ body {
 }
 
 .character-card__about {
-  background: #E0D0CE;
+  background: #F7D5DB;
 }
 
 .character-card__tabs {
@@ -38,7 +38,7 @@ body {
 }
 
 .character-card__footer {
-  background: #C44350;
+  background: #DB6375;
 }
 
 .gallery--character {
