@@ -10,23 +10,23 @@ body {
 }
 
 .character-card__info-wrapper {
-  background: #C9C1DE;
+  background: #E0D0CE;
 }
 
 .character-card__info-tab {
-	border: 1px solid #E1BDFC;
+	border: 1px solid #55AD79;
 }
 
 .character-card__info-tab:hover {
-  background: #E1BDFC;
+  background: #55AD79;
 }
 
 .character-card__info-tab.active {
-  background: #E1BDFC;
+  background: #55AD79;
 }
 
 .character-card__about {
-  background: #C9C1DE;
+  background: #E0D0CE;
 }
 
 .character-card__tabs {
@@ -34,7 +34,7 @@ body {
 }
 
 .character-card__tab.active {
-  background: #C695E8;
+  background: #3D8257;
 }
 
 .character-card__footer {
