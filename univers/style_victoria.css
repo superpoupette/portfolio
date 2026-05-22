@@ -1,0 +1,59 @@
+body {
+  background-image: url("../Images/Patterns/Pattern_brunelle2(04.08.21).png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 1000px;
+}
+
+.character-card__header {
+  background: #F593D0;
+}
+
+.character-card__info-wrapper {
+  background: #D0F7DE;
+}
+
+.character-card__info-tab {
+	border: 1px solid #E1BDFC;
+}
+
+.character-card__info-tab:hover {
+  background: #E1BDFC;
+}
+
+.character-card__info-tab.active {
+  background: #E1BDFC;
+}
+
+.character-card__about {
+  background: #D0F7DE;
+}
+
+.character-card__tabs {
+	background: #E1BDFC;
+}
+
+.character-card__tab.active {
+  background: #C695E8;
+}
+
+.character-card__footer {
+  background: #F593D0;
+}
+
+.gallery--character {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1100px;
+    margin: 20px auto 60px auto;
+    padding: 0 20px;
+}
+
+.gallery--character img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
