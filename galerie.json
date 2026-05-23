@@ -672,5 +672,29 @@
     "tags": [],
     "perso": ["sila","kastor"],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/bereal3(13.01.23).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Oiseau (23.06.20).png",
+    "date": "2020-06-23",
+    "title": "Oiseau",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Oiseau (23.06.20).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Poussin (18.06.20).png",
+    "date": "2020-06-18",
+    "title": "Poussin",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Poussin (18.06.20).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Reading girl (18.06.20).png",
+    "date": "2020-06-20",
+    "title": "Reading girl",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Reading girl (18.06.20).png"
   }
 ]
