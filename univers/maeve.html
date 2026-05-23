@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="style_personnages.css">
   <link rel="stylesheet" href="style_maeve.css">
@@ -21,7 +22,7 @@
 <!-- HEADER GLOBAL (ton site) -->
 <header>
   <a href="index.html">
-    <h1>SEOLIA</h1>
+    <h1>Seolia</h1>
   </a>
 
   <nav>
@@ -46,7 +47,7 @@
 
     <!-- LEFT -->
     <aside class="character-card__left">
-      <img src="../Images/Galerie/MaevePORTRAIT(05.12.20).png" alt="character">
+      <img src="../Images/Personnages/MaevePORTRAIT(05.12.20).png" alt="character">
 
       <div class="character-card__info-wrapper">
 
@@ -149,6 +150,12 @@
         <button class="character-card__info-tab" data-info="info-stats">
           <i class="fa-solid fa-chart-simple"></i>
         </button>
+        <a class="character-card__info-tab spotify-btn"
+             href="https://open.spotify.com/playlist/6PrV6aAGTdsfkKf4NntXnj?si=dcea215b2c384e78"
+             target="_blank"
+             rel="noopener noreferrer">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
       </div>
 
     </aside>
@@ -251,7 +258,6 @@
   <footer class="character-card__footer">
     “ The only faith that can overcome is that which does not stop in the face of sacrifice. ”
   </footer>
-  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6PrV6aAGTdsfkKf4NntXnj?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
 
 <div class="character-card__gallery gallery--character"></div>
@@ -271,7 +277,7 @@ tabs.forEach(tab => {
   });
 });
 
-const infoTabs = document.querySelectorAll(".character-card__info-tab");
+const infoTabs = document.querySelectorAll(".character-card__info-tab:not(.spotify-btn)");
 const infoContents = document.querySelectorAll(".character-card__info-content");
 
 infoTabs.forEach(tab => {
@@ -295,7 +301,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch("../galerie.json");
     const data = await response.json();
 
-    const personnage = "armanti";
+    const personnage = "maeve";
 
     const images = data.filter(item =>
         item.perso && item.perso.includes(personnage)

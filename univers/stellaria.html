@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="style_personnages.css">
 
@@ -20,7 +21,7 @@
 <!-- HEADER GLOBAL (ton site) -->
 <header>
   <a href="index.html">
-    <h1>SEOLIA</h1>
+    <h1>Seola</h1>
   </a>
 
   <nav>
@@ -45,7 +46,7 @@
 
     <!-- LEFT -->
     <aside class="character-card__left">
-      <img src="../Images/Galerie/STELLA.tn.png" alt="character">
+      <img src="../Images/Personnages/Stellaportrait(25.03.21).png" alt="character">
 
       <div class="character-card__info-wrapper">
 
@@ -148,6 +149,12 @@
         <button class="character-card__info-tab" data-info="info-stats">
           <i class="fa-solid fa-chart-simple"></i>
         </button>
+        <a class="character-card__info-tab spotify-btn"
+             href="https://open.spotify.com/playlist/3Vs82njkbndzICmCnY97p7?si=04155b12044b4a61"
+             target="_blank"
+             rel="noopener noreferrer">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
       </div>
 
     </aside>
@@ -230,10 +237,57 @@
         </div>
 
         <div class="character-card__tab-content" id="liens">
-          <p>Relations, connexions, etc...</p>
+
+      <div class="character-links">
+
+        <a href="ilian.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Ilian</h3>
+              <div class="hearts">❤︎❤︎❤︎❤︎</div>
+            </div>
+            <span class="relation">[ best friend ]</span>
+            <p>Ilian and Stella have been traveling the roads together for years. They have absolute trust in each other and fight together.</p>
+          </div>
+          <img src="../Images/Personnages/Ilian(20.05.21).png" alt="Ilian">
+        </a>
+        <a href="mercure.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Mercure</h3>
+              <div class="hearts">❤︎❤︎</div>
+            </div>
+            <span class="relation">[ ally ]</span>
+            <p>They are both members of the rebellion. Mercure confided Ilian to her.</p>
+          </div>
+          <img src="../Images/Personnages/Mercure(22.07.21).png" alt="Mercure">
+        </a>
+        <a href="sila.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Sila</h3>
+              <div class="hearts">❤︎❤︎❤︎</div>
+            </div>
+            <span class="relation">[ ally ]</span>
+            <p>Sila was recruited by Stella and Ilian to aid them in the hero's release.</p>
+          </div>
+          <img src="../Images/Personnages/Sila(19.05.21).png" alt="Sila">
+        </a>
+        <a href="gyulladt.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Gyulladt</h3>
+              <div class="hearts">❤︎</div>
+            </div>
+            <span class="relation">[ employer ]</span>
+            <p>Gyulladt called on Ilian and Stella for many assignments.</p>
+          </div>
+          <img src="../Images/Personnages/Gyulladt(19.05.21).png" alt="Gyulladt">
+        </a>
         </div>
 
       </div>
+    </div>
 
       <!-- TABS -->
       <div class="character-card__tabs">
@@ -257,8 +311,6 @@
   <footer class="character-card__footer">
     “ Who controls the past controls the future, who controls the present controls the past. ”
   </footer>
-  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3Vs82njkbndzICmCnY97p7?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
 </div>
 
 <!-- JS -->
@@ -276,7 +328,7 @@ tabs.forEach(tab => {
   });
 });
 
-const infoTabs = document.querySelectorAll(".character-card__info-tab");
+const infoTabs = document.querySelectorAll(".character-card__info-tab:not(.spotify-btn)");
 const infoContents = document.querySelectorAll(".character-card__info-content");
 
 infoTabs.forEach(tab => {
@@ -288,7 +340,40 @@ infoTabs.forEach(tab => {
     document.getElementById(tab.dataset.info).classList.add("active");
   });
 });
-</script>
 
+document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.querySelector(".gallery--character");
+
+    if (!container) {
+        console.error("Galerie introuvable !");
+        return;
+    }
+
+    const response = await fetch("../galerie.json");
+    const data = await response.json();
+
+    const personnage = "stellaria";
+
+    const images = data.filter(item =>
+        item.perso && item.perso.includes(personnage)
+    );
+
+    images.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    images.forEach(item => {
+        const img = document.createElement("img");
+
+        img.src = item.src;
+        img.alt = item.title;
+
+        if (item.pos) {
+            img.dataset.pos = item.pos;
+        }
+
+        container.appendChild(img);
+    });
+});
+</script>
 </body>
 </html>
+
