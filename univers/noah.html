@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style_personnages2.css">
+  <link rel="stylesheet" href="style_sila.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER GLOBAL (ton site) -->
+<header>
+  <a href="../index.html">
+    <h1>Seolia</h1>
+  </a>
+
+  <nav>
+    <a href="../galerie.html">GALERIE</a>
+    <a href="../jeux.html">JEUX</a>
+    <a href="../toutim.html">TOUTIM MAGAZINE</a>
+    <a href="univers.html">PERSONNAGES</a>
+    <a href="../charlie.html">OU EST CHARLIE ?</a>
+  </nav>
+</header>
+
+<!-- CHARACTER CARD -->
+<div class="character-card">
+
+  <!-- HEADER CARD -->
+  <header class="character-card__header">
+    <h1 class="character-card__title">Noah</h1>
+    <div class="character-card__icon">♌︎</div>
+  </header>
+
+  <div class="character-card__main">
+
+    <!-- LEFT -->
+    <aside class="character-card__left">
+      <img src="../Images/Personnages/Noah(20.02.21).png" alt="character">
+
+      <div class="character-card__info-wrapper">
+
+        <!-- GENERAL -->
+        <div class="character-card__info-content active" id="info-general">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Age</span>
+            <span class="character-card__value">18</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Pronouns</span>
+            <span class="character-card__value">he/him</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Species</span>
+            <span class="character-card__value">human</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Magic</span>
+            <span class="character-card__value">tattoo invocation</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Job</span>
+            <span class="character-card__value">archaeology student</span>
+          </div>
+        </div>
+
+        <!-- PHYSIQUE -->
+        <div class="character-card__info-content" id="info-physique">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Height</span>
+            <span class="character-card__value">1m87</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Build</span>
+            <span class="character-card__value">muscular</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Skin</span>
+            <span class="character-card__value">brown</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Eyes</span>
+            <span class="character-card__value">dark brown</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Hair</span>
+            <span class="character-card__value">dark brown</span>
+          </div>
+        </div>
+
+        <!-- STATS -->
+        <div class="character-card__info-content" id="info-stats">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Loyalty</span>
+            <span class="character-card__value">★★★★★</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Creativity</span>
+            <span class="character-card__value">★★☆☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Social</span>
+            <span class="character-card__value">★★★★☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Sensivity</span>
+            <span class="character-card__value">★★★☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Intellect</span>
+            <span class="character-card__value">★★★★☆</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="character-card__info-tabs">
+        <button class="character-card__info-tab active" data-info="info-general">
+          <i class="fa-solid fa-circle-info"></i>
+        </button>
+
+        <button class="character-card__info-tab" data-info="info-physique">
+          <i class="fa-solid fa-user"></i>
+        </button>
+
+        <button class="character-card__info-tab" data-info="info-stats">
+          <i class="fa-solid fa-chart-simple"></i>
+        </button>
+        <a class="character-card__info-tab spotify-btn"
+             href="https://open.spotify.com/playlist/0JVm7cE7w6I78DfQvdenNE?si=Q2XwQCjUTp6sAEmtwHmWHQ"
+             target="_blank"
+             rel="noopener noreferrer">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+      </div>
+
+    </aside>
+
+    <!-- RIGHT -->
+<section class="character-card__right">
+
+  <div class="character-card__about">
+
+    <!-- DESCRIPTION -->
+    <div class="character-card__tab-content active" id="description">
+      <p>Sila is a very gentle and calm person. She is cheerful and positive in nature.<br><br>
+        She is very careful with her appearance. She loves pretty clothes, and often does hairstyles. She wears makeup and likes to draw things on her cheeks (hearts, stars, fake freckles)<br><br>
+        Sila is a water magician, able to summon golems. Her powers are quite powerful and she is able to summon several at once if they are not too big.<br>
+        Poc is the smallest of his golems and is summoned almost all the time. Gom is the tallest, and he serves as his watery armor for combat
+      </p>
+    </div>
+
+    <!-- STORY -->
+    <div class="character-card__tab-content" id="histoire">
+
+      <div class="story-section">
+        <h4>Childhood</h4>
+        <p>
+        Noah grew up in the Kuuma Desert. He and his family lived on large sand ships. Many members of his family have tattoos made by a khānbs they can summon. They are very close and generally live amongst themselves.
+        </p>
+      </div>
+
+      <div class="story-section">
+        <h4>Honey Moon</h4>
+        <p>
+        After meeting Hyacinth, he traveled with him for a while, until his death
+        </p>
+      </div>
+
+      <div class="story-section">
+        <h4>Today</h4>
+        <p>
+        Noah then moved to Daiwan at the age of 22 to study archaeology. Once he finishes his studies, he plans to return to Kuuma in search of his family. </p>
+      </div>
+
+    </div>
+
+    <!-- LIENS ❤︎🔥🗲-->
+    <div class="character-card__tab-content" id="liens">
+
+      <div class="character-links">
+
+        <a href="hyacinthe.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Hyacinthe</h3>
+              <div class="hearts">❤︎❤︎❤︎❤︎❤︎❤︎</div>
+            </div>
+            <span class="relation">[ lover ]</span>
+            <p>Hyacinthe and Noah are madly in love. They have a very good relationship, very fusional and caring. Their characters complement each other and they support each other tremendously despite their very different lives and goals.</p>
+          </div>
+          <img src="../Images/Personnages/Hyacinthe(24.07.21) (2).png" alt="Hyacinthe">
+        </a>
+
+        <a href="kastor.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Kastor</h3>
+              <div class="hearts">❤︎❤︎❤︎❤︎❤︎</div>
+            </div>
+            <span class="relation">[ lovers ]</span>
+            <p>They have a very sweet relationship.  Sila fell in love with Kastor from their first meeting. They are neighbors.</p>
+          </div>
+          <img src="../Images/Personnages/Kastor(20.05.21).png" alt="Kastor">
+        <a>
+
+
+        <a href="noah.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Noah</h3>
+              <div class="hearts">❤︎❤︎❤︎</div>
+            </div>
+            <span class="relation">[ roommates ]</span>
+            <p>They get along quite well.</p>
+          </div>
+          <img src="../Images/Personnages/Noah(20.02.21).png" alt="Noah">
+        </a>
+
+        <a href="sila.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Victoria</h3>
+              <div class="hearts">❤︎❤︎❤︎</div>
+            </div>
+            <span class="relation">[ colleage ]</span>
+            <p>They have been working together at the pastry shop for several years now and see each other quite often outside of the shop.</p>
+          </div>
+          <img src="../Images/Personnages/Victoria(13.06.25).png" alt="Victoria">
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+      <!-- TABS -->
+      <div class="character-card__tabs">
+        <span class="character-card__tab active" data-tab="description">About</span>
+        <span class="character-card__tab" data-tab="histoire">Story</span>
+        <span class="character-card__tab" data-tab="liens">Links</span>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="character-card__gallery">
+        <img src="../Images/Moodboards/bde3ff4919ec05c23468a85b725f2191.jpg">
+        <img src="../Images/Moodboards/667dbc2137cf6b27f227b3a9b12cab43.jpg">
+        <img src="../Images/Moodboards/fa2293ca0e70123cc314fd7e5de5c7fb.jpg">
+        <img src="../Images/Moodboards/6d539b057161887c6229653fe3730d3f.jpg">
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer class="character-card__footer">
+    “ If your compassion does not include yourself, it is incomplete. ”
+  </footer>
+  </div>
+
+<div class="character-card__gallery gallery--character"></div>
+
+<!-- JS -->
+<script>
+const tabs = document.querySelectorAll(".character-card__tab");
+const contents = document.querySelectorAll(".character-card__tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.tab).classList.add("active");
+  });
+});
+
+const infoTabs = document.querySelectorAll(".character-card__info-tab:not(.spotify-btn)");
+const infoContents = document.querySelectorAll(".character-card__info-content");
+
+infoTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    infoTabs.forEach(t => t.classList.remove("active"));
+    infoContents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.info).classList.add("active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.querySelector(".gallery--character");
+
+    if (!container) {
+        console.error("Galerie introuvable !");
+        return;
+    }
+
+    const response = await fetch("../galerie.json");
+    const data = await response.json();
+
+    const personnage = "sila";
+
+    const images = data.filter(item =>
+        item.perso && item.perso.includes(personnage)
+    );
+
+    images.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    images.forEach(item => {
+        const img = document.createElement("img");
+
+        img.src = item.src;
+        img.alt = item.title;
+
+        if (item.pos) {
+            img.dataset.pos = item.pos;
+        }
+
+        container.appendChild(img);
+    });
+});
+</script>
+</body>
+</html>
