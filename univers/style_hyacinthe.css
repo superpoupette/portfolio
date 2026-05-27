@@ -1,12 +1,12 @@
 body {
-  background-image: url("../Images/Patterns/Pattern_Sila2(04.08.21).png");
+  background-image: url("../Images/Patterns/Pattern_Hyacinthe2(04.08.21).png");
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 1000px;
 }
 
 .character-card__header {
-  background: #D64D61;
+  background: #E8B34A;
 }
 
 .character-card__info-wrapper {
@@ -57,3 +57,8 @@ body {
     display: block;
     border-radius: 0;
 }
+
+.character-card {
+	background: DFD5ED;
+}
+	
