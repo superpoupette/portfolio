@@ -6,11 +6,11 @@ body {
 }
 
 .character-card__header {
-  background: #761FAB;
+  background: #A24CA6;
 }
 
 .character-card__info-wrapper {
-  background: #E1E6F5;
+  background: #FAD491;
 }
 
 .character-card__info-tab {
@@ -59,6 +59,6 @@ body {
 }
 
 .character-card {
-	background: #FAD491;
+	background: #FCF2D9;
 }
 	
