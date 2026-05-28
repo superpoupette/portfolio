@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style_personnages2.css">
+  <link rel="stylesheet" href="style_kastor.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER GLOBAL (ton site) -->
+<header>
+  <a href="../index.html">
+    <h1>Seolia</h1>
+  </a>
+
+  <nav>
+    <a href="../galerie.html">GALERIE</a>
+    <a href="../jeux.html">JEUX</a>
+    <a href="../toutim.html">TOUTIM MAGAZINE</a>
+    <a href="univers.html">PERSONNAGES</a>
+    <a href="../charlie.html">OU EST CHARLIE ?</a>
+  </nav>
+</header>
+
+<!-- CHARACTER CARD -->
+<div class="character-card">
+
+  <!-- HEADER CARD -->
+  <header class="character-card__header">
+    <h1 class="character-card__title">Kaoda</h1>
+    <div class="character-card__icon">♍︎</div>
+  </header>
+
+  <div class="character-card__main">
+
+    <!-- LEFT -->
+    <aside class="character-card__left">
+      <img src="../Images/Personnages/Kaoda(19.05.21).png" alt="character">
+
+      <div class="character-card__info-wrapper">
+
+        <!-- GENERAL -->
+        <div class="character-card__info-content active" id="info-general">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Age</span>
+            <span class="character-card__value">22</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Pronouns</span>
+            <span class="character-card__value">he/him</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Species</span>
+            <span class="character-card__value">cyané</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Magic</span>
+            <span class="character-card__value">none</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Job</span>
+            <span class="character-card__value">violinist</span>
+          </div>
+        </div>
+
+        <!-- PHYSIQUE -->
+        <div class="character-card__info-content" id="info-physique">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Height</span>
+            <span class="character-card__value">1m71</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Build</span>
+            <span class="character-card__value">thin</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Skin</span>
+            <span class="character-card__value">turquoise and green</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Eyes</span>
+            <span class="character-card__value">navy blue</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Hair</span>
+            <span class="character-card__value">water blue</span>
+          </div>
+        </div>
+
+        <!-- STATS -->
+        <div class="character-card__info-content" id="info-stats">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Ambition</span>
+            <span class="character-card__value">★★★★★</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Creativity</span>
+            <span class="character-card__value">★★★☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Social</span>
+            <span class="character-card__value">★★☆☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Sensivity</span>
+            <span class="character-card__value">★★★☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Intellect</span>
+            <span class="character-card__value">★★☆☆☆</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="character-card__info-tabs">
+        <button class="character-card__info-tab active" data-info="info-general">
+          <i class="fa-solid fa-circle-info"></i>
+        </button>
+
+        <button class="character-card__info-tab" data-info="info-physique">
+          <i class="fa-solid fa-user"></i>
+        </button>
+
+        <button class="character-card__info-tab" data-info="info-stats">
+          <i class="fa-solid fa-chart-simple"></i>
+        </button>
+        <a class="character-card__info-tab spotify-btn"
+             href="https://open.spotify.com/playlist/0xriOveu2Vl9lAy8bNMdEb?si=bb6953b788684e5a"
+             target="_blank"
+             rel="noopener noreferrer">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+      </div>
+
+    </aside>
+
+    <!-- RIGHT -->
+    <section class="character-card__right">
+
+      <div class="character-card__about">
+
+        <div class="character-card__tab-content active" id="description">
+          <p>Kastor is a free and ambitious young woman but she is terrified of failure.<br>
+          She appreciates the night and the calm. <br>
+          Although she is not very demonstrative, she sacrifices a lot for the people she values and when she is invested in a relationship, she offers a lot.</p>
+        </div>
+
+        <div class="character-card__tab-content" id="histoire">
+          <div class="story-section">
+            <h4>Childhood</h4>
+            <p>
+              03 june 1251
+            </p>
+            <p>
+              Kastor has always lived in Dawan. Since childhood, she has had enormous ambition. She spent a lot of time working at school when she was little.<br>
+              Today she works in a large flying vehicle company and owns her own brand of vehicles called Azul.<br>
+              She creates small vehicles like skateboards, rollerblades or scooters. 
+              </p>
+          </div>
+        </div>
+
+        <!-- LIENS ❤︎🔥🗲-->
+    <div class="character-card__tab-content" id="liens">
+
+      <div class="character-links">
+
+        <a href="sila.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Sila</h3>
+              <div class="hearts">❤︎❤︎❤︎❤︎❤︎</div>
+            </div>
+            <span class="relation">[ lover ]</span>
+            <p>They have a very sweet relationship. Sila fell in love with Kastor from their first meeting. They are neighbors.
+            </p>
+          </div>
+          <img src="../Images/Personnages/Sila(19.05.21).png" alt="Sila">
+        <a>
+
+        <a href="pollux.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Pollux</h3>
+              <div class="hearts">❤︎❤︎❤︎❤︎</div>
+            </div>
+            <span class="relation">[ twin sister ]</span>
+            <p>Kastor and pollux have always done everything together since their childhood. They have very different characters but have learned to make concessions. They are now roomates. Kastor behaves a bit like mother and catches up with Pollux's stupidities.
+            </div>
+          <img src="../Images/Personnages/Pollux(21.05.21).png" alt="Pollux">
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+      <!-- TABS -->
+      <div class="character-card__tabs">
+        <span class="character-card__tab active" data-tab="description">About</span>
+        <span class="character-card__tab" data-tab="histoire">Story</span>
+        <span class="character-card__tab" data-tab="liens">Links</span>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="character-card__gallery">
+        <img src="../Images/Moodboards/8d6c15fac312691a088a95276d86a21f.jpg">
+        <img src="../Images/Moodboards/d5f6a79d0462c54a302005c25d3d0694.jpg">
+        <img src="../Images/Moodboards/bca44fb994269557f131baf6f95d55de.jpg">
+        <img src="../Images/Moodboards/453420194a19402b7472aad31d0e50f0.jpg">
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer class="character-card__footer">
+    “ Work hard, dream big, never give up. ”
+  </footer>
+  </div>
+
+<!-- JS -->
+<script>
+const tabs = document.querySelectorAll(".character-card__tab");
+const contents = document.querySelectorAll(".character-card__tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.tab).classList.add("active");
+  });
+});
+
+const infoTabs = document.querySelectorAll(".character-card__info-tab:not(.spotify-btn)");
+const infoContents = document.querySelectorAll(".character-card__info-content");
+
+infoTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    infoTabs.forEach(t => t.classList.remove("active"));
+    infoContents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.info).classList.add("active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.querySelector(".gallery--character");
+
+    if (!container) {
+        console.error("Galerie introuvable !");
+        return;
+    }
+
+    const response = await fetch("../galerie.json");
+    const data = await response.json();
+
+    const personnage = "kastor";
+
+    const images = data.filter(item =>
+        item.perso && item.perso.includes(personnage)
+    );
+
+    images.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    images.forEach(item => {
+        const img = document.createElement("img");
+
+        img.src = item.src;
+        img.alt = item.title;
+
+        if (item.pos) {
+            img.dataset.pos = item.pos;
+        }
+
+        container.appendChild(img);
+    });
+});
+</script>
+
+</body>
+</html>
