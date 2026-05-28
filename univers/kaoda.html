@@ -198,30 +198,18 @@
 
       <div class="character-links">
 
-        <a href="sila.html" class="character-link-card">
+        <a href="maeve.html" class="character-link-card">
           <div class="character-link-text">
             <div class="character-link-header">
-              <h3>Sila</h3>
+              <h3>Maeve</h3>
               <div class="hearts">❤︎❤︎❤︎❤︎❤︎</div>
             </div>
-            <span class="relation">[ lover ]</span>
-            <p>They have a very sweet relationship. Sila fell in love with Kastor from their first meeting. They are neighbors.
+            <span class="relation">[ wife ]</span>
+            <p>Kaoda and Maeve had a diplomatic arranged marriage. They are very close friends, having mutual trust and respect.
             </p>
           </div>
-          <img src="../Images/Personnages/Sila(19.05.21).png" alt="Sila">
+          <img src="../Images/Personnages/MaevePORTRAIT(05.12.20).png" alt="Maeve">
         <a>
-
-        <a href="pollux.html" class="character-link-card">
-          <div class="character-link-text">
-            <div class="character-link-header">
-              <h3>Pollux</h3>
-              <div class="hearts">❤︎❤︎❤︎❤︎</div>
-            </div>
-            <span class="relation">[ twin sister ]</span>
-            <p>Kastor and pollux have always done everything together since their childhood. They have very different characters but have learned to make concessions. They are now roomates. Kastor behaves a bit like mother and catches up with Pollux's stupidities.
-            </div>
-          <img src="../Images/Personnages/Pollux(21.05.21).png" alt="Pollux">
-        </a>
 
       </div>
 
@@ -249,7 +237,7 @@
   </div>
 
   <footer class="character-card__footer">
-    “ Work hard, dream big, never give up. ”
+    “ It's a mad world, and I'm insane. ”
   </footer>
   </div>
 
@@ -292,7 +280,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch("../galerie.json");
     const data = await response.json();
 
-    const personnage = "kastor";
+    const personnage = "kaoda";
 
     const images = data.filter(item =>
         item.perso && item.perso.includes(personnage)
