@@ -731,7 +731,7 @@
   },
   {
     "src": "/portfolio/Images/Galerie/Full/Andromeda.png",
-    "date": "2010-07-28",
+    "date": "2020-07-28",
     "title": "Andromeda",
     "tags": ["artfight"],
     "perso": [],
@@ -784,5 +784,109 @@
     "tags": [],
     "perso": ["kastor","pollux"],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/Kastor & Pollux (13.04.20).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/ketu.png",
+    "date": "2020-03-01",
+    "title": "Ketu",
+    "tags": ["watercolor"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/ketu.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/kjiem.png",
+    "date": "2020-03-01",
+    "title": "Kjiem",
+    "tags": ["watercolor"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/kjiem.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Luminous (04.20).png",
+    "date": "2020-05-07",
+    "title": "Luminous",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Luminous (04.20).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Naeye.png",
+    "date": "2020-07-23",
+    "title": "Naeye",
+    "tags": ["artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Naeye.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/osa.png",
+    "date": "2020-03-01",
+    "title": "Osa",
+    "tags": ["watercolor"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/osa.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Phare.png",
+    "date": "2020-03-01",
+    "title": "Phare",
+    "tags": ["watercolor"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Phare.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Picnic.png",
+    "date": "2020-07-30",
+    "title": "Picnique entre amis",
+    "tags": ["artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Picnic.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Rin (Stars_E).png",
+    "date": "2020-07-06",
+    "title": "Rin (Stars_E)",
+    "tags": ["artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Rin (Stars_E).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Shino.png",
+    "date": "2019-06-20",
+    "title": "Shino",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Shino.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Shirua.png",
+    "date": "2020-07-03",
+    "title": "Shirua",
+    "tags": ["artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Shirua.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/underwater.jpg",
+    "date": "2020-03-01",
+    "title": "Underwater",
+    "tags": ["watercolor"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/underwater.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Téa (11.04.20).png",
+    "date": "2020-04-11",
+    "title": "Théa",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Téa (11.04.20).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Ygora Tess.png",
+    "date": "2020-07-20",
+    "title": "Ygora Tess",
+    "tags": ["artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Ygora Tess.png"
   }
 ]
