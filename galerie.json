@@ -728,5 +728,45 @@
     "tags": [],
     "perso": [],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/Absent(24.04.19).jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Andromeda.png",
+    "date": "2010-07-28",
+    "title": "Andromeda",
+    "tags": ["artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Andromeda.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/bereal1.3(13.01.23).png",
+    "date": "2023-01-13",
+    "title": "Bereal - Maeve",
+    "tags": [],
+    "perso": ["maeve","kaoda"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/bereal1.3(13.01.23).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/bereal2(13.01.23).png",
+    "date": "2023-01-13",
+    "title": "Bereal - Pollux",
+    "tags": [],
+    "perso": ["pollux"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/bereal2(13.01.23).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/dragon1.png",
+    "date": "2020-05-02",
+    "title": "Dragon",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/dragon1.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Groupe.png",
+    "date": "2020-04-26",
+    "title": "Gang gang",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Groupe.png"
   }
 ]
