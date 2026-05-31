@@ -214,6 +214,7 @@
     "src": "/portfolio/Images/Galerie/Full/IMG_20220302_112310.jpg",
     "title": "Autoportrait",
     "tags": ["watercolor"],
+    "perso": ["julia"],
     "date": "2022-03-02",
     "perso": [],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220302_112310.jpg"
@@ -244,6 +245,7 @@
     "src": "/portfolio/Images/Galerie/Full/julia FOND.png",
     "title": "Super Julia #Touteam",
     "date": "2025-09-10",
+    "perso": ["julia"],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/julia FOND.png"
   },
   {
@@ -259,7 +261,7 @@
     "date": "2025-04-03",
     "title": "Julia StarterPack",
     "tags": [],
-    "perso": [],
+    "perso": ["julia"],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/JuliaStarterPack(13.04.25).png"
   },
   {
@@ -554,7 +556,7 @@
     "src": "/portfolio/Images/Galerie/Full/PhotoClasse(09.09.22).png",
     "date": "2022-09-09",
     "title": "Photo de classe",
-    "perso": [],
+    "perso": ["julia"],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/PhotoClasse(09.09.22).png"
   },
   {
@@ -902,7 +904,7 @@
     "date": "2026-03-17",
     "title": "Cluedo - Julia",
     "tags": [],
-    "perso": [],
+    "perso": ["julia"],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/Cluedo-julia3(17.03.26).png"
   },
   {
@@ -918,7 +920,7 @@
     "date": "2024-10-17",
     "title": "Check the fit go check that",
     "tags": [],
-    "perso": [],
+    "perso": ["julia"],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/fitcheck(17.10.24).png"
   },
   {
@@ -960,7 +962,69 @@
     "tags": ["crayons"],
     "perso": [],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220306_103708.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20220312_170034.jpg",
+    "date": "2022-03-12",
+    "title": "Gruikui",
+    "tags": ["crayons"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220312_170034.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20220321_125216.jpg",
+    "date": "2022-03-21",
+    "title": "Tortipouss",
+    "tags": ["crayons"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220321_125216.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20230704_125557.jpg",
+    "date": "2023-07-04",
+    "title": "Aquarelles en Slovaquie",
+    "tags": ["watercolor","artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20230704_125557.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Photo(18.01.25).png",
+    "date": "2025-01-18",
+    "title": "Photo de groupe",
+    "tags": [],
+    "perso": ["victoria","sila","kastor","pollux","evy","noah"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Photo(18.01.25).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Profil(04.05.26).png",
+    "date": "2026-05-04",
+    "title": "Sorcière rose",
+    "tags": [],
+    "perso": ["julia"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Profil(04.05.26).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Sorciere(26.04.26).png",
+    "date": "2026-04-26",
+    "title": "Sorcière menthe à l'eau",
+    "tags": [],
+    "perso": ["julia"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Sorciere(26.04.26).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/witch(13.05.26).png",
+    "date": "2026-05-26",
+    "title": "Sorcière bleue",
+    "tags": [],
+    "perso": ["julia"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/witch(13.05.26).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Victoria(31.05.26).png",
+    "date": "2026-05-31",
+    "title": "I'm a cool Lady",
+    "tags": [],
+    "perso": ["victoria"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Victoria(31.05.26).png"
   }
-
-
 ]
