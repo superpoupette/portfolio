@@ -928,6 +928,22 @@
     "tags": [],
     "perso": ["victoria","sila"],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/Girlies(17.01.25).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20220115_112549_532.jpg",
+    "date": "2022-01-15",
+    "title": "Get Jinxed",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220115_112549_532.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/IMG_20220130_093658_550.jpg",
+    "date": "2022-01-30",
+    "title": "Pixies",
+    "tags": ["watercolor"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20220130_093658_550.jpg"
   }
 
 
