@@ -337,7 +337,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch("../galerie.json");
     const data = await response.json();
 
-    const personnage = "victoria";
+    const personnage = "pollux";
 
     const images = data.filter(item =>
         item.perso && item.perso.includes(personnage)
