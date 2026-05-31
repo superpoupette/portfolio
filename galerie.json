@@ -704,6 +704,29 @@
     "tags": ["peintures"],
     "perso": [],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/24.01.Citrons.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/24.02.Escargotfacettes.png",
+    "date": "2024-02-01",
+    "title": "Gouache - Escargot à facette",
+    "tags": ["peintures"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/24.02.Escargotfacettes.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/AMiaou (14.07.19).png",
+    "date": "2019-07-14",
+    "title": "Amiaou",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/AMiaou (14.07.19).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Absent(24.04.19).jpg",
+    "date": "2019-04-24",
+    "title": "Absent",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Absent(24.04.19).jpg"
   }
-
 ]
