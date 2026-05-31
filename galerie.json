@@ -888,5 +888,47 @@
     "tags": ["artfight"],
     "perso": [],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/Ygora Tess.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/20240310_153758.jpg",
+    "date": "2024-03-10",
+    "title": "KPOP cards",
+    "tags": ["watercolor"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/20240310_153758.jpg"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Cluedo-julia3(17.03.26).png",
+    "date": "2026-03-17",
+    "title": "Cluedo - Julia",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Cluedo-julia3(17.03.26).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/DaniGabriella(20.06.25).png",
+    "date": "2025-06-20",
+    "title": "Daniella - Gabriella",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/DaniGabriella(20.06.25).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/fitcheck(17.10.24).png",
+    "date": "2024-10-17",
+    "title": "Check the fit go check that",
+    "tags": [],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/fitcheck(17.10.24).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Girlies(17.01.25).png",
+    "date": "2025-01-17",
+    "title": "After work",
+    "tags": [],
+    "perso": ["victoria","sila"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Girlies(17.01.25).png"
   }
+
+
 ]

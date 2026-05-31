@@ -24,9 +24,9 @@ fs.readdirSync(inputDir).forEach(file => {
   sharp(inputPath)
     .resize(400, 400, {
       fit: "cover",        // recadre pour remplir 400x400
-      position: "centre"   
+      //position: "centre"   
       //position:"bottom"
-      //position: "top"
+      position: "top"
       //position: "left"
       //position: "right"
     })
