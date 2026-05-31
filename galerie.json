@@ -238,7 +238,7 @@
     "date": "2023-03-11",
     "perso": [],
     "tags": ["watercolor"],
-    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20230311_155257.jpg"
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/IMG_20230311_155257.png"
   },
   {
     "src": "/portfolio/Images/Galerie/Full/julia FOND.png",
@@ -478,7 +478,7 @@
     "src": "/portfolio/Images/Galerie/Full/Lesbians2(14.10.22).png",
     "date": "2022-10-14",
     "title": "Lesbians",
-    "perso": ["va'ar","flodeis"],
+    "perso": ["vaar","flodeis"],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/Lesbians2(14.10.22).png"
   },
   {
@@ -768,5 +768,21 @@
     "tags": [],
     "perso": [],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/Groupe.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Kaerushi (Hashiiyan).png",
+    "date": "2020-07-03",
+    "title": "Kaerushi",
+    "tags": ["artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Kaerushi (Hashiiyan).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Kastor & Pollux (13.04.20).png",
+    "date": "2020-04-13",
+    "title": "Twins",
+    "tags": [],
+    "perso": ["kastor","pollux"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Kastor & Pollux (13.04.20).png"
   }
 ]
