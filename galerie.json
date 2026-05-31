@@ -640,5 +640,37 @@
     "tags": ["peintures"],
     "perso": [],
     "thumbnail": "/portfolio/Images/Galerie/Thumbs/23.10.Foret.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/23.11.Oiseaux.png",
+    "date": "2023-11-01",
+    "title": "Acrylique - Oiseaux",
+    "tags": ["peintures"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/23.11.Oiseaux.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/23.12.tournesol.png",
+    "date": "2023-12-01",
+    "title": "Gouache - Tournesol",
+    "tags": ["peintures"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/23.12.tournesol.png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/Chell (Rosyplagueprincess).png",
+    "date": "2020-07-07",
+    "title": "Chell",
+    "tags": ["artfight"],
+    "perso": [],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/Chell (Rosyplagueprincess).png"
+  },
+  {
+    "src": "/portfolio/Images/Galerie/Full/bereal3(13.01.23).png",
+    "date": "2023-01-13",
+    "title": "Bereal - Sila et Kastor en date",
+    "tags": [],
+    "perso": ["sila","kastor"],
+    "thumbnail": "/portfolio/Images/Galerie/Thumbs/bereal3(13.01.23).png"
   }
 ]

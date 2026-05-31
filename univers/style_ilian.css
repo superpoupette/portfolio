@@ -6,35 +6,35 @@ body {
 }
 
 .character-card__header {
-  background: #D64D61;
+  background: #E83CA2;
 }
 
 .character-card__info-wrapper {
-  background: #E1E6F5;
+  background: #333232;
 }
 
 .character-card__info-tab {
-	border: 1px solid #DE6A80;
+	border: 1px solid #F2FF63;
 }
 
 .character-card__info-tab:hover {
-  background: #DE6A80;
+  background: #F2FF63;
 }
 
 .character-card__info-tab.active {
-  background: #DE6A80;
+  background: #F2FF63;
 }
 
 .character-card__about {
-  background: #E1E6F5;
+  background: #333232;
 }
 
 .character-card__tabs {
-	background: #EB8A9F;
+	background: #F5D458;
 }
 
 .character-card__tab.active {
-  background: #DE6A80;
+  background: #F0C835;
 }
 
 .character-card__footer {
