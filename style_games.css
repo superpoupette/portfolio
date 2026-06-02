@@ -9,11 +9,18 @@ main {
 .box {
     display: flex;
     gap: 50px;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.boutton {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0; 
 }
 
 .texte {
-    max-width: 700px;
+    flex: 1; 
 }
 
 h2{
@@ -33,12 +40,6 @@ p {
     color: white;
     font-family: 'Outfit', sans-serif;
     line-height: 1.7;
-}
-
-.boutton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .btn {
