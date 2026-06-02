@@ -6,23 +6,23 @@ body {
 }
 
 .character-card__header {
-  background: #CC2504;
+  background: #647553;
 }
 
 .character-card__info-wrapper {
-  background: #333232;
+  background: #3A4037;
 }
 
 .character-card__info-tab {
-	border: 1px solid #591D04;
+	border: 1px solid #4B632E;
 }
 
 .character-card__info-tab:hover {
-  background: #591D04;
+  background: #4B632E;
 }
 
 .character-card__info-tab.active {
-  background: #591D04;
+  background: #4B632E;
 }
 
 .character-card__about {
