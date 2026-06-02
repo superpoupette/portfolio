@@ -8,4 +8,15 @@ main {
 
 h1{
   font-family: 'Outfit', serif;
+    color: #CC8AE3;
+    font-size: 25px;  
+    align-items: center; 
 }
+
+h2{
+    font-family: 'Outfit', serif;
+    color: white;
+    font-size: 10px;  
+    align-items: center; 
+}
+    
