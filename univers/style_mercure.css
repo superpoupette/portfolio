@@ -26,19 +26,19 @@ body {
 }
 
 .character-card__about {
-  background: #333232;
+  background: #3A4037;
 }
 
 .character-card__tabs {
-	background: #E8BE38;
+	background: #647553;
 }
 
 .character-card__tab.active {
-  background: #CCA223;
+  background: #405230;
 }
 
 .character-card__footer {
-  background: #574141;
+  background: #647553;
 }
 
 .gallery--character {
