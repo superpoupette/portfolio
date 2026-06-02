@@ -40,7 +40,7 @@ h2{
 }
 
 h3{
-    margin-top: -5;
+    margin-top: 0;
     font-family: 'Outfit', serif;
     color: white;
     font-size: 18px;  
@@ -48,7 +48,6 @@ h3{
 }
 p {
     color: white;
-    font-family: 'Outfit', sans-serif;
     line-height: 1.7;
 }
 
