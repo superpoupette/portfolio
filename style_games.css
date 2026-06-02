@@ -1,3 +1,51 @@
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    padding: 15px;
+    color: #c90b5e;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1{
+    font-size: 25px;            
+    font-family: 'Outfit', serif;
+    margin: 0;                  
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #FFB78A; 
+}
+
+nav a {
+    font-size: 15px;             
+    font-family: 'Combo', sans-serif;
+    color: #ea8494;
+    margin-right: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+}
+nav a:last-child {
+    margin-right: 0;     
+}
+
+nav a:hover {
+    color: #c90b5e; 
+}
+
+main {
+    padding: 20px;
+}
+
 body {
     background-color: #2D2B3B;
 }
@@ -20,10 +68,21 @@ p{
 }
 
 .boutton {
-    width: 300px;
+    width: 500px;
     display: flex;
-    justify-content: center;
-    flex-shrink: 0; 
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    flex-shrink: 0;
+    padding-top: 80px;
+}
+
+.orphee {
+    transform: translateX(-40px);
+}
+
+.eurydice {
+    transform: translateX(40px);
 }
 
 .texte {
@@ -42,21 +101,22 @@ h2{
 h3{
     margin-top: 0;
     font-family: 'Outfit', serif;
-    color: white;
+    color: #6B2080;
     font-size: 18px;  
     text-align: center;
 }
 p {
     color: white;
     line-height: 1.7;
+    font-size:16px;
 }
 
 .btn {
-    background-color: #ea8494;
+    background-color: #9F56B0;
     color: white;
     font-family: 'Nunito', sans-serif;
     padding: 12px 24px;
-    border-radius: 30px;
+    border-radius: 2px;
     font-size: 14px;
     text-decoration: none;
     transition: 0.3s;
@@ -64,6 +124,6 @@ p {
 }
 
 .btn:hover {
-    background-color: #c90b5e;
+    background-color: #6B2080;
     transform: scale(1.05);
 }
