@@ -6,6 +6,11 @@ main {
     padding: 20px;
 }
 
+.box {
+  border: 2px dotted rgb(96 139 168);
+  display: flex;
+}
+
 h2{
   font-family: 'Outfit', serif;
     color: #CC8AE3;
