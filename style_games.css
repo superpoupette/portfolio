@@ -7,8 +7,13 @@ main {
 }
 
 .box {
-  display: flex;
+    display: flex;
     gap: 50px;
+    align-items: center;
+}
+
+.texte {
+    max-width: 700px;
 }
 
 h2{
@@ -24,21 +29,31 @@ h3{
     font-size: 18px;  
     text-align: center;
 }
+p {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.7;
+}
+
+.boutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .btn {
-  background-color: #ea8494;
-  color: white;
-  font-family: 'Nunito', sans-serif;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 14px;
-  text-decoration: none;
-  transition: 0.3s;
+    background-color: #ea8494;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
 }
 
 .btn:hover {
-  background-color: #c90b5e;
+    background-color: #c90b5e;
+    transform: scale(1.05);
 }
-    
