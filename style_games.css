@@ -9,15 +9,14 @@ main {
 h2{
   font-family: 'Outfit', serif;
     color: #CC8AE3;
-    font-size: 25px;  
-    display: flex;
-    align-items: center; 
+    font-size: 30px;  
+    text-align: center;
 }
 
 h3{
     font-family: 'Outfit', serif;
     color: white;
-    font-size: 10px;  
+    font-size: 18px;  
     display: flex;
     align-items: center; 
 }
