@@ -7,8 +7,8 @@ main {
 }
 
 .box {
-  border: 2px dotted rgb(96 139 168);
   display: flex;
+    gap: 50px;
 }
 
 h2{
@@ -22,8 +22,7 @@ h3{
     font-family: 'Outfit', serif;
     color: white;
     font-size: 18px;  
-    display: flex;
-    align-items: center; 
+    text-align: center;
 }
 
 .btn {
