@@ -1,3 +1,11 @@
 body {
+    background-color: #FFFEF5;
+}
+
+.titre {
     background-color: #C0D9B4;
+}
+
+.galerie {
+    background-color: #D9B9ED;
 }
