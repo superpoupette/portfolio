@@ -39,7 +39,7 @@ body {
 /* SIDEBAR */
 .sidebar {
     width: 30%;
-    background: #2D2B3B;
+    background: #201E26;
     color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -91,7 +91,7 @@ body {
     appearance: none;
     width: 15px;
     height: 15px;
-    border: 2px solid #8BB8E0;
+    border: 2px solid #C5F0D5;
     border-radius: 50%;
     cursor: pointer;
     position: relative;
@@ -99,7 +99,7 @@ body {
 
 /* CHECKED */
 .checklist input[type="checkbox"]:checked {
-    background-color: #8BB8E0;
+    background-color: #C5F0D5;
 }
 
 /* TEXTE BARRÉ */
@@ -126,8 +126,8 @@ body {
     font-size: 12px;
 
     background-color: transparent;
-    color: #8BB8E0;
-    border: 2px solid #8BB8E0;
+    color: #C5F0D5;
+    border: 2px solid #C5F0D5;
     cursor: pointer;
 
     transition: all 0.3s ease;
@@ -135,7 +135,7 @@ body {
 
 /* HOVER */
 .year-buttons button:hover {
-    background-color: #8BB8E0;
+    background-color: #C5F0D5;
     color: #111;
 }
 
