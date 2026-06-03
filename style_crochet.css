@@ -8,12 +8,13 @@ body {
 
 .titre {
     background-color: #C0D9B4;
-    height: 500px;
+    height: 300px;
     text-align: center;
     font-size: 35px;    
 }
 
 .galerie {
+     margin-top: 0px;
     background-color: #D9B9ED;
 }
 
