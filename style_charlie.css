@@ -14,7 +14,10 @@ header {
     height: 70px;
     box-sizing: border-box;
     z-index: 10;
-    color:#C5E8DC;
+}
+
+body {
+    background-color: #2D2B3B;
 }
 
 /* LAYOUT GLOBAL */
@@ -36,7 +39,7 @@ header {
 /* SIDEBAR */
 .sidebar {
     width: 30%;
-    background: #C5E8DC;
+    background: #2D2B3B;
     color: white;
     padding: 20px;
     box-sizing: border-box;
