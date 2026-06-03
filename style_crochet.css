@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFEF5;
+    background-color: #C0D9B4;
 }
 
 .titre {
@@ -8,4 +8,8 @@ body {
 
 .galerie {
     background-color: #D9B9ED;
+}
+
+.poupees {
+    background-color: #FFFEF5;
 }
