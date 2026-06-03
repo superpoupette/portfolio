@@ -105,7 +105,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 .map(p => p.trim());
 
         })
-    )].filter(p => p !== "");
+    )]
+    .filter(p => p !== "")
+    .sort((a, b) => a.localeCompare(b, "fr"));
 
     persos.forEach(perso => {
 
