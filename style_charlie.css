@@ -14,6 +14,7 @@ header {
     height: 70px;
     box-sizing: border-box;
     z-index: 10;
+    color:#C5E8DC;
 }
 
 /* LAYOUT GLOBAL */
@@ -35,7 +36,7 @@ header {
 /* SIDEBAR */
 .sidebar {
     width: 30%;
-    background: #111;
+    background: #C5E8DC;
     color: white;
     padding: 20px;
     box-sizing: border-box;
