@@ -6,21 +6,33 @@ body {
     background-color: #C0D9B4;
 }
 
+@font-face
+{
+    font-family: 'Brittany';
+    src: url(Fonts/brittany_signature/BrittanySignature.ttf);
+}
 .titre {
+    margin-top: 0px;
     background-color: #C0D9B4;
-    height: 200px;
+    height: 120px;
     text-align: center;
-    font-family: "WindSong", cursive;
-    font-size: 35px;  
-    color: #422354;
+    font-family: "Brittany";
+    font-size: 40px;  
+    color: #7F42A1;
 }
 
 .galerie {
+    position: relative;
+    padding: 100px;
      margin-top: 0px;
+     margin-bottom: 0px;
     background-color: #D9B9ED;
 }
 
 .poupees {
+    border: outset #FFFEF5;
+    height: 150px;
+    margin-top:0px;
     background-color: #FFFEF5;
 }
 
@@ -32,9 +44,11 @@ body {
 }
 
 /* couleur des vagues */
-.wave-top path,
+.wave-top path{
+    fill:#C0D9B4;
+}
 .wave-bottom path {
-  fill: #D9B9ED; /* couleur de ton fond global */
+  fill: #FFFEF5;
 }
 
 /* position */
