@@ -10,7 +10,9 @@ body {
     background-color: #C0D9B4;
     height: 300px;
     text-align: center;
-    font-size: 35px;    
+    font-family: "WindSong", cursive;
+    font-size: 35px;  
+    color: #422354;
 }
 
 .galerie {
