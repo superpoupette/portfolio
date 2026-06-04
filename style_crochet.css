@@ -30,6 +30,10 @@ body {
 }
 
 .poupees {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    
     border: outset #FFFEF5;
     height: 150px;
     margin-top:0px;
