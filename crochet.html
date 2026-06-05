@@ -59,9 +59,9 @@
     <section class="poupees">
 		<button class="button left-button">❮</button>
 		<div class="image">
-			<img src="Images/Crochet/poupee1.png" />
+			<img id ="poupee" src="Images/Crochet/poupee1.png" />
 		</div>
-		<button class="button right-button">❮</button>
+		<button id="clickme" onclick="changeImage();">Click to change image!</button>
 		
 		<div class="texte">
 			<h3>Les poupées</h3>
@@ -81,5 +81,16 @@
 </main>
 
 <footer></footer>
+
+	<script> 
+
+function changeImage()
+	{
+	var img = document.getElementById("poupee");
+	img.src="Images/Crochet/poupee2.png";
+	return false;
+	}
+
+</script>
 </body>
 </html>
