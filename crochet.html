@@ -99,11 +99,12 @@ function changeImage(direction) {
         if (rng == 3) {
             rng = 0;
         }
+
     } else {
         rng--;
 
-		if (rng == 0) {
-            rng = 3;
+        if (rng < 0) {
+            rng = 2;
         }
     }
 
