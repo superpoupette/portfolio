@@ -92,18 +92,18 @@ var poupimages = [
     'Images/Crochet/poupee3.png'
 ];
 
-function changeImage() {
+function changeImage(direction) {
     if (direction == 'next') {
         rng++;
 
         if (rng == 3) {
-            curImage = 0;
+            rng = 0;
         }
     } else {
-        curImage--;
+        rng--;
     }
 
-    document.getElementById("poupee") = poupimages[rng];
+    document.getElementById("poupee").src = poupimages[rng];
 }
 
 </script>
