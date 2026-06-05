@@ -39,12 +39,13 @@ body {
     margin-top:0px;
     background-color: #FFFEF5;
 
-    height: 300px;
+    height: 500px;
 }
 
 .image{
-    object-position: center;
-    width: 450px; 
+    justify-content: center;
+    transform: translate(-50px, 0px);
+    width: 400px; 
     height: auto;
 }
 
