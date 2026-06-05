@@ -93,12 +93,12 @@ body {
 
 /* BOUTTONS */
 .poupees button {
-    width: 52px;
-    height: 52px;
+    width: 60px;
+    height: 40px;
     border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0.45);
+    border: 2px solid rgba(127, 66, 161, 1);
     backdrop-filter: blur(8px);
-    color: D9B9ED;
+    color: #D9B9ED;
     font-size: 34px;
     line-height: 1;
     cursor: pointer;
