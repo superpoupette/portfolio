@@ -101,6 +101,10 @@ function changeImage(direction) {
         }
     } else {
         rng--;
+
+		if (rng == 0) {
+            rng = 3;
+        }
     }
 
     document.getElementById("poupee").src = poupimages[rng];
