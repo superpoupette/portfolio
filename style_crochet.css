@@ -1,3 +1,13 @@
+nav a {
+    color: #FAF4EB; 
+}
+
+nav a:hover {
+    color: #7F42A1; 
+}
+
+
+
 main {
     padding: 0px;
 }
@@ -14,11 +24,35 @@ body {
 .titre {
     margin-top: 0px;
     background-color: #C0D9B4;
-    height: 120px;
+    height: 150px;
     text-align: center;
     font-family: "Brittany";
-    font-size: 40px;  
+    font-size: 70px;  
     color: #7F42A1;
+}
+
+
+h2{
+    transform: translate(0px, -60px);
+}
+
+#img1 {
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+}
+#img2 {
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+}
+#img3 {
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
 }
 
 .galerie {
@@ -35,18 +69,40 @@ body {
     align-items: center;
     justify-content: center;
     
-    border: outset #FFFEF5;
-    height: 150px;
+    border: outset #FAF4EB;
     margin-top:0px;
-    background-color: #FFFEF5;
+    background-color: #FAF4EB;
 
     height: 500px;
 }
 
 .image{
     transform: translate(-50px, 0px);
-    width: 360px; 
+}
+
+#poupee {
+    position: relative;
+    overflow: hidden;
+    width: 350px;
     height: auto;
+}
+
+.peluches {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:0px;
+
+    height: 500px;
+}
+
+#peluche {
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+    transform: translate(250px, 0px);
 }
 
 .wave-top svg,
@@ -62,7 +118,7 @@ body {
     fill:#C0D9B4;
 }
 .wave-bottom path {
-  fill: #FFFEF5;
+  fill: #FAF4EB;
 }
 
 .wave-bottom2 path {
@@ -84,22 +140,48 @@ body {
   left: 0;
   width: 100%;
 }
-
-.wave-bottom2{
-    position: fixed;
+.wave-bottom2 {
+    position: absolute;
     bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 
-/* BOUTTONS */
+
+
 .poupees button {
-    width: 60px;
+    width: 40px;
     height: 40px;
+
+    background-color: #D9B9ED;
+    border: none;
+
+    color: #FAF4EB;
+    font-size: 20px;
+
     border-radius: 50%;
-    border: 2px solid rgba(127, 66, 161, 1);
-    backdrop-filter: blur(8px);
-    color: #D9B9ED;
-    font-size: 34px;
-    line-height: 1;
     cursor: pointer;
+
+    transform: translate(-50px, 0px);
 }
+
+.peluches button{
+width: 40px;
+    height: 40px;
+
+    background-color: #FAF4EB;
+    border: none;
+
+    color: #C0D9B4;
+    font-size: 20px;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    transform: translate(200px, 0px);
+}
+
+}
+
+

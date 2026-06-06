@@ -42,7 +42,9 @@
         </svg>
     </div>
 
-	<p>ici gelerie</p>
+	    <img id ="img1" src="Images/Crochet/IMG_20260606_122459.jpg" />
+        <img id ="img2" src="Images/Crochet/IMG_20260606_123018.jpg" />
+        <img id ="img3" src="Images/Crochet/IMG_20260606_122919.png" />
 	</div>
 
 	<div class="wave-bottom">
@@ -59,7 +61,7 @@
     <section class="poupees">
 		<button id="clickme" onclick="changeImage('previous');">❮</button>
 		<div class="image">
-			<img id ="poupee" src="Images/Crochet/poupee1.png" />
+			<img id ="poupee" src="Images/Crochet/IMG_20260606_121338.jpg" />
 		</div>
 		<button id="clickme" onclick="changeImage('next');">❯</button>
 		
@@ -78,6 +80,22 @@
     </div>
 	</section>
 
+    <section class="peluches">
+
+    <div class="texte">
+			<h3>Les peluches</h3>
+			<p>Blablabla</p>
+		</div>
+
+    <button id="clickme2" onclick="changeImage2('previous');">❮</button>
+		<div class="image">
+			<img id ="peluche" src="Images/Crochet/IMG_20260606_122626.jpg" />
+		</div>
+		<button id="clickme2" onclick="changeImage2('next');">❯</button>
+
+    </section>
+    
+
 </main>
 
 <footer></footer>
@@ -87,16 +105,19 @@
 
 var rng = 0;
 var poupimages = [
-    'Images/Crochet/poupee1.png',
-    'Images/Crochet/poupee2.png',
-    'Images/Crochet/poupee3.png'
+    'Images/Crochet/IMG_20260606_121338.jpg',
+    'Images/Crochet/IMG_20260606_121415.jpg',
+    'Images/Crochet/IMG_20260606_121629.jpg',
+    'Images/Crochet/IMG_20260606_121236.jpg',
+    'Images/Crochet/IMG_20260606_121909.jpg',
+    'Images/Crochet/IMG_20260606_122151.jpg'
 ];
 
 function changeImage(direction) {
     if (direction == 'next') {
         rng++;
 
-        if (rng == 3) {
+        if (rng == 6) {
             rng = 0;
         }
 
@@ -104,11 +125,38 @@ function changeImage(direction) {
         rng--;
 
         if (rng < 0) {
-            rng = 2;
+            rng = 5;
         }
     }
 
     document.getElementById("poupee").src = poupimages[rng];
+}
+
+var rng2 = 0;
+var pelimages = [
+    'Images/Crochet/IMG_20260606_122626.jpg',
+    'Images/Crochet/IMG_20260606_122616.jpg',
+    'Images/Crochet/IMG_20260606_122715.jpg',
+    'Images/Crochet/IMG_20260606_122726.jpg'
+];
+
+function changeImage2(direction) {
+    if (direction == 'next') {
+        rng2++;
+
+        if (rng2 == 4) {
+            rng2 = 0;
+        }
+
+    } else {
+        rng2--;
+
+        if (rng2 < 0) {
+            rng2 = 3;
+        }
+    }
+
+    document.getElementById("peluche").src = pelimages[rng2];
 }
 
 </script>
