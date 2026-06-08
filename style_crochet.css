@@ -169,6 +169,14 @@ width: 40px;
     transform: translate(200px, 0px);
 }
 
+.wave-separation svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.wave-separation path {
+    fill: #FAF4EB;
 }
 
 
