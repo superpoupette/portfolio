@@ -1,7 +1,7 @@
 const track = document.querySelector(".track");
 const slides = Array.from(document.querySelectorAll(".slide"));
 
-let index = 2; 
+let index = 2;
 // on démarre sur la 3e carte
 
 const len = slides.length;
@@ -34,21 +34,21 @@ function update() {
     next1.classList.add("near");
     next2.classList.add("near");
 
-    const container = document.querySelector(".carousel");
+    /* largeur réelle d'une slide :
+       160px + 10px gauche + 10px droite */
+    const slideWidth = 180;
 
-    const currentRect = current.getBoundingClientRect();
-    const containerRect = container.getBoundingClientRect();
-    
-    const currentCenter =
-        currentRect.left + currentRect.width / 2;
-    
-    const containerCenter =
-        containerRect.left + containerRect.width / 2;
-    
-    const delta =
-        containerCenter - currentCenter;
-    
-    track.style.transform = `translateX(${delta}px)`;
+    /* largeur du carousel */
+    const containerWidth = 900;
+
+    /* centrage */
+    const translateX =
+        (containerWidth / 2)
+        - (slideWidth / 2)
+        - (index * slideWidth);
+
+    track.style.transform =
+        `translateX(${translateX}px)`;
 }
 
 /* navigation */
@@ -70,6 +70,18 @@ document
 document
     .querySelector(".prev")
     .addEventListener("click", prev);
+
+/* clavier */
+document.addEventListener("keydown", (e) => {
+
+    if (e.key === "ArrowRight") {
+        next();
+    }
+
+    if (e.key === "ArrowLeft") {
+        prev();
+    }
+});
 
 /* init */
 window.addEventListener("load", update);
