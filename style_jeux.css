@@ -311,14 +311,12 @@ main {
 .track {
     display: flex;
     align-items: center;
-
+    will-change: transform;
     transition: transform 0.5s ease;
-    border: 2px solid green;
 }
 
 /* slide */
 .slide {
-    border: 2px solid blue;
 
     width: 160px;
     height: 240px;
