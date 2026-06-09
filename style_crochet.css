@@ -69,7 +69,7 @@ h2{
     align-items: center;
     justify-content: center;
     
-    border: outset #FAF4EB;
+    border: none;
     margin-top:0px;
     background-color: #FAF4EB;
 
@@ -173,7 +173,7 @@ width: 40px;
     display: block;
     width: 100%;
     height: 100px;
-    background-color: pink;
+    background-color: #FAF4EB;
 }
 
 .wave-separation path {
