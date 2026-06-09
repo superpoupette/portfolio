@@ -177,5 +177,14 @@ width: 40px;
 
 .wave-separation path {
     fill: #C0D9B4;
-    background-color: #FAF4EB;
+    background-color: yellow;
+}
+
+.wave-separation {
+    border: 3px solid red;
+    height: 120px;
+}
+
+.wave-separation svg {
+    border: 3px solid blue;
 }
