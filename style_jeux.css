@@ -34,6 +34,10 @@ main {
     background-image: url("Images/Jeux/background_cartes.png");
 }
 
+.section-similo {
+    background-color:#6476af;
+}
+
 .bloc h2 {
     font-size: 30px;
     font-family: 'Limelight', sans-serif;
