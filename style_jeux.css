@@ -300,6 +300,9 @@ main {
 
     overflow-x: hidden;
     overflow-y: visible;
+
+    align-items: center;
+    justify-content: center;
 }
 
 /* track */
