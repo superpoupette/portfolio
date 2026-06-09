@@ -103,6 +103,7 @@ h2{
     width: 350px;
     height: auto;
     transform: translate(250px, 0px);
+    pointer-events: none;
 }
 
 .wave-top svg,
