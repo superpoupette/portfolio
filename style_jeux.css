@@ -465,11 +465,11 @@ main {
 
 /* positions */
 .carousel .prev {
-    left: 20px;
+    left: 50px;
 }
 
 .carousel .next {
-    right: 20px;
+    right: 50px;
 }
 
 /* =========================
