@@ -1,0 +1,17 @@
+/* BOUTON */
+.btn {
+  background-color: #ea8494;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #c90b5e;
+}
