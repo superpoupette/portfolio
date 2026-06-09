@@ -34,7 +34,7 @@ function update() {
     next1.classList.add("near");
     next2.classList.add("near");
 
-    const slideWidth = 200;
+    const slideWidth = 180;
     /* 160px + 20px gauche + 20px droite */
     
     const containerWidth = 900;
