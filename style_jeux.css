@@ -342,7 +342,7 @@ main {
 
 .carousel {
     width: 900px;
-    height: 500px;
+    height: 400px;
 
     position: relative;
 
@@ -431,35 +431,22 @@ main {
 
 .carousel button {
     position: absolute;
-
     top: 50%;
-
     transform: translateY(-50%);
-
     width: 52px;
     height: 52px;
-
     border-radius: 50%;
-
     border: 2px solid rgba(255,255,255,0.45);
-
     background: rgba(255,255,255,0.10);
-
     backdrop-filter: blur(8px);
-
     color: white;
-
     font-size: 34px;
     line-height: 1;
-
     cursor: pointer;
-
     z-index: 50;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     transition:
         background 0.25s ease,
         transform 0.25s ease,
@@ -470,22 +457,19 @@ main {
 /* hover */
 .carousel button:hover {
     background: rgba(255,255,255,0.22);
-
     transform: translateY(-50%) scale(1.08);
-
     border-color: rgba(255,255,255,0.9);
-
     box-shadow:
         0 0 20px rgba(255,255,255,0.25);
 }
 
 /* positions */
 .carousel .prev {
-    left: 15px;
+    left: 20px;
 }
 
 .carousel .next {
-    right: 15px;
+    right: 20px;
 }
 
 /* =========================
