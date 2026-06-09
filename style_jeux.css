@@ -294,20 +294,22 @@ main {
 
     width: 900px;
     height: 600px;
-    border: 2px solid red;
 
     position: relative;
 
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: hidden;
 
+    display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 60px 0;
+
+    box-sizing: border-box;
 }
 
 /* track */
 .track {
-
     display: flex;
     align-items: center;
 
