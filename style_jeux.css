@@ -340,6 +340,10 @@ main {
    SIMILO CAROUSEL
 ========================= */
 
+.section-similo2 p {
+    text-align: center;
+}
+
 .carousel {
     width: 900px;
     height: 400px;
@@ -465,134 +469,9 @@ main {
 
 /* positions */
 .carousel .prev {
-    left: 50px;
+    left: 3px;
 }
 
 .carousel .next {
-    right: 50px;
-}
-
-/* =========================
-   SIMILO GALERIE
-========================= */
-
-/* wrapper global */
-.similo-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 25px;
-
-    margin-top: 40px;
-}
-
-/* galerie cartes */
-.similo-gallery {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 50px;
-
-    transition: transform 0.45s ease;
-}
-
-/* cartes */
-.similo-card {
-    object-fit: cover;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.35),
-        0 0 25px rgba(255,255,255,0.15);
-
-    transition:
-        transform 0.45s ease,
-        opacity 0.45s ease;
-}
-
-/* cartes côtés */
-.similo-card.side {
-    width: 170px;
-
-    opacity: 0.65;
-
-    transform: scale(0.9);
-}
-
-/* carte centrale */
-.similo-card.center {
-    width: 220px;
-
-    z-index: 2;
-
-    transform: scale(1.08);
-}
-
-.section-similo p {
-    margin-top: 30px;
-}
-
-/* =========================
-   BOUTONS SIMILO
-========================= */
-
-.similo-button {
-    width: 30px;
-    height: 30px;
-
-    border-radius: 50%;
-
-    border: 2px solid rgba(255,255,255,0.5);
-
-    background: rgba(255,255,255,0.08);
-
-    backdrop-filter: blur(6px);
-
-    color: white;
-
-    font-size: 34px;
-
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    transition: all 0.25s ease;
-}
-
-/* hover */
-.similo-button:hover {
-    transform: scale(1.08);
-
-    background: rgba(255,255,255,0.18);
-
-    border-color: rgba(255,255,255,0.9);
-
-    box-shadow:
-        0 0 20px rgba(255,255,255,0.25);
-}
-
-/* animations */
-.similo-card.slide-left {
-    transform: translateX(-120px);
-    opacity: 0;
-}
-
-.similo-card.slide-right {
-    transform: translateX(120px);
-    opacity: 0;
-}
-
-.similo-gallery.slide-next {
-    transform: translateX(-120px);
-}
-
-.similo-gallery.slide-prev {
-    transform: translateX(120px);
+    right: 3px;
 }
