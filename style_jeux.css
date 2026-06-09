@@ -293,7 +293,7 @@ main {
 .carousel {
 
     width: 900px;
-    height: 600px;
+    height: 500px;
 
     position: relative;
 
@@ -301,7 +301,6 @@ main {
 
     display: flex;
     align-items: center;
-    justify-content: center;
 
     padding: 60px 0;
 
