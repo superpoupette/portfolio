@@ -155,7 +155,7 @@ h2{
 }
 
 .peluches button{
-width: 40px;
+    width: 40px;
     height: 40px;
 
     background-color: #FAF4EB;
@@ -168,6 +168,8 @@ width: 40px;
     cursor: pointer;
 
     transform: translate(200px, 0px);
+
+    z-index: 10;
 }
 
 .wave-separation svg {
