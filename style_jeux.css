@@ -1,4 +1,4 @@
-﻿header {
+header {
     position: fixed;
     z-index: 1000;
 }
@@ -16,11 +16,28 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     min-height: 100vh;
+
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: auto 100%;
 }
+
+.bloc h2 {
+    font-size: 30px;
+    font-family: 'Limelight', sans-serif;
+    color: white;
+}
+
+.bloc p {
+    max-width: 500px;
+    color: white;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 
 .section-intro {
     background-image: url("Images/Jeux/background_intro.png");
@@ -35,18 +52,7 @@ main {
 }
 
 .section-similo2 {
-    background-color:#6476af;
-}
-
-.bloc h2 {
-    font-size: 30px;
-    font-family: 'Limelight', sans-serif;
-    color: white;
-}
-
-.bloc p {
-    max-width: 500px;
-    color: white;
+    background: #6476af;
 }
 
 /* =========================
@@ -64,21 +70,18 @@ main {
 
 .section-loup {
     background-image: url("Images/Jeux/background_loup.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     justify-content: flex-start;
+
     position: relative;
     overflow: hidden;
 }
 
-/* titre */
 .section-loup h2 {
     color: #D62068;
     margin-top: 30px;
 }
 
-/* texte */
 .section-loup p {
     color: #781E41;
     text-align: center;
@@ -88,11 +91,14 @@ main {
 /* bloc principal */
 .carte-container {
     position: relative;
+
     width: 500px;
     height: 500px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin-top: 300px;
     margin-bottom: 90px;
 }
@@ -101,6 +107,7 @@ main {
 .loup-image {
     width: 400px;
     height: 400px;
+
     object-fit: contain;
 
     position: relative;
@@ -116,21 +123,28 @@ main {
 /* nom personnage */
 .nom-personnage {
     position: absolute;
+
     bottom: 80px;
     left: 50%;
+
     transform: translateX(-50%);
+
     z-index: 10;
+
     color: black;
+
     font-size: 20px;
     letter-spacing: 1px;
-    text-shadow:
-    0 0 6px rgba(255,255,255,0.9),
-    0 0 12px rgba(255,255,255,0.7),
-    0 2px 18px rgba(255,255,255,0.9);
+
     font-family: 'Marcellus', serif;
+
+    text-shadow:
+        0 0 6px rgba(255,255,255,0.9),
+        0 0 12px rgba(255,255,255,0.7),
+        0 2px 18px rgba(255,255,255,0.9);
 }
 
-/* container des symboles */
+/* symboles */
 #symbolesContainer {
     position: absolute;
 
@@ -143,74 +157,106 @@ main {
     z-index: 3;
 }
 
-/* boutons symboles */
 .symbole {
     position: absolute;
+
+    width: 35px;
+    height: 35px;
 
     border: none;
     background: none;
 
     cursor: pointer;
 
+    z-index: 5;
+
+    padding: 0;
+
     transition:
         transform 0.2s ease,
-        color 0.2s ease;
-
-    z-index: 5;
+        filter 0.2s ease;
 }
 
-/* hover */
 .symbole:hover {
-    transform: scale(1.25);
+    transform: scale(1.15);
 
-    color: #ffe082;
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.7));
 }
+
+.icone-loup {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    pointer-events: none;
+}
+
 /* =========================
    SECTION CARTES
 ========================= */
 
 .section-cards {
     flex-direction: row;
+
     width: 100%;
+
     padding: 0 80px;
+
     box-sizing: border-box;
+
     position: relative;
 }
+
 .content-cards {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+
     gap: 50px;
-    transform: translateX(150px); 
+
+    transform: translateX(150px);
 }
 
-.deco-image {
-    position: absolute;
-    bottom: 0; 
-    left: 10px;    
-    width: 450px;  
-    height: auto;
-    z-index: 0;   
-    pointer-events: none; 
-}
-
-.section-cards h2
-{
+.section-cards h2 {
     color: #D62068;
 }
+
 .section-cards p {
     color: #781E41;
+}
+
+/* déco */
+.deco-image {
+    position: absolute;
+
+    bottom: 0;
+    left: 10px;
+
+    width: 450px;
+    height: auto;
+
+    z-index: 0;
+
+    pointer-events: none;
 }
 
 /* =========================
    MAIN DE CARTES
 ========================= */
 
+.cartes-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+}
+
 .cartes {
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin-top: 140px;
 }
 
@@ -218,6 +264,7 @@ main {
 .card {
     width: 170px;
     height: 260px;
+
     position: relative;
 
     margin-left: -30px;
@@ -230,47 +277,15 @@ main {
 .card img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     border-radius: 16px;
+
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-.cartes-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-/* zone cartes */
-.cartes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.deck {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* carte verso */
-.deck-back {
-    width: 160px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    transform: rotate(90deg); 
-    margin-left: 150px;
-}
-.deck-back:hover {
-    transform: rotate(90deg) scale(1.05);
-}
-
-/* =========================
-   EFFET MAIN DE JOUEUR
-========================= */
-
+/* effet éventail */
 .card:nth-child(1) {
     transform: rotate(-38deg) translateY(80px) translateX(-30px);
     z-index: 0;
@@ -290,68 +305,87 @@ main {
     transform: rotate(18deg) translateY(8px);
     z-index: 3;
 }
+
+/* deck */
+.deck-back {
+    width: 160px;
+
+    margin-left: 150px;
+
+    border-radius: 12px;
+
+    transform: rotate(90deg);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+    transition: transform 0.25s ease;
+}
+
+.deck-back:hover {
+    transform: rotate(90deg) scale(1.05);
+}
+
 /* =========================
-   SIMILO CAROUSSEL
+   SIMILO CAROUSEL
 ========================= */
 
+.section-similo2 h2 {
+    margin-bottom: 40px;
+}
+
 .carousel {
-
-    width: 900px;
-    height: 500px;
-
     position: relative;
+
+    width: 1300px;
+    height: 700px;
 
     overflow: hidden;
 
     display: flex;
     align-items: center;
-
-    padding: 60px 0;
-
-    box-sizing: border-box;
+    justify-content: center;
 }
 
 /* track */
 .track {
     display: flex;
     align-items: center;
-    will-change: transform;
+
     transition: transform 0.5s ease;
+
+    will-change: transform;
 }
 
-/* slide */
+/* slides */
 .slide {
-
-    width: 160px;
-    height: 240px;
+    width: 240px;
+    height: 360px;
 
     flex-shrink: 0;
 
-    margin: 0 10px;
+    margin: 0 18px;
 
     position: relative;
 
-    transition:
-        transform 0.4s ease,
-        filter 0.4s ease,
-        opacity 0.4s ease;
+    opacity: 0.45;
 
     transform: scale(0.8);
 
     filter: brightness(0.4);
 
-    opacity: 0.5;
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease,
+        opacity 0.4s ease;
 }
 
-/* image */
 .slide img {
-
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 
-    border-radius: 12px;
+    border-radius: 18px;
 
     display: block;
 
@@ -360,41 +394,39 @@ main {
         0 0 20px rgba(255,255,255,0.08);
 }
 
-/* slide centrale */
+/* slide active */
 .slide.active {
-
-    transform: scale(1.15);
-
-    filter: brightness(1);
+    transform: scale(1.18);
 
     opacity: 1;
+
+    filter: brightness(1);
 
     z-index: 5;
 }
 
 /* slides proches */
 .slide.near {
+    transform: scale(0.96);
 
-    transform: scale(0.95);
+    opacity: 0.82;
 
-    filter: brightness(0.7);
-
-    opacity: 0.8;
+    filter: brightness(0.75);
 }
 
 /* =========================
-   BOUTONS
+   BOUTONS CAROUSEL
 ========================= */
 
 .carousel button {
-
     position: absolute;
 
     top: 50%;
+
     transform: translateY(-50%);
 
-    width: 52px;
-    height: 52px;
+    width: 65px;
+    height: 65px;
 
     border-radius: 50%;
 
@@ -406,7 +438,7 @@ main {
 
     color: white;
 
-    font-size: 34px;
+    font-size: 42px;
     line-height: 1;
 
     cursor: pointer;
@@ -424,9 +456,7 @@ main {
         box-shadow 0.25s ease;
 }
 
-/* hover */
 .carousel button:hover {
-
     background: rgba(255,255,255,0.22);
 
     transform: translateY(-50%) scale(1.08);
@@ -437,174 +467,15 @@ main {
         0 0 20px rgba(255,255,255,0.25);
 }
 
-/* positions */
 .carousel .prev {
-    left: 15px;
+    left: 0;
 }
 
 .carousel .next {
-    right: 15px;
+    right: 0;
 }
-/* =========================
-   SIMILO GALERIE
-========================= */
 
-/* wrapper global */
-.similo-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
+/* texte similo */
+.section-similo2 p {
     margin-top: 40px;
 }
-
-/* galerie cartes */
-.similo-gallery {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
-
-/* cartes */
-.similo-card {
-    border-radius: 18px;
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.35),
-        0 0 25px rgba(255,255,255,0.15);
-
-    transition: all 0.3s ease;
-
-    object-fit: cover;
-}
-
-/* cartes côtés */
-.similo-card.side {
-    width: 170px;
-    opacity: 0.65;
-    transform: scale(0.9);
-}
-
-/* carte centrale */
-.similo-card.center {
-    width: 220px;
-    z-index: 2;
-    transform: scale(1.08);
-}
-
-.section-similo p {
-    margin-top: 30px;
-}
-
-/* =========================
-   BOUTONS
-========================= */
-
-.similo-button {
-    width: 30px;
-    height: 30px;
-
-    border-radius: 50%;
-
-    border: 2px solid rgba(255,255,255,0.5);
-
-    background: rgba(255,255,255,0.08);
-
-    backdrop-filter: blur(6px);
-
-    color: white;
-    font-size: 34px;
-
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: all 0.25s ease;
-
-    flex-shrink: 0;
-}
-
-/* hover */
-.similo-button:hover {
-    transform: scale(1.08);
-
-    background: rgba(255,255,255,0.18);
-
-    border-color: rgba(255,255,255,0.9);
-
-    box-shadow:
-        0 0 20px rgba(255,255,255,0.25);
-}
-
-.similo-card {
-    transition:
-        transform 0.45s ease,
-        opacity 0.45s ease;
-}
-
-/* quand on avance */
-.similo-card.slide-left {
-    transform: translateX(-120px);
-    opacity: 0;
-}
-
-/* quand on recule */
-.similo-card.slide-right {
-    transform: translateX(120px);
-    opacity: 0;
-}
-
-.similo-gallery {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-
-    transition: transform 0.45s ease;
-}
-
-/* animation */
-.similo-gallery.slide-next {
-    transform: translateX(-120px);
-}
-
-.similo-gallery.slide-prev {
-    transform: translateX(120px);
-}
-
-.symbole {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    transition:
-        transform 0.2s ease,
-        filter 0.2s ease;
-    z-index: 5;
-    padding: 0;
-}
-
-/* image */
-.icone-loup {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    pointer-events: none;
-}
-
-/* hover */
-.symbole:hover {
-    transform: scale(1.15);
-
-    filter: drop-shadow(0 0 8px rgba(255,255,255,0.7));
-}
-
-
-
-
-
-
