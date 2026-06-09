@@ -34,18 +34,21 @@ function update() {
     next1.classList.add("near");
     next2.classList.add("near");
 
-    const slideWidth = 180;
-    /* 160px + 20px gauche + 20px droite */
+    const container = document.querySelector(".carousel");
+
+    const currentRect = current.getBoundingClientRect();
+    const containerRect = container.getBoundingClientRect();
     
-    const containerWidth = 900;
+    const currentCenter =
+        currentRect.left + currentRect.width / 2;
     
-    const translateX =
-        (containerWidth / 2)
-        - (slideWidth / 2)
-        - (index * slideWidth);
+    const containerCenter =
+        containerRect.left + containerRect.width / 2;
     
-    track.style.transform =
-        `translateX(${translateX}px)`;
+    const delta =
+        containerCenter - currentCenter;
+    
+    track.style.transform = `translateX(${delta}px)`;
 }
 
 /* navigation */
