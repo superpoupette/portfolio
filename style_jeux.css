@@ -1,545 +1,222 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #2D2B3B;
+}
+
+/* ===================== */
+/* HEADER */
+/* ===================== */
+
 header {
     position: fixed;
-    z-index: 1000;
-}
-
-main {
-    padding: 0;
-}
-
-/* =========================
-   STRUCTURE GLOBALE
-========================= */
-
-.bloc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    min-height: 100vh;
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto 100%;
-}
-
-.section-intro {
-    background-image: url("Images/Jeux/background_intro.png");
-}
-
-.section-cluedo {
-    background-image: url("Images/Jeux/background_cluedo.jpg");
-}
-
-.section-cards {
-    background-image: url("Images/Jeux/background_cartes.png");
-}
-
-.section-similo2 {
-    background-color: #6476af;
-}
-
-.bloc h2 {
-    font-size: 30px;
-    font-family: 'Limelight', sans-serif;
-    color: white;
-}
-
-.bloc p {
-    max-width: 500px;
-    color: white;
-}
-
-/* =========================
-   TEXTE
-========================= */
-
-.texte {
-    max-width: 400px;
-    color: white;
-}
-
-/* =========================
-   SECTION LOUP
-========================= */
-
-.section-loup {
-    background-image: url("Images/Jeux/background_loup.png");
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    position: relative;
-    overflow: hidden;
-}
-
-/* titre */
-.section-loup h2 {
-    color: #D62068;
-    margin-top: 30px;
-}
-
-/* texte */
-.section-loup p {
-    color: #781E41;
-    text-align: center;
-    margin-top: 30px;
-}
-
-/* bloc principal */
-.carte-container {
-    position: relative;
-
-    width: 500px;
-    height: 500px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 300px;
-    margin-bottom: 90px;
-}
-
-/* image centrale */
-.loup-image {
-    width: 400px;
-    height: 400px;
-
-    object-fit: contain;
-
-    position: relative;
-    z-index: 2;
-
-    border-radius: 20px;
-
-    box-shadow:
-        0 0 25px rgba(214, 32, 104, 0.3),
-        0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
-/* nom personnage */
-.nom-personnage {
-    position: absolute;
-
-    bottom: 80px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    z-index: 10;
-
-    color: black;
-    font-size: 20px;
-    letter-spacing: 1px;
-
-    text-shadow:
-        0 0 6px rgba(255,255,255,0.9),
-        0 0 12px rgba(255,255,255,0.7),
-        0 2px 18px rgba(255,255,255,0.9);
-
-    font-family: 'Marcellus', serif;
-}
-
-/* container des symboles */
-#symbolesContainer {
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
     top: 0;
     left: 0;
+    width: 100%;
 
-    z-index: 3;
+    background: transparent;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    z-index: 1000;
+
+    pointer-events: none;
 }
 
-/* boutons symboles */
-.symbole {
-    position: absolute;
+/* CROIX */
 
-    width: 35px;
-    height: 35px;
+.close-button {
+    pointer-events: auto;
 
-    border: none;
-    background: none;
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+
+    line-height: 1;
+
+    margin-top: 8px;
+    margin-right: 12px;
+
+    transition: opacity 0.3s ease;
+}
+
+.close-button:hover {
+    opacity: 0.6;
+}
+
+/* ===================== */
+/* LAYOUT GLOBAL */
+/* ===================== */
+
+.main {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* ===================== */
+/* VIEWER */
+/* ===================== */
+
+#viewer {
+    width: 70%;
+    height: 100%;
+    background: black;
+    border-right: 2px solid #222;
+}
+
+/* ===================== */
+/* SIDEBAR */
+/* ===================== */
+
+.sidebar {
+    width: 30%;
+    height: 100%;
+
+    background: #201E26;
+    color: white;
+
+    padding: 35px 20px 20px 20px;
+
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* TITRE SIDEBAR */
+
+.sidebar h2 {
+    margin-top: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 17px;
+}
+
+.sidebar p {
+    line-height: 1;
+}
+
+/* ===================== */
+/* CHECKLIST */
+/* ===================== */
+
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-family: Verdana, sans-serif;
+}
+
+/* TEXTE */
+
+.checklist span {
+    font-size: 14px;
+}
+
+/* ITEM */
+
+.checklist li {
+    margin-bottom: 10px;
+}
+
+/* LABEL */
+
+.checklist label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* CHECKBOX RONDE */
+
+.checklist input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid #A0DBB6;
+    border-radius: 50%;
 
     cursor: pointer;
-
-    z-index: 5;
-
-    padding: 0;
-
-    transition:
-        transform 0.2s ease,
-        filter 0.2s ease;
-}
-
-/* image */
-.icone-loup {
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
-
-    pointer-events: none;
-}
-
-/* hover */
-.symbole:hover {
-    transform: scale(1.15);
-
-    filter: drop-shadow(0 0 8px rgba(255,255,255,0.7));
-}
-/* =========================
-   SECTION CLUEDO
-========================= */
-
-.content-cluedo {
-    display: flex;
-}
-/* =========================
-   MAIN DE CARTES CLUEDO
-========================= */
-.cluedo .tecte{
-    margin-top:100px
-}
-.cluedo-wrapper {
-    position: relative;
-
-    width: 500px;
-    height: 320px;
-    margin-left: 300px;
-    margin-top: 10px;
-}
-
-/* style général */
-.card-cluedo {
-    position: absolute;
-
-    width: 180px;
-    height: 280px;
-
-    object-fit: cover;
-
-    border-radius: 16px;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
-
-    transition: transform 0.25s ease;
-
-    transform-origin: bottom center;
-}
-
-/* gauche */
-.card-left {
-    left: 40px;
-    top: 30px;
-
-    transform: rotate(-18deg);
-
-    z-index: 1;
-}
-
-/* centre */
-.card-center {
-    left: 160px;
-    top: 0;
-
-    transform: rotate(0deg);
-
-    z-index: 2;
-}
-
-/* droite */
-.card-right {
-    left: 280px;
-    top: 30px;
-
-    transform: rotate(18deg);
-
-    z-index: 3;
-}
-/* =========================
-   SECTION CARTES
-========================= */
-
-.section-cards {
-    flex-direction: row;
-
-    width: 100%;
-
-    padding: 0 80px;
-
-    box-sizing: border-box;
-
     position: relative;
 }
 
-.content-cards {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+/* CHECKED */
 
-    gap: 50px;
-
-    transform: translateX(150px);
+.checklist input[type="checkbox"]:checked {
+    background-color: #A0DBB6;
 }
 
-.deco-image {
-    position: absolute;
+/* TEXTE BARRÉ */
 
-    bottom: 0;
-    left: 10px;
-
-    width: 450px;
-    height: auto;
-
-    z-index: 0;
-
-    pointer-events: none;
-}
-
-.section-cards h2 {
-    color: #D62068;
-}
-
-.section-cards p {
-    color: #781E41;
-}
-
-/* =========================
-   MAIN DE CARTES
-========================= */
-
-.cartes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 140px;
-}
-
-/* cartes */
-.card {
-    width: 170px;
-    height: 260px;
-
-    position: relative;
-
-    margin-left: -30px;
-}
-
-.card:first-child {
-    margin-left: 0;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    border-radius: 16px;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.cartes-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 5px;
-}
-
-.deck {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* carte verso */
-.deck-back {
-    width: 160px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-
-    transform: rotate(90deg);
-
-    margin-left: 150px;
-}
-
-.deck-back:hover {
-    transform: rotate(90deg) scale(1.05);
-}
-
-/* =========================
-   EFFET MAIN DE JOUEUR
-========================= */
-
-.card:nth-child(1) {
-    transform: rotate(-38deg) translateY(80px) translateX(-30px);
-    z-index: 0;
-}
-
-.card:nth-child(2) {
-    transform: rotate(-18deg) translateY(8px);
-    z-index: 1;
-}
-
-.card:nth-child(3) {
-    transform: rotate(0deg) translateY(-15px);
-    z-index: 2;
-}
-
-.card:nth-child(4) {
-    transform: rotate(18deg) translateY(8px);
-    z-index: 3;
-}
-
-/* =========================
-   SIMILO CAROUSEL
-========================= */
-
-.section-similo2 p {
-    text-align: center;
-}
-
-.carousel {
-    width: 900px;
-    height: 400px;
-
-    position: relative;
-
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-
-    padding: 60px 0;
-
-    box-sizing: border-box;
-}
-
-/* track */
-.track {
-    display: flex;
-    align-items: center;
-
-    will-change: transform;
-
-    transition: transform 0.5s ease;
-}
-
-/* slide */
-.slide {
-    width: 160px;
-    height: 240px;
-
-    flex-shrink: 0;
-
-    margin: 0 10px;
-
-    position: relative;
-
-    transition:
-        transform 0.4s ease,
-        filter 0.4s ease,
-        opacity 0.4s ease;
-
-    transform: scale(0.8);
-
-    filter: brightness(0.4);
-
+.checklist input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
     opacity: 0.5;
 }
 
-/* image */
-.slide img {
-    width: 100%;
-    height: 100%;
+/* ===================== */
+/* BOUTONS ANNÉES */
+/* ===================== */
 
-    object-fit: cover;
+.year-buttons {
+    display: flex;
+    justify-content: space-between;
 
-    border-radius: 12px;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* STYLE DES BOUTONS */
+
+.year-buttons button {
+    flex: 1;
+
+    padding: 6px;
+
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+
+    background-color: transparent;
+    color: #A0DBB6;
+
+    border: 2px solid #A0DBB6;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.year-buttons button:hover {
+    background-color: #A0DBB6;
+    color: #111;
+}
+
+/* ===================== */
+/* LIEN ARTFIGHT */
+/* ===================== */
+
+.artfight-link {
+    margin-top: 25px;
 
     display: block;
 
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.35),
-        0 0 20px rgba(255,255,255,0.08);
-}
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
 
-/* slide centrale */
-.slide.active {
-    transform: scale(1.15);
-
-    filter: brightness(1);
-
-    opacity: 1;
-
-    z-index: 5;
-}
-
-/* slides proches */
-.slide.near {
-    transform: scale(0.95);
-
-    filter: brightness(0.7);
-
-    opacity: 0.8;
-}
-
-/* =========================
-   BOUTONS CAROUSEL
-========================= */
-
-.carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0.45);
-    background: rgba(255,255,255,0.10);
-    backdrop-filter: blur(8px);
     color: white;
-    font-size: 34px;
-    line-height: 1;
-    cursor: pointer;
-    z-index: 50;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition:
-        background 0.25s ease,
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
+    text-decoration: none;
 }
 
-/* hover */
-.carousel button:hover {
-    background: rgba(255,255,255,0.22);
-    transform: translateY(-50%) scale(1.08);
-    border-color: rgba(255,255,255,0.9);
-    box-shadow:
-        0 0 20px rgba(255,255,255,0.25);
-}
-
-/* positions */
-.carousel .prev {
-    left: 3px;
-}
-
-.carousel .next {
-    right: 3px;
+.artfight-link:hover {
+    color: #A0DBB6;
 }
