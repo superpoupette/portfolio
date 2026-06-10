@@ -194,6 +194,20 @@ main {
 
     filter: drop-shadow(0 0 8px rgba(255,255,255,0.7));
 }
+/* =========================
+   SECTION CLUEDO
+========================= */
+
+.content-cluedo {
+    display: flex;
+}
+.cluedo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+}
 
 /* =========================
    SECTION CARTES
