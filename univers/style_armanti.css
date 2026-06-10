@@ -5,11 +5,15 @@
   background-size: 1000px;
 }
 
-header h1,
-.close-button {
-  background: rgba(0, 0, 0, 0.35);
-  padding: 4px 10px;
-  border-radius: 6px;
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background:
+    radial-gradient(circle at left top, rgba(255,255,255,0.12), transparent 40%),
+    radial-gradient(circle at right top, rgba(255,255,255,0.12), transparent 40%),
+    rgba(0,0,0,0.3);
 }
 
 .character-card__header {
