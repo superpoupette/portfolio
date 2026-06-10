@@ -61,9 +61,20 @@ fetch("charlie.json")
     .then(data => {
         allItems = data;
 
-        // charger par défaut 2022
-        loadYear("2022");
-    });
+        // récupérer l'année dans l'URL
+		const params = new URLSearchParams(window.location.search);
+		const selectedYear = params.get("year");
+		
+		// années autorisées
+		const validYears = ["2022", "2024", "2025"];
+		
+		// année par défaut si rien ou erreur
+		const yearToLoad = validYears.includes(selectedYear)
+		    ? selectedYear
+		    : "2022";
+		
+		loadYear(yearToLoad);
+		    });
 
 // fonction pour charger une année
 function loadYear(year) {
