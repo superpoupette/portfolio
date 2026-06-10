@@ -208,13 +208,13 @@ main {
 .cluedo-wrapper {
     position: relative;
 
-    width: 420px;
+    width: 500px;
     height: 320px;
 
     margin-top: 80px;
 }
 
-/* cartes */
+/* style général */
 .card-cluedo {
     position: absolute;
 
@@ -227,16 +227,14 @@ main {
 
     box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+    transition: transform 0.25s ease;
 
     transform-origin: bottom center;
 }
 
 /* gauche */
-.card-cluedo:nth-child(1) {
-    left: 0;
+.card-left {
+    left: 40px;
     top: 30px;
 
     transform: rotate(-18deg);
@@ -245,8 +243,8 @@ main {
 }
 
 /* centre */
-.card-cluedo:nth-child(2) {
-    left: 120px;
+.card-center {
+    left: 160px;
     top: 0;
 
     transform: rotate(0deg);
@@ -255,21 +253,14 @@ main {
 }
 
 /* droite */
-.card-cluedo:nth-child(3) {
-    left: 240px;
+.card-right {
+    left: 280px;
     top: 30px;
 
     transform: rotate(18deg);
 
     z-index: 2;
 }
-
-/* hover */
-.card-cluedo:hover {
-    transform: translateY(-15px) scale(1.04);
-    z-index: 10;
-}
-
 /* =========================
    SECTION CARTES
 ========================= */
