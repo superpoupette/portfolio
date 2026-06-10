@@ -242,18 +242,18 @@ main {
 
 /* éventail naturel */
 .card-cluedo:nth-child(1) {
-    transform: rotate(-14deg) translateY(25px);
+    transform: rotate(-18deg) translateY(25px);
     z-index: 1;
 }
 
 .card-cluedo:nth-child(2) {
     transform: rotate(0deg) translateY(-10px);
-    z-index: 3;
+    z-index: 2;
 }
 
 .card-cluedo:nth-child(3) {
-    transform: rotate(14deg) translateY(25px);
-    z-index: 2;
+    transform: rotate(18deg) translateY(25px);
+    z-index: 3;
 }
 
 
