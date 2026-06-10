@@ -2,15 +2,56 @@
     margin: 0;
     height: 100%;
 }
-header {
-    height: 0px;
-}
 
 body {
     background-color: #2D2B3B;
 }
 
+/* ===================== */
+/* HEADER */
+/* ===================== */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 70px;
+
+    background: transparent;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+
+/* CROIX */
+
+.close-button {
+    color: white;
+    text-decoration: none;
+
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+
+    line-height: 1;
+
+    transition: opacity 0.3s ease;
+}
+
+.close-button:hover {
+    opacity: 0.6;
+}
+
+/* ===================== */
 /* LAYOUT GLOBAL */
+/* ===================== */
 .main {
     display: flex;
     height: 100vh;
