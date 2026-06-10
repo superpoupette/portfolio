@@ -201,12 +201,63 @@ main {
 .content-cluedo {
     display: flex;
 }
+/* =========================
+   MAIN DE CARTES CLUEDO
+========================= */
+
 .cluedo-wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    gap: 5px;
+    margin-top: 80px;
+
+    position: relative;
+}
+
+/* cartes */
+.card-cluedo {
+    width: 180px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+
+    position: relative;
+
+    margin-left: -40px;
+
+    transition: transform 0.25s ease;
+}
+
+/* première carte */
+.card-cluedo:first-child {
+    margin-left: 0;
+}
+
+/* effet éventail */
+.card-cluedo:nth-child(1) {
+    transform: rotate(-18deg) translateY(35px);
+    z-index: 1;
+}
+
+.card-cluedo:nth-child(2) {
+    transform: rotate(0deg) translateY(-10px);
+    z-index: 2;
+}
+
+.card-cluedo:nth-child(3) {
+    transform: rotate(18deg) translateY(35px);
+    z-index: 1;
+}
+
+/* hover optionnel */
+.card-cluedo:hover {
+    transform: scale(1.05) translateY(-10px);
+    z-index: 10;
 }
 
 /* =========================
