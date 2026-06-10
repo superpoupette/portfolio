@@ -9,7 +9,35 @@ body {
   background-attachment: fixed;
   background-size: 1000px;
 }
+
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.close-button {
+    pointer-events: auto;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+
+    line-height: 1;
+
+    margin-top: 8px;
+    margin-right: 12px;
+
+    transition: opacity 0.3s ease;
+}
+
+.close-button:hover {
+    opacity: 0.6;
 }
   
 
