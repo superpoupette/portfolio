@@ -242,7 +242,7 @@ main {
 
 /* éventail naturel */
 .card-cluedo:nth-child(1) {
-    transform: rotate(-18deg) translateY(25px);
+    transform: rotate(-18deg) translateY(15px);
     z-index: 1;
 }
 
@@ -252,7 +252,7 @@ main {
 }
 
 .card-cluedo:nth-child(3) {
-    transform: rotate(18deg) translateY(25px);
+    transform: rotate(18deg) translateY(0px);
     z-index: 3;
 }
 
