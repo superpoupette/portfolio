@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style_personnages.css">
+  <link rel="stylesheet" href="style_armanti.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER GLOBAL (ton site) -->
+<header class="site-header">
+  <a href="../index.html">
+    <h1>Seolia</h1>
+  </a>
+  <a href="univers.html" class="close-button">✕</a>
+</header>
+
+<!-- CHARACTER CARD -->
+<div class="character-card">
+
+  <!-- HEADER CARD -->
+  <header class="character-card__header">
+    <h1 class="character-card__title">Evy</h1>
+    <div class="character-card__icon">֍</div>
+  </header>
+
+  <div class="character-card__main">
+
+    <!-- LEFT -->
+    <aside class="character-card__left">
+      <img src="../Images/Personnages/Armantiportrait(18.03.21).png" alt="character">
+
+      <div class="character-card__info-wrapper">
+
+        <!-- GENERAL -->
+        <div class="character-card__info-content active" id="info-general">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Age</span>
+            <span class="character-card__value">26</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Pronouns</span>
+            <span class="character-card__value">he/him</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Species</span>
+            <span class="character-card__value">human</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Magic</span>
+            <span class="character-card__value">none</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Job</span>
+            <span class="character-card__value">influencer</span>
+          </div>
+        </div>
+
+        <!-- PHYSIQUE -->
+        <div class="character-card__info-content" id="info-physique">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Height</span>
+            <span class="character-card__value">1m68</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Build</span>
+            <span class="character-card__value">thin</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Skin</span>
+            <span class="character-card__value">olive</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Eyes</span>
+            <span class="character-card__value">dark brown</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Hair</span>
+            <span class="character-card__value">black</span>
+          </div>
+        </div>
+
+        <!-- STATS -->
+        <div class="character-card__info-content" id="info-stats">
+          <div class="character-card__info-row">
+            <span class="character-card__label">Ego</span>
+            <span class="character-card__value">★★★★☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Creativity</span>
+            <span class="character-card__value">★★★★☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Social</span>
+            <span class="character-card__value">★★★★☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Sensivity</span>
+            <span class="character-card__value">★★☆☆☆</span>
+          </div>
+
+          <div class="character-card__info-row">
+            <span class="character-card__label">Intellect</span>
+            <span class="character-card__value">★★☆☆☆</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="character-card__info-tabs">
+        <button class="character-card__info-tab active" data-info="info-general">
+          <i class="fa-solid fa-circle-info"></i>
+        </button>
+
+        <button class="character-card__info-tab" data-info="info-physique">
+          <i class="fa-solid fa-user"></i>
+        </button>
+
+        <button class="character-card__info-tab" data-info="info-stats">
+          <i class="fa-solid fa-chart-simple"></i>
+        </button>
+        <a class="character-card__info-tab spotify-btn"
+             href="https://open.spotify.com/playlist/65Tz5hnCJlA0DgnmmuMpcJ?si=ef2ff9f55d264d07"
+             target="_blank"
+             rel="noopener noreferrer">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+      </div>
+
+    </aside>
+
+    <!-- RIGHT -->
+<section class="character-card__right">
+
+  <div class="character-card__about">
+
+    <!-- DESCRIPTION -->
+    <div class="character-card__tab-content active" id="description">
+      <p>Evy is a very sociable young man who takes up a lot of space. He likes meeting new people, laughing and partying.</p>
+    </div>
+
+    <!-- STORY -->
+    <div class="character-card__tab-content" id="histoire">
+
+      <div class="story-section">
+        <h4>Childhood</h4>
+        <p>-</p>
+        <p>
+          -
+        </p>
+      </div>
+
+    </div>
+
+    <!-- LIENS ❤︎🔥🗲-->
+    <div class="character-card__tab-content" id="liens">
+
+      <div class="character-links">
+
+        <a href="kaoda.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Kaoda</h3>
+              <div class="hearts">🗲🗲🗲🗲🗲</div>
+            </div>
+            <span class="relation">[ enemy ]</span>
+            <p>Armanti deeply hates Kaoda. He destroyed everything and caused the death of the father tree.</p>
+          </div>
+          <img src="../Images/Personnages/Kaoda(19.05.21).png" alt="Kaoda">
+        <a>
+
+        <a href="maeve.html" class="character-link-card">
+          <div class="character-link-text">
+            <div class="character-link-header">
+              <h3>Maeve</h3>
+              <div class="hearts">🗲🗲🗲</div>
+            </div>
+            <span class="relation">[ rival ]</span>
+            <p>Armanti has always been jealous of Maeve. During their childhood, they often bickered. She doesn't forgive her for helping destroy Vehmas even though Maeve was not the direct cause.</p>
+          </div>
+          <img src="../Images/Personnages/Maeve(19.05.21).png" alt="Maeve">
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+      <!-- TABS -->
+      <div class="character-card__tabs">
+        <span class="character-card__tab active" data-tab="description">About</span>
+        <span class="character-card__tab" data-tab="histoire">Story</span>
+        <span class="character-card__tab" data-tab="liens">Links</span>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="character-card__gallery">
+        <img src="../Images/Moodboards/cd961c82ab3c8240dc97e588bcc54515.jpg">
+        <img src="../Images/Moodboards/4fdda669219e8142f754c5691220b182.jpg">
+        <img src="../Images/Moodboards/ff0cf9c6b772fd57b8e086f942e071b7.jpg">
+        <img src="../Images/Moodboards/3cc6a285fd8cca3f02e1c0e073b30122.jpg">
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer class="character-card__footer">
+    “ Faith can move mountains. ”
+  </footer>
+  </div>
+
+<div class="character-card__gallery gallery--character"></div>
+
+<!-- JS -->
+<script>
+const tabs = document.querySelectorAll(".character-card__tab");
+const contents = document.querySelectorAll(".character-card__tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.tab).classList.add("active");
+  });
+});
+
+const infoTabs = document.querySelectorAll(".character-card__info-tab:not(.spotify-btn)");
+const infoContents = document.querySelectorAll(".character-card__info-content");
+
+infoTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    infoTabs.forEach(t => t.classList.remove("active"));
+    infoContents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.info).classList.add("active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.querySelector(".gallery--character");
+
+    if (!container) {
+        console.error("Galerie introuvable !");
+        return;
+    }
+
+    const response = await fetch("../galerie.json");
+    const data = await response.json();
+
+    const personnage = "evy";
+
+    const images = data.filter(item =>
+        item.perso && item.perso.includes(personnage)
+    );
+
+    images.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    images.forEach(item => {
+        const img = document.createElement("img");
+
+        img.src = item.src;
+        img.alt = item.title;
+
+        if (item.pos) {
+            img.dataset.pos = item.pos;
+        }
+
+        container.appendChild(img);
+    });
+});
+</script>
+</body>
+</html>
