@@ -204,14 +204,16 @@ main {
 /* =========================
    MAIN DE CARTES CLUEDO
 ========================= */
-
+.cluedo .tecte{
+    margin-top:100px
+}
 .cluedo-wrapper {
     position: relative;
 
     width: 500px;
     height: 320px;
     margin-left: 300px;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 /* style général */
@@ -249,7 +251,7 @@ main {
 
     transform: rotate(0deg);
 
-    z-index: 3;
+    z-index: 2;
 }
 
 /* droite */
@@ -259,7 +261,7 @@ main {
 
     transform: rotate(18deg);
 
-    z-index: 2;
+    z-index: 3;
 }
 /* =========================
    SECTION CARTES
