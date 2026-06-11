@@ -10,16 +10,17 @@
 
 /* GALERIE CHARLIE */
 .galeriecharlie {
+    margin-left:100px;
     display: grid;
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 150px 150px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
     gap: 20px;
 }
 
 /* Images */
 .galeriecharlie img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     display: block;
 }
