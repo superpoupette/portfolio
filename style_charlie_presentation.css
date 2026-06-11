@@ -1,16 +1,22 @@
+body {
+    background-color: #D0D6F2;
+}
+
 /* CONTENEUR PRINCIPAL */
+
 .box {
     display: flex;
     align-items: flex-start;
     gap: 100px;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
 }
+
 
 /* GALERIE CHARLIE */
 .galeriecharlie {
-    margin-left:100px;
+    margin-left:250px;
     display: grid;
     grid-template-columns: 200px 200px;
     grid-template-rows: 200px 200px;
@@ -23,7 +29,14 @@
     height: 200px;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
 }
+
+.galeriecharlie img:hover {
+    transform: scale(1.05);
+}
+
+
 
 /* Image du haut centrée */
 .galeriecharlie a:nth-child(1) {
@@ -37,9 +50,15 @@
     min-width: 400px;
 }
 
+.texte img {
+    margin-left:10px;
+    width: 220px;
+    height: auto;
+}
 /* BOUTON */
 .btn {
-    background-color: #ea8494;
+    margin-left:150px;
+    background-color: #F0375B;
     color: white;
     font-family: 'Nunito', sans-serif;
     padding: 10px 20px;
@@ -53,5 +72,5 @@
 }
 
 .btn:hover {
-    background-color: #c90b5e;
+    background-color: #B5122E;
 }
