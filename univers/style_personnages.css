@@ -10,7 +10,27 @@ body {
   background-size: 1000px;
 }
 
-header {
+.site-header {
+    position: relative;
+    height: 120px;
+}
+
+.header-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: auto;
+    z-index: 0;
+}
+
+.header-wave path {
+    fill: #BC9ADB; /* couleur de la page */
+}
+
+.site-header h1 {
+    position: relative;
+    z-index: 1;
 }
 
 
