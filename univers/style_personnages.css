@@ -24,7 +24,7 @@ body {
     width: 250px;
     height: 200px;
 
-    background-color: var(--theme-color, #BC9ADB);
+    background-color: var(--theme-color, #918247);
 
     mask: url("../Images/angle1(1).svg") no-repeat top left;
     -webkit-mask: url("../Images/angle1(1).svg") no-repeat top left;
@@ -39,6 +39,7 @@ body {
 .site-header .close-button {
     position: relative;
     z-index: 1;
+    top: -20px;
 }
 
 
@@ -67,7 +68,7 @@ body {
 /* CONTAINER */
 .character-card {
   width: 1000px;
-  margin: 40px auto;
+  margin: 10px auto;
   background: #1F1F1F;
 }
 
