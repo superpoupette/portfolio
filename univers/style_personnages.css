@@ -12,23 +12,31 @@ body {
 
 .site-header {
     position: relative;
-    height: 120px;
+    height: 120px; /* ajuste selon ton header */
 }
 
-.header-wave {
+.site-header::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 350px;
-    height: auto;
+
+    width: 300px;
+    height: 200px;
+
+    background-color: var(--theme-color, #BC9ADB);
+
+    mask: url("../Images/angle1(1).svg") no-repeat top left;
+    -webkit-mask: url("../Images/angle1(1).svg") no-repeat top left;
+
+    mask-size: contain;
+    -webkit-mask-size: contain;
+
     z-index: 0;
 }
 
-.header-wave path {
-    fill: #BC9ADB; /* couleur de la page */
-}
-
-.site-header h1 {
+.site-header h1,
+.site-header .close-button {
     position: relative;
     z-index: 1;
 }
