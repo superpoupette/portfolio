@@ -39,7 +39,7 @@ body {
 .site-header .close-button {
     position: relative;
     z-index: 1;
-    top: -40px;
+    top: -30px;
 }
 
 
@@ -68,7 +68,7 @@ body {
 /* CONTAINER */
 .character-card {
   width: 1000px;
-  margin: 10px auto;
+  margin: 0px auto;
   background: #1F1F1F;
 }
 
