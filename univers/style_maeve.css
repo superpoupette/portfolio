@@ -9,6 +9,11 @@
   background: #476E3A;
 }
 
+.site-header::before,
+.site-header::after {
+		background-color:#8FB079;
+}
+
 .character-card__info-wrapper {
   background: #2A3624;
 }
