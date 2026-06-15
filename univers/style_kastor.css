@@ -4,7 +4,10 @@
   background-attachment: fixed;
   background-size: 1000px;
 }
-
+.site-header::before,
+.site-header::after {
+    background-color:  #BA2B43;
+}
 .character-card {
 	background: #D9E4FC;
 }
