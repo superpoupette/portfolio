@@ -88,12 +88,13 @@ body {
     opacity: 0.6;
 }
 
-header {
-    color:white;
+.site-header h1 {
+    color: white;
+    transition: color 0.3s ease;
 }
 
-header:hover{
-  color:#FFBC63;
+.site-header h1:hover {
+    color: #FFBC63;
 }
   
 
