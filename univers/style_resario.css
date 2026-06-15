@@ -40,10 +40,12 @@ body {
 
 .character-card__tabs {
 	background: #F7E965;
+	color: black;
 }
 
 .character-card__tab.active {
   background: #FFCF57;
+	color: black;
 }
 
 .character-card__footer {
