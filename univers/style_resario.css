@@ -4,39 +4,42 @@ body {
   background-attachment: fixed;
   background-size: 1000px;
 }
+.character-card {
+  background: #E3FFF4;
+}
 
 .character-card__header {
-  background: #918247;
+  background: #9B88F7;
 }
 
 .character-card__info-wrapper {
-  background: #363328;
+  background: #CBF5DA;
 }
 
 .character-card__info-tab {
-	border: 1px solid #918247;
+	border: 1px solid #FFCF57;
 }
 
 .character-card__info-tab:hover {
-  background: #918247;
+  background: #FFCF57;
 }
 
 .character-card__info-tab.active {
-  background: #918247;
+  background: #FFCF57;
 }
 
 .character-card__about {
-  background: #363328;
+  background: #CBF5DA;
 }
 
 .character-card__tabs {
-	background: #918247;
+	background: #F7E965;
 }
 
 .character-card__tab.active {
-  background: #736630;
+  background: #FFCF57;
 }
 
 .character-card__footer {
-  background: #918247;
+  background: #9CB3F7;
 }
