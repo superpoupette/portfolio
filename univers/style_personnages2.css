@@ -87,7 +87,15 @@ body {
 .close-button:hover {
     opacity: 0.6;
 }
-  
+
+.site-header h1 {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.site-header h1:hover {
+    color: #FFBC63;
+}
 
 /* CONTAINER */
 .character-card {
