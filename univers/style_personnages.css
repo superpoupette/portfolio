@@ -442,11 +442,16 @@ body {
 
 .popup {
     position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,.85);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
     justify-content: center;
     align-items: center;
+
     z-index: 9999;
 }
 
@@ -456,12 +461,15 @@ body {
 
 .popup-content {
     background: white;
-    border-radius: 10px;
     padding: 10px;
     max-width: 92vw;
     max-height: 92vh;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
 }
 
 .popup-content img {
@@ -471,23 +479,55 @@ body {
 }
 
 .popup-info {
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+#popup-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    text-align: left;
+    color: black;
 }
 
 .popup-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+#popup-date {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    white-space: nowrap;
 }
 
 #popup-tags {
     display: flex;
+    flex-wrap: nowrap;
     gap: 5px;
+    justify-content: flex-end;
+    overflow-x: auto;
+    max-width: 60%;
+}
+
+#popup-tags::-webkit-scrollbar {
+    height: 4px;
+}
+
+#popup-tags::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 2px;
 }
 
 #popup-tags span {
     padding: 4px 8px;
-    border-radius: 10px;
-    background: #eee;
+    border-radius: 12px;
     font-size: 11px;
+    white-space: nowrap;
+    font-weight: 500;
 }
