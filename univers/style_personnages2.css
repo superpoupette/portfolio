@@ -9,7 +9,83 @@ body {
   background-attachment: fixed;
   background-size: 1000px;
 }
-header {
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 150px; /* ajuste selon ton header */
+}
+
+.site-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 200px;
+    height: 150px;
+
+    background-color: var(--theme-color, #918247);
+
+    mask: url("../Images/angle1(1).svg") no-repeat top left;
+    -webkit-mask: url("../Images/angle1(1).svg") no-repeat top left;
+
+    mask-size: contain;
+    -webkit-mask-size: contain;
+
+    z-index: 0;
+}
+
+.site-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 70px;
+    height: 120px;
+
+    background-color: var(--theme-color, #918247);
+
+    mask: url("../Images/angle2.svg") no-repeat top right;
+    -webkit-mask: url("../Images/angle2.svg") no-repeat top right;
+
+    mask-size: contain;
+    -webkit-mask-size: contain;
+
+    z-index: 0;
+}
+
+.site-header h1,
+.site-header .close-button {
+    position: relative;
+    z-index: 1;
+    top: -45px;
+}
+
+
+.close-button {
+    pointer-events: auto;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+
+    line-height: 1;
+
+    margin-top: 8px;
+    margin-right: 12px;
+
+    transition: opacity 0.3s ease;
+}
+
+.close-button:hover {
+    opacity: 0.6;
 }
   
 
