@@ -39,6 +39,26 @@ body {
     z-index: 0;
 }
 
+.site-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 200px;
+    height: 150px;
+
+    background-color: var(--theme-color, #918247);
+
+    mask: url("../Images/angle2.svg") no-repeat top right;
+    -webkit-mask: url("../Images/angle2.svg") no-repeat top right;
+
+    mask-size: contain;
+    -webkit-mask-size: contain;
+
+    z-index: 0;
+}
+
 .site-header h1,
 .site-header .close-button {
     position: relative;
