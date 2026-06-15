@@ -5,6 +5,11 @@ body {
   background-size: 1000px;
 }
 
+.site-header::before,
+.site-header::after {
+    background-color: #E9EEF2;
+}
+
 .character-card {
   background: #E9EEF2;
 }
