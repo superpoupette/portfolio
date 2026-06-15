@@ -5,6 +5,11 @@
   background-size: 1000px;
 }
 
+.site-header::before,
+.site-header::after {
+    background-color: #F593D0; /* couleur souhaitée */
+}
+
 .character-card__header {
   background: #F593D0;
 }
