@@ -7,7 +7,7 @@ body {
 
 .site-header::before,
 .site-header::after {
-    background-color: #7d90a7;
+    background-color: #AEBCCF;
 }
 
 .character-card {
@@ -19,7 +19,7 @@ body {
 }
 
 .character-card__info-wrapper {
-  background: #7d90a7;
+  background: #AEBCCF;
 }
 
 .character-card__info-tab {
