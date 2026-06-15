@@ -87,6 +87,14 @@ body {
 .close-button:hover {
     opacity: 0.6;
 }
+
+header {
+    color:white;
+}
+
+header:hover{
+  color:#FFBC63;
+}
   
 
 /* CONTAINER */
