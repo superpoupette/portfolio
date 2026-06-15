@@ -95,8 +95,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     const popupTags = document.getElementById("popup-tags");
 
     container.addEventListener("click", e => {
+        console.log("clic détecté");
 
         if (e.target.tagName !== "IMG") return;
+        console.log("image détectée");
 
         popupImg.src = e.target.dataset.full;
 
