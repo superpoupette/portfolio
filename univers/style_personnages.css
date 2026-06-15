@@ -28,7 +28,7 @@ body {
     width: 200px;
     height: 150px;
 
-    background-color: var(--theme-color, #918247);
+    background-color: var(--theme-color, #393444);
 
     mask: url("../Images/angle1(1).svg") no-repeat top left;
     -webkit-mask: url("../Images/angle1(1).svg") no-repeat top left;
@@ -48,7 +48,7 @@ body {
     width: 70px;
     height: 120px;
 
-    background-color: var(--theme-color, #918247);
+    background-color: var(--theme-color, #393444);
 
     mask: url("../Images/angle2.svg") no-repeat top right;
     -webkit-mask: url("../Images/angle2.svg") no-repeat top right;
