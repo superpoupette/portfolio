@@ -4,6 +4,12 @@ body {
   background-attachment: fixed;
   background-size: 1000px;
 }
+
+.site-header::before,
+.site-header::after {
+    background-color: #9CB3F7; /* couleur souhaitée */
+}
+
 .character-card {
   background: #E3FFF4;
 }
