@@ -236,66 +236,30 @@
   </footer>
   </div>
 
-<!-- JS -->
-<script>
-const tabs = document.querySelectorAll(".character-card__tab");
-const contents = document.querySelectorAll(".character-card__tab-content");
+<div
+    class="character-card__gallery gallery--character"
+    data-character="kaoda">
+</div>
 
-tabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    tabs.forEach(t => t.classList.remove("active"));
-    contents.forEach(c => c.classList.remove("active"));
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
 
-    tab.classList.add("active");
-    document.getElementById(tab.dataset.tab).classList.add("active");
-  });
-});
+    <img id="popup-img" src="" alt="">
 
-const infoTabs = document.querySelectorAll(".character-card__info-tab:not(.spotify-btn)");
-const infoContents = document.querySelectorAll(".character-card__info-content");
+    <div class="popup-info">
+      <p id="popup-title"></p>
 
-infoTabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    infoTabs.forEach(t => t.classList.remove("active"));
-    infoContents.forEach(c => c.classList.remove("active"));
+      <div class="popup-footer">
+        <p id="popup-date"></p>
+        <div id="popup-tags"></div>
+      </div>
+    </div>
 
-    tab.classList.add("active");
-    document.getElementById(tab.dataset.info).classList.add("active");
-  });
-});
+  </div>
+</div>
 
-document.addEventListener("DOMContentLoaded", async () => {
-    const container = document.querySelector(".gallery--character");
+<script src="character-gallery.js"></script>
 
-    if (!container) {
-        console.error("Galerie introuvable !");
-        return;
-    }
-
-    const response = await fetch("../galerie.json");
-    const data = await response.json();
-
-    const personnage = "kaoda";
-
-    const images = data.filter(item =>
-        item.perso && item.perso.includes(personnage)
-    );
-
-    images.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-    images.forEach(item => {
-        const img = document.createElement("img");
-
-        img.src = item.src;
-        img.alt = item.title;
-
-        if (item.pos) {
-            img.dataset.pos = item.pos;
-        }
-
-        container.appendChild(img);
-    });
-});
-</script>
 </body>
 </html>
