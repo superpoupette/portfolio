@@ -308,67 +308,10 @@
   </footer>
 </div>
 
-<!-- JS -->
-<script>
-const tabs = document.querySelectorAll(".character-card__tab");
-const contents = document.querySelectorAll(".character-card__tab-content");
-
-tabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    tabs.forEach(t => t.classList.remove("active"));
-    contents.forEach(c => c.classList.remove("active"));
-
-    tab.classList.add("active");
-    document.getElementById(tab.dataset.tab).classList.add("active");
-  });
-});
-
-const infoTabs = document.querySelectorAll(".character-card__info-tab:not(.spotify-btn)");
-const infoContents = document.querySelectorAll(".character-card__info-content");
-
-infoTabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    infoTabs.forEach(t => t.classList.remove("active"));
-    infoContents.forEach(c => c.classList.remove("active"));
-
-    tab.classList.add("active");
-    document.getElementById(tab.dataset.info).classList.add("active");
-  });
-});
-
-document.addEventListener("DOMContentLoaded", async () => {
-    const container = document.querySelector(".gallery--character");
-
-    if (!container) {
-        console.error("Galerie introuvable !");
-        return;
-    }
-
-    const response = await fetch("../galerie.json");
-    const data = await response.json();
-
-    const personnage = "stellaria";
-
-    const images = data.filter(item =>
-        item.perso && item.perso.includes(personnage)
-    );
-
-    images.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-    images.forEach(item => {
-        const img = document.createElement("img");
-
-        img.src = item.src;
-        img.alt = item.title;
-
-        if (item.pos) {
-            img.dataset.pos = item.pos;
-        }
-
-        container.appendChild(img);
-    });
-});
-</script>
+<div
+    class="character-card__gallery gallery--character"
+    data-character="stellaria">
+</div>
 
 <!-- POPUP -->
 <div id="popup" class="popup hidden">
@@ -387,6 +330,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   </div>
 </div>
+
+<script src="character-gallery.js"></script>
+
 </body>
 </html>
-
