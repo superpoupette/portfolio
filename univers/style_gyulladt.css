@@ -4,41 +4,45 @@ body {
   background-attachment: fixed;
   background-size: 1000px;
 }
+.site-header::before,
+.site-header::after {
+    background-color: #B36E47; 
+}
 
 .character-card__header {
-  background: #918247;
+  background: #d6431e;
 }
 
 .character-card__info-wrapper {
-  background: #363328;
+  background: #594F4F;
 }
 
 .character-card__info-tab {
-	border: 1px solid #918247;
+	border: 1px solid #B36E47;
 }
 
 .character-card__info-tab:hover {
-  background: #918247;
+  background: #B36E47;
 }
 
 .character-card__info-tab.active {
-  background: #918247;
+  background: #B36E47;
 }
 
 .character-card__about {
-  background: #363328;
+  background: #594F4F;
 }
 
 .character-card__tabs {
-	background: #918247;
+	background: #C96442;
 }
 
 .character-card__tab.active {
-  background: #736630;
+  background: #A64826;
 }
 
 .character-card__footer {
-  background: #918247;
+  background: #B36E47;
 }
 
 .gallery--character {
