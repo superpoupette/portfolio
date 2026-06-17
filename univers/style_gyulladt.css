@@ -6,7 +6,7 @@ body {
 }
 .site-header::before,
 .site-header::after {
-    background-color: #B36E47; 
+    background-color: #695647; 
 }
 
 .character-card__header {

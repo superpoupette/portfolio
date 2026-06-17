@@ -6,46 +6,46 @@
 }
 .site-header::before,
 .site-header::after {
-    background-color:  #BA2B43;
+    background-color:  #70BCA8;
 }
 .character-card {
-	background: #D9E4FC;
+	background: #E8DCE1;
 }
 
 .character-card__header {
-  background: #BA2B43;
+  background: #3EB595;
 }
 
 .character-card__info-wrapper {
-  background: #a4c0f2;
+  background: #D9B2C1;
 }
 
 .character-card__info-tab {
-	border: 1px solid #6EA8DB;
+	border: 1px solid #50A693;
 }
 
 .character-card__info-tab:hover {
-  background: #6EA8DB;
+  background: #50A693;
 }
 
 .character-card__info-tab.active {
-  background: #6EA8DB;
+  background: #50A693;
 }
 
 .character-card__about {
-  background: #a4c0f2;
+  background: #D9B2C1;
 }
 
 .character-card__tabs {
-	background: #6EA8DB;
+	background: #70BCA8;
 }
 
 .character-card__tab.active {
-  background: #5383B0;
+  background: #50A693;
 }
 
 .character-card__footer {
-  background: #5C0F1E;
+  background: #70BCA8;
 }
 
 .gallery--character {
