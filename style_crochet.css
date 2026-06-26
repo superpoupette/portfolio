@@ -32,9 +32,9 @@ body {
 }
 
 .titre-image {
-    width: 500px;      /* ajuste cette valeur selon la taille souhaitée */
-    max-width: 90%;
-    height: auto;
+    height: 300px;   /* hauteur fixe */
+    width: auto;     /* la largeur s'adapte automatiquement */
+    max-width: 90vw; /* évite que l'image dépasse sur les petits écrans */
 }
 
 #img1 {
