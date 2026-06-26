@@ -22,18 +22,19 @@ body {
     src: url(Fonts/brittany_signature/BrittanySignature.ttf);
 }
 .titre {
-    margin-top: 0px;
+    margin-top: 0;
     background-color: #C0D9B4;
-    height: 150px;
-    text-align: center;
-    font-family: "Brittany";
-    font-size: 70px;  
-    color: #7F42A1;
+    height: 220px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-h2{
-    transform: translate(0px, -60px);
+.titre-image {
+    width: 500px;      /* ajuste cette valeur selon la taille souhaitée */
+    max-width: 90%;
+    height: auto;
 }
 
 #img1 {
