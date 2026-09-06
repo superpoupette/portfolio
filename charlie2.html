@@ -39,6 +39,7 @@
         <button data-year="2022">2022</button>
         <button data-year="2024">2024</button>
         <button data-year="2025">2025</button>
+        <button data-year="2026">2026</button>
     </div>
 
     <a class="artfight-link" href="https://artfight.net/attack/3902456.wheres-wally-part-1" target="_blank">
@@ -68,7 +69,7 @@ fetch("charlie.json")
 		const selectedYear = params.get("year");
 		
 		// années autorisées
-		const validYears = ["2022", "2024", "2025"];
+		const validYears = ["2022", "2024", "2025", "2026"];
 		
 		// année par défaut si rien ou erreur
 		const yearToLoad = validYears.includes(selectedYear)
